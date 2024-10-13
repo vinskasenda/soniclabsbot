@@ -97,6 +97,6 @@ export class Helper {
   }
   static ["decodeDataUsingAbi"]() {}
   static ['showSkelLogo']() {
-    console.log("");
+    console.log("INSIDERS");
   }
 }
