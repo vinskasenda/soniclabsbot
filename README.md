@@ -15,7 +15,7 @@
 Sonic Labs ( Prev Fantom )
 
 - Get Faucet : https://testnet.soniclabs.com/account
-- Register : https://airdrop.soniclabs.com/?ref=qos4k8
+- Register : [https://airdrop.soniclabs.com/?ref=4K0I6S](https://sightai.io/dashboard?referral-code=4K0I6S)
 - Connect Wallet to Sonic Testnet
 - Enter Access Code 
 ```
