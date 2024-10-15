@@ -1,106 +1,121 @@
 import { Helper } from '../utils/helper.js';
-import a1_0x426dff from '../utils/logger.js';
+import a1_0x3e0e46 from '../utils/logger.js';
+import a1_0x43832b from 'node-fetch';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 export class API {
-  constructor(_0x58555e, _0x324756, _0x171f6f, _0x3df204, _0x5c525d) {
-    this.url = _0x58555e;
-    this.host = _0x171f6f;
-    this.origin = _0x3df204;
+  constructor(_0x388a9c, _0x51515e, _0x104a2b, _0x5568b9, _0x463243) {
+    this.url = _0x388a9c;
+    this.host = _0x104a2b;
+    this.origin = _0x5568b9;
     this.ua = Helper.randomUserAgent();
-    this.something = _0x5c525d;
-    this.proxy = _0x324756;
+    this.something = _0x463243;
+    this.proxy = _0x51515e;
   }
-  ["generateHeaders"](_0x2727d1) {
-    const _0x5721de = {
+  ["generateHeaders"](_0x138776) {
+    const _0x37f032 = {
       'Accept': "application/json",
       'Accept-Language': "en-US,en;q=0.9,id;q=0.8",
       'Content-Type': "application/json",
       'Sec-Fetch-Dest': "empty",
       'Sec-Fetch-Site': "same-site",
       'Sec-Fetch-Mode': "cors",
-      'Host': this.host,
-      'Origin': this.origin,
+      'Cache-Control': "no-cache",
+      'Connection': "keep-alive",
       'Pragma': "no-cache"
     };
-    if (_0x2727d1) {
-      _0x5721de.Authorization = "Bearer " + _0x2727d1;
+    if (_0x138776) {
+      _0x37f032.Authorization = "Bearer " + _0x138776;
     }
-    return _0x5721de;
+    return _0x37f032;
   }
-  ["replaceSensitiveData"](_0x52b6f1) {
-    if (typeof this.something === 'string') {
-      const _0x30e0f2 = new RegExp(this.something, 'g');
-      return _0x52b6f1.replace(_0x30e0f2, "?????");
+  ['replaceSensitiveData'](_0x3533e0) {
+    if (typeof this.something === "string") {
+      const _0x2334a4 = new RegExp(this.something, 'g');
+      return _0x3533e0.replace(_0x2334a4, "?????");
     } else if (Array.isArray(this.something)) {
-      this.something.forEach(_0x2fa269 => {
-        const _0x3003cb = new RegExp(_0x2fa269, 'g');
-        _0x52b6f1 = _0x52b6f1.replace(_0x3003cb, "?????");
+      this.something.forEach(_0x3e1236 => {
+        const _0x3b2038 = new RegExp(_0x3e1236, 'g');
+        _0x3533e0 = _0x3533e0.replace(_0x3b2038, "?????");
       });
     }
-    return _0x52b6f1;
+    return _0x3533e0;
   }
-  async ["fetch"](_0x2cafaa, _0x22d626, _0xae7dda, _0x282488 = {}, _0x5aaae6 = {}, _0x127cc5, _0x2d0980 = false) {
-    const _0x116214 = _0x2d0980 ? _0x2cafaa : '' + this.url + _0x2cafaa;
+  async ["fetch"](_0xa2c1f0, _0x56efc5, _0x2ef368, _0x12bed1 = {}, _0x22bc7c = {}, _0x3fce7c, _0x222e6f = false) {
+    const _0x502c24 = _0x222e6f ? _0xa2c1f0 : '' + this.url + _0xa2c1f0;
     try {
-      const _0x16cb43 = {
-        ..._0x5aaae6,
-        ...this.generateHeaders(_0xae7dda)
+      const _0x4dc2b0 = {
+        ...this.generateHeaders(_0x2ef368),
+        ..._0x22bc7c
       };
-      const _0x2cab6d = {
-        'headers': _0x16cb43,
-        'method': _0x22d626,
-        'referer': _0x127cc5
+      const _0x1e7517 = {
+        'headers': _0x4dc2b0,
+        'method': _0x56efc5,
+        'referer': _0x3fce7c,
+        'referrerPolicy': "strict-origin-when-cross-origin",
+        'mode': 'cors',
+        'credentials': "omit"
       };
-      a1_0x426dff.info(_0x22d626 + " : " + this.replaceSensitiveData(_0x116214) + " " + (this.proxy ? this.proxy : ''));
-      for (let _0x53c21e in _0x16cb43) {
-        _0x16cb43[_0x53c21e] = this.replaceSensitiveData(_0x16cb43[_0x53c21e]);
+      a1_0x3e0e46.info(_0x56efc5 + " : " + this.replaceSensitiveData(_0x502c24) + " " + (this.proxy ? this.proxy : ''));
+      for (let _0x3a36b2 in _0x4dc2b0) {
+        _0x4dc2b0[_0x3a36b2] = this.replaceSensitiveData(_0x4dc2b0[_0x3a36b2]);
       }
-      a1_0x426dff.info("Request Header : " + JSON.stringify(_0x16cb43));
-      if (_0x22d626 !== "GET") {
-        _0x2cab6d.body = '' + JSON.stringify(_0x282488);
-        const _0x127cbb = this.replaceSensitiveData(_0x2cab6d.body);
-        a1_0x426dff.info("Request Body : " + _0x127cbb);
+      a1_0x3e0e46.info("Request Header : " + JSON.stringify(_0x4dc2b0));
+      if (_0x56efc5 !== "GET") {
+        _0x1e7517.body = '' + JSON.stringify(_0x12bed1);
+        const _0x49d55f = this.replaceSensitiveData(_0x1e7517.body);
+        a1_0x3e0e46.info("Request Body : " + _0x49d55f);
       }
       if (this.proxy) {
-        _0x2cab6d.agent = new HttpsProxyAgent(this.proxy, {
+        _0x1e7517.agent = new HttpsProxyAgent(this.proxy, {
           'rejectUnauthorized': false
         });
       }
-      const _0x19a290 = await fetch(_0x116214, _0x2cab6d);
-      a1_0x426dff.info("Response : " + _0x19a290.status + " " + _0x19a290.statusText);
-      if (_0x19a290.ok || _0x19a290.status == 0x190 || _0x19a290.status == 0x193) {
-        const _0x42097b = _0x19a290.headers.get("content-type");
-        let _0x5335f6;
-        if (_0x42097b && _0x42097b.includes("application/json")) {
-          _0x5335f6 = await _0x19a290.json();
-          _0x5335f6.status = _0x19a290.status;
+      const _0x5ddc0d = await a1_0x43832b(_0x502c24, _0x1e7517);
+      a1_0x3e0e46.info("Response : " + _0x5ddc0d.status + " " + _0x5ddc0d.statusText);
+      if (_0x5ddc0d.ok || _0x5ddc0d.status == 0x190 || _0x5ddc0d.status == 0x193) {
+        const _0x67bf88 = _0x5ddc0d.headers.get('content-type');
+        let _0x4c8681;
+        if (_0x67bf88 && _0x67bf88.includes("application/json")) {
+          _0x4c8681 = await _0x5ddc0d.json();
+          _0x4c8681.status = _0x5ddc0d.status;
         } else {
-          _0x5335f6 = {
-            'status': _0x19a290.status,
-            'message': await _0x19a290.text()
+          _0x4c8681 = {
+            'status': _0x5ddc0d.status,
+            'message': await _0x5ddc0d.text()
           };
         }
-        if (_0x19a290.ok) {
-          _0x5335f6.status = 0xc8;
+        if (_0x5ddc0d.ok) {
+          _0x4c8681.status = 0xc8;
         }
-        let _0x67ae3 = JSON.stringify(_0x5335f6);
-        _0x67ae3 = this.replaceSensitiveData(_0x67ae3);
-        if (_0x67ae3.length > 0xc8) {
-          _0x67ae3 = _0x67ae3.substring(0x0, 0xc8) + "...";
+        let _0x32edb1 = JSON.stringify(_0x4c8681);
+        _0x32edb1 = this.replaceSensitiveData(_0x32edb1);
+        if (_0x32edb1.length > 0xc8) {
+          _0x32edb1 = _0x32edb1.substring(0x0, 0xc8) + "...";
         }
-        a1_0x426dff.info("Response Data : " + _0x67ae3);
-        return _0x5335f6;
+        a1_0x3e0e46.info("Response Data : " + _0x32edb1);
+        return _0x4c8681;
       } else {
-        throw new Error(_0x19a290.status + " - " + _0x19a290.statusText);
+        throw _0x5ddc0d;
       }
-    } catch (_0x33dd91) {
-      if (_0x116214.includes("setInvited") && _0x33dd91.message.includes("401")) {
-        return {
-          'status': 0xc8
-        };
+    } catch (_0x2b02b1) {
+      if (_0x2b02b1.status && _0x2b02b1.statusText) {
+        if (_0x502c24.includes("setInvited") && _0x2b02b1.status == '401') {
+          return {
+            'status': 0xc8
+          };
+        } else {
+          if (_0x502c24.includes('points-by-player') && _0x2b02b1.status == '500') {
+            return {
+              'status': 0x1f4,
+              ...(await _0x2b02b1.json())
+            };
+          } else {
+            a1_0x3e0e46.error("Error : " + _0x2b02b1.message);
+            throw Error(_0x2b02b1.status + " - " + _0x2b02b1.statusText);
+          }
+        }
       } else {
-        a1_0x426dff.error("Error : " + _0x33dd91.message);
-        throw _0x33dd91;
+        throw _0x2b02b1;
       }
     }
   }
