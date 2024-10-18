@@ -1,121 +1,121 @@
 import { Helper } from '../utils/helper.js';
-import a1_0x4b3716 from '../utils/logger.js';
-import a1_0x403bd8 from 'node-fetch';
+import a1_0x5496cd from '../utils/logger.js';
+import a1_0x16b200 from 'node-fetch';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 export class API {
-  constructor(_0x4a6cf4, _0x2f0b42, _0x275be4, _0x500007, _0x2306ee) {
-    this.url = _0x4a6cf4;
-    this.host = _0x275be4;
-    this.origin = _0x500007;
+  constructor(_0xf52d76, _0x59012c, _0x7a8536, _0x28aab9, _0x21ddbc) {
+    this.url = _0xf52d76;
+    this.host = _0x7a8536;
+    this.origin = _0x28aab9;
     this.ua = Helper.randomUserAgent();
-    this.something = _0x2306ee;
-    this.proxy = _0x2f0b42;
+    this.something = _0x21ddbc;
+    this.proxy = _0x59012c;
   }
-  ["generateHeaders"](_0x1c95a1) {
-    const _0x3a9788 = {
-      'Accept': 'application/json',
+  ["generateHeaders"](_0x38e4bc) {
+    const _0x17ec63 = {
+      'Accept': "application/json",
       'Accept-Language': 'en-US,en;q=0.9,id;q=0.8',
-      'Content-Type': "application/json",
-      'Sec-Fetch-Dest': "empty",
+      'Content-Type': 'application/json',
+      'Sec-Fetch-Dest': 'empty',
       'Sec-Fetch-Site': "same-site",
-      'Sec-Fetch-Mode': "cors",
+      'Sec-Fetch-Mode': 'cors',
       'Cache-Control': "no-cache",
       'Connection': "keep-alive",
       'Pragma': "no-cache"
     };
-    if (_0x1c95a1) {
-      _0x3a9788.Authorization = "Bearer " + _0x1c95a1;
+    if (_0x38e4bc) {
+      _0x17ec63.Authorization = "Bearer " + _0x38e4bc;
     }
-    return _0x3a9788;
+    return _0x17ec63;
   }
-  ["replaceSensitiveData"](_0x58bd9a) {
-    if (typeof this.something === "string") {
-      const _0x11ad46 = new RegExp(this.something, 'g');
-      return _0x58bd9a.replace(_0x11ad46, "?????");
+  ["replaceSensitiveData"](_0x39cf23) {
+    if (typeof this.something === 'string') {
+      const _0x376338 = new RegExp(this.something, 'g');
+      return _0x39cf23.replace(_0x376338, '?????');
     } else if (Array.isArray(this.something)) {
-      this.something.forEach(_0x2cfa80 => {
-        const _0x26a558 = new RegExp(_0x2cfa80, 'g');
-        _0x58bd9a = _0x58bd9a.replace(_0x26a558, "?????");
+      this.something.forEach(_0x4b0c4d => {
+        const _0xa98c64 = new RegExp(_0x4b0c4d, 'g');
+        _0x39cf23 = _0x39cf23.replace(_0xa98c64, "?????");
       });
     }
-    return _0x58bd9a;
+    return _0x39cf23;
   }
-  async ["fetch"](_0x1a74b6, _0x175b2d, _0x1f9f6b, _0x369808 = {}, _0x9d73da = {}, _0x3bd449, _0x554feb = false) {
-    const _0x42eb92 = _0x554feb ? _0x1a74b6 : '' + this.url + _0x1a74b6;
+  async ["fetch"](_0x31987f, _0x2f279f, _0x2ba091, _0x38eb72 = {}, _0x37d40c = {}, _0x8c43bf, _0x1bd771 = false) {
+    const _0x569932 = _0x1bd771 ? _0x31987f : '' + this.url + _0x31987f;
     try {
-      const _0x1f22df = {
-        ...this.generateHeaders(_0x1f9f6b),
-        ..._0x9d73da
+      const _0x16c1f7 = {
+        ...this.generateHeaders(_0x2ba091),
+        ..._0x37d40c
       };
-      const _0x5e0bcc = {
-        'headers': _0x1f22df,
-        'method': _0x175b2d,
-        'referer': _0x3bd449,
-        'referrerPolicy': 'strict-origin-when-cross-origin',
-        'mode': 'cors',
-        'credentials': 'omit'
+      const _0x4ce3fb = {
+        'headers': _0x16c1f7,
+        'method': _0x2f279f,
+        'referer': _0x8c43bf,
+        'referrerPolicy': "strict-origin-when-cross-origin",
+        'mode': "cors",
+        'credentials': "omit"
       };
-      a1_0x4b3716.info(_0x175b2d + " : " + this.replaceSensitiveData(_0x42eb92) + " " + (this.proxy ? this.proxy : ''));
-      for (let _0x5ac048 in _0x1f22df) {
-        _0x1f22df[_0x5ac048] = this.replaceSensitiveData(_0x1f22df[_0x5ac048]);
+      a1_0x5496cd.info(_0x2f279f + " : " + this.replaceSensitiveData(_0x569932) + " " + (this.proxy ? this.proxy : ''));
+      for (let _0xb59211 in _0x16c1f7) {
+        _0x16c1f7[_0xb59211] = this.replaceSensitiveData(_0x16c1f7[_0xb59211]);
       }
-      a1_0x4b3716.info("Request Header : " + JSON.stringify(_0x1f22df));
-      if (_0x175b2d !== "GET") {
-        _0x5e0bcc.body = '' + JSON.stringify(_0x369808);
-        const _0x4df6f7 = this.replaceSensitiveData(_0x5e0bcc.body);
-        a1_0x4b3716.info("Request Body : " + _0x4df6f7);
+      a1_0x5496cd.info("Request Header : " + JSON.stringify(_0x16c1f7));
+      if (_0x2f279f !== "GET") {
+        _0x4ce3fb.body = '' + JSON.stringify(_0x38eb72);
+        const _0x59fc36 = this.replaceSensitiveData(_0x4ce3fb.body);
+        a1_0x5496cd.info("Request Body : " + _0x59fc36);
       }
       if (this.proxy) {
-        _0x5e0bcc.agent = new HttpsProxyAgent(this.proxy, {
+        _0x4ce3fb.agent = new HttpsProxyAgent(this.proxy, {
           'rejectUnauthorized': false
         });
       }
-      const _0x2f9f18 = await a1_0x403bd8(_0x42eb92, _0x5e0bcc);
-      a1_0x4b3716.info("Response : " + _0x2f9f18.status + " " + _0x2f9f18.statusText);
-      if (_0x2f9f18.ok || _0x2f9f18.status == 0x190 || _0x2f9f18.status == 0x193) {
-        const _0x4ac0ea = _0x2f9f18.headers.get('content-type');
-        let _0x40db3f;
-        if (_0x4ac0ea && _0x4ac0ea.includes("application/json")) {
-          _0x40db3f = await _0x2f9f18.json();
-          _0x40db3f.status = _0x2f9f18.status;
+      const _0x2fdf6 = await a1_0x16b200(_0x569932, _0x4ce3fb);
+      a1_0x5496cd.info("Response : " + _0x2fdf6.status + " " + _0x2fdf6.statusText);
+      if (_0x2fdf6.ok || _0x2fdf6.status == 0x190 || _0x2fdf6.status == 0x193) {
+        const _0x1db2ba = _0x2fdf6.headers.get("content-type");
+        let _0x1ab345;
+        if (_0x1db2ba && _0x1db2ba.includes("application/json")) {
+          _0x1ab345 = await _0x2fdf6.json();
+          _0x1ab345.status = _0x2fdf6.status;
         } else {
-          _0x40db3f = {
-            'status': _0x2f9f18.status,
-            'message': await _0x2f9f18.text()
+          _0x1ab345 = {
+            'status': _0x2fdf6.status,
+            'message': await _0x2fdf6.text()
           };
         }
-        if (_0x2f9f18.ok) {
-          _0x40db3f.status = 0xc8;
+        if (_0x2fdf6.ok) {
+          _0x1ab345.status = 0xc8;
         }
-        let _0x3406a0 = JSON.stringify(_0x40db3f);
-        _0x3406a0 = this.replaceSensitiveData(_0x3406a0);
-        if (_0x3406a0.length > 0xc8) {
-          _0x3406a0 = _0x3406a0.substring(0x0, 0xc8) + "...";
+        let _0x5cfa07 = JSON.stringify(_0x1ab345);
+        _0x5cfa07 = this.replaceSensitiveData(_0x5cfa07);
+        if (_0x5cfa07.length > 0xc8) {
+          _0x5cfa07 = _0x5cfa07.substring(0x0, 0xc8) + "...";
         }
-        a1_0x4b3716.info("Response Data : " + _0x3406a0);
-        return _0x40db3f;
+        a1_0x5496cd.info("Response Data : " + _0x5cfa07);
+        return _0x1ab345;
       } else {
-        throw _0x2f9f18;
+        throw _0x2fdf6;
       }
-    } catch (_0x126197) {
-      if (_0x126197.status && _0x126197.statusText) {
-        if (_0x42eb92.includes('setInvited') && _0x126197.status == "401") {
+    } catch (_0x1ed861) {
+      if (_0x1ed861.status && _0x1ed861.statusText) {
+        if (_0x569932.includes("setInvited") && _0x1ed861.status == "401") {
           return {
             'status': 0xc8
           };
         } else {
-          if (_0x42eb92.includes("points-by-player") && _0x126197.status == "500") {
+          if (_0x569932.includes('points-by-player') && _0x1ed861.status == "500") {
             return {
               'status': 0x1f4,
-              ...(await _0x126197.json())
+              ...(await _0x1ed861.json())
             };
           } else {
-            a1_0x4b3716.error("Error : " + _0x126197.message);
-            throw Error(_0x126197.status + " - " + _0x126197.statusText);
+            a1_0x5496cd.error("Error : " + _0x1ed861.message);
+            throw Error(_0x1ed861.status + " - " + _0x1ed861.statusText);
           }
         }
       } else {
-        throw _0x126197;
+        throw _0x1ed861;
       }
     }
   }
