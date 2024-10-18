@@ -1,74 +1,70 @@
 import { privateKey } from './accounts/accounts.js';
 import { proxyList } from './config/proxy_list.js';
-import a0_0x31881c from './src/core/core.js';
+import a0_0x2ebada from './src/core/core.js';
 import { Helper } from './src/utils/helper.js';
-import a0_0x47ed64 from './src/utils/logger.js';
-async function operation(_0x5310a6, _0x14a08b, _0x3bc245) {
-  const _0x4a209a = new a0_0x31881c(_0x5310a6, _0x14a08b, _0x3bc245);
+import a0_0x394c33 from './src/utils/logger.js';
+async function operation(_0x2587cc, _0x131f6a, _0x3d7d22) {
+  const _0x26d9c1 = new a0_0x2ebada(_0x2587cc, _0x131f6a, _0x3d7d22);
   try {
-    await _0x4a209a.connectWallet();
-    await _0x4a209a.getBalance();
-    await _0x4a209a.getPoint(true);
-    await _0x4a209a.connectSonicDapps();
-    await _0x4a209a.getUserInfo();
-    await _0x4a209a.getUserInvite();
-    await _0x4a209a.createSession();
-    await _0x4a209a.permitContract();
-    while (_0x4a209a.limit == false) {
-      await _0x4a209a.playPlinko();
-      await _0x4a209a.getPoint();
+    await _0x26d9c1.connectWallet();
+    await _0x26d9c1.getBalance();
+    await _0x26d9c1.connectSonicDapps();
+    await _0x26d9c1.getUserInfo();
+    await _0x26d9c1.getUserInvite();
+    await _0x26d9c1.createSession();
+    await _0x26d9c1.permitContract();
+    while (_0x26d9c1.limit == false) {
+      await _0x26d9c1.playPlinko();
     }
-    while (_0x4a209a.wheelLimit == false) {
-      await _0x4a209a.playWheel();
-      await _0x4a209a.getPoint();
+    while (_0x26d9c1.wheelLimit == false) {
+      await _0x26d9c1.playWheel();
     }
-    while (_0x4a209a.mineLimit == false) {
-      await _0x4a209a.playMine();
-      await _0x4a209a.getPoint();
+    while (_0x26d9c1.mineLimit == false) {
+      await _0x26d9c1.playMine();
     }
-    const _0x4963d1 = privateKey.find(_0x1e6bb8 => _0x1e6bb8.pk == _0x5310a6);
-    const _0x5bf050 = privateKey.indexOf(_0x4963d1);
-    await Helper.delay(43200000, _0x5310a6, "Account " + (_0x5bf050 + 0x1) + " Processing Done, Delaying for " + Helper.msToTime(43200000), _0x4a209a);
-    await operation(_0x5310a6, _0x14a08b, _0x3bc245);
-  } catch (_0x54ffd5) {
-    if (_0x54ffd5.message) {
-      await Helper.delay(0x2710, _0x5310a6, "Error : " + _0x54ffd5.message + ", Retry again after 10 Second", _0x4a209a);
+    const _0x377e61 = privateKey.find(_0x5f3409 => _0x5f3409.pk == _0x2587cc);
+    const _0x1ee52c = privateKey.indexOf(_0x377e61);
+    await Helper.delay(43200000, _0x2587cc, "Account " + (_0x1ee52c + 0x1) + " Processing Done, Delaying for " + Helper.msToTime(43200000), _0x26d9c1);
+    await operation(_0x2587cc, _0x131f6a, _0x3d7d22);
+  } catch (_0x439eb8) {
+    if (_0x439eb8.message) {
+      await Helper.delay(0x2710, _0x2587cc, "Error : " + _0x439eb8.message + ", Retry again after 10 Second", _0x26d9c1);
     } else {
-      await Helper.delay(0x2710, _0x5310a6, "Error :" + JSON.stringify(_0x54ffd5) + ", Retry again after 10 Second", _0x4a209a);
+      await Helper.delay(0x2710, _0x2587cc, "Error :" + JSON.stringify(_0x439eb8) + ", Retry again after 10 Second", _0x26d9c1);
     }
-    await operation(_0x5310a6, _0x14a08b, _0x3bc245);
+    await operation(_0x2587cc, _0x131f6a, _0x3d7d22);
   }
 }
 async function startBot() {
-  return new Promise(async (_0x78005b, _0x42b8bc) => {
+  return new Promise(async (_0xc05f64, _0x5dea67) => {
     try {
-      a0_0x47ed64.info("BOT STARTED");
-      const _0x5b2fa1 = [];
+      a0_0x394c33.info("BOT STARTED");
+      const _0x201e22 = [];
       if (proxyList.length != privateKey.length && proxyList.length != 0x0) {
         throw Error("You Have " + privateKey.length + " Accounts But Provide " + proxyList.length);
       }
-      for (const _0x177973 of privateKey) {
-        if (!_0x177973.pk) {
+      for (const _0x37c800 of privateKey) {
+        if (!_0x37c800.pk) {
           throw Error("Your accounts.js is malformed, please fix it first, see accounts_tmp.js for the format");
         }
-        const _0x154402 = privateKey.indexOf(_0x177973);
-        const _0x2d36a0 = proxyList[_0x154402];
-        _0x5b2fa1.push(operation(_0x177973.pk, _0x177973.smartWalletAddress, _0x2d36a0));
+        const _0x84ef34 = privateKey.indexOf(_0x37c800);
+        const _0x32f4af = proxyList[_0x84ef34];
+        _0x201e22.push(operation(_0x37c800.pk, _0x37c800.smartWalletAddress, _0x32f4af));
       }
-      await Promise.all(_0x5b2fa1);
-      _0x78005b();
-    } catch (_0x4b4164) {
-      a0_0x47ed64.info("BOT STOPPED");
-      a0_0x47ed64.error(JSON.stringify(_0x4b4164));
-      _0x42b8bc(_0x4b4164);
+      await Promise.all(_0x201e22);
+      _0xc05f64();
+    } catch (_0xfd46e4) {
+      a0_0x394c33.info("BOT STOPPED");
+      a0_0x394c33.error(JSON.stringify(_0xfd46e4));
+      _0x5dea67(_0xfd46e4);
     }
   });
 }
 (async () => {
   try {
-    a0_0x47ed64.clear();
-    a0_0x47ed64.info('');
-    a0_0x47ed64.info("Application Started");
+    a0_0x394c33.clear();
+    a0_0x394c33.info('');
+    a0_0x394c33.info("Application Started");
     console.log("Soniclabs Arcade Testnet BOT");
     console.log();
     console.log("Join Channel : https://t.me/AirdropInsiderID");
@@ -77,8 +73,8 @@ async function startBot() {
     console.log();
     Helper.showSkelLogo();
     await startBot();
-  } catch (_0x11fe99) {
-    console.log("Error During executing bot", _0x11fe99);
+  } catch (_0x27c854) {
+    console.log("Error During executing bot", _0x27c854);
     await startBot();
   }
 })();
