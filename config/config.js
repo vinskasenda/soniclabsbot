@@ -1,3 +1,3 @@
 export class Config {
-  static AUTOJOINREF = true;
+  static AUTOJOINREF = false;
 }
