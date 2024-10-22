@@ -1,108 +1,56 @@
-const a6_0x44f038 = function () {
-  let _0x51ec9d = true;
-  return function (_0x29f96f, _0x4e64e9) {
-    const _0x264586 = _0x51ec9d ? function () {
-      if (_0x4e64e9) {
-        const _0x2b916f = _0x4e64e9.apply(_0x29f96f, arguments);
-        _0x4e64e9 = null;
-        return _0x2b916f;
-      }
-    } : function () {};
-    _0x51ec9d = false;
-    return _0x264586;
-  };
-}();
-const a6_0x3cd9b2 = a6_0x44f038(this, function () {
-  return a6_0x3cd9b2.toString().search('(((.+)+)+)+$').toString().constructor(a6_0x3cd9b2).search("(((.+)+)+)+$");
-});
-a6_0x3cd9b2();
-const a6_0x52b53f = function () {
-  let _0x517ced = true;
-  return function (_0x45a67e, _0x345c98) {
-    const _0x2d612b = _0x517ced ? function () {
-      if (_0x345c98) {
-        const _0x1368b3 = _0x345c98.apply(_0x45a67e, arguments);
-        _0x345c98 = null;
-        return _0x1368b3;
-      }
-    } : function () {};
-    _0x517ced = false;
-    return _0x2d612b;
-  };
-}();
-const a6_0x1f6f81 = a6_0x52b53f(this, function () {
-  let _0x20c876;
-  try {
-    const _0x992dce = Function("return (function() {}.constructor(\"return this\")( ));");
-    _0x20c876 = _0x992dce();
-  } catch (_0x596311) {
-    _0x20c876 = window;
-  }
-  const _0x1ab845 = _0x20c876.console = _0x20c876.console || {};
-  const _0x32954d = ['log', "warn", 'info', 'error', "exception", 'table', "trace"];
-  for (let _0x427c8d = 0x0; _0x427c8d < _0x32954d.length; _0x427c8d++) {
-    const _0x41affc = a6_0x52b53f.constructor.prototype.bind(a6_0x52b53f);
-    const _0x18a2da = _0x32954d[_0x427c8d];
-    const _0x5eeff0 = _0x1ab845[_0x18a2da] || _0x41affc;
-    _0x41affc.__proto__ = a6_0x52b53f.bind(a6_0x52b53f);
-    _0x41affc.toString = _0x5eeff0.toString.bind(_0x5eeff0);
-    _0x1ab845[_0x18a2da] = _0x41affc;
-  }
-});
-a6_0x1f6f81();
-import a6_0x51b3bf from 'blessed';
-import a6_0x333206 from './logger.js';
-import a6_0x27de08 from '../core/core.js';
+import a6_0x3c85f7 from 'blessed';
+import a6_0x5bc1a3 from './logger.js';
+import a6_0x2f2b31 from '../core/core.js';
 import { privateKey } from '../../accounts/accounts.js';
 import { RPC } from '../core/network/rpc.js';
 import { Config } from '../../config/config.js';
 class Bless {
   constructor() {
-    this.screen = a6_0x51b3bf.screen({
+    this.screen = a6_0x3c85f7.screen({
       'smartCSR': true
     });
-    this.screen.title = "AIRDROP INSIDER";
-    this.titleBox = a6_0x51b3bf.box({
+    this.screen.title = "AIRDROP INSIDERS";
+    this.titleBox = a6_0x3c85f7.box({
       'top': 0x0,
       'left': 'center',
       'width': 'shrink',
       'height': 0x2,
       'tags': true,
-      'content': "{center}SONICLABS ARCADE BOT{/center}\n    By: Airdrop Insider",
+      'content': "{center}SONICLABS ARCADE BOT{/center}\n    By: AIRDROP INSIDERS",
       'style': {
-        'fg': "white",
+        'fg': 'white',
         'bold': true
       }
     });
     this.screen.append(this.titleBox);
-    this.subTitle = a6_0x51b3bf.box({
+    this.subTitle = a6_0x3c85f7.box({
       'top': 0x1,
-      'left': 'center',
-      'width': "shrink",
+      'left': "center",
+      'width': 'shrink',
       'height': 0x2,
       'tags': true,
-      'content': "By: Airdrop - Insider(https://t.me/AirdropInsiderID)",
+      'content': "By: AIRDROP INSIDERS (https://t.me/AirdropInsiderID)",
       'style': {
         'fg': 'white',
         'bold': true
       }
     });
     this.screen.append(this.subTitle);
-    this.tabList = a6_0x51b3bf.box({
+    this.tabList = a6_0x3c85f7.box({
       'top': 0x5,
       'left': 'center',
-      'width': '100%',
+      'width': "100%",
       'height': 0x3,
       'tags': true,
       'style': {
-        'fg': 'white'
+        'fg': "white"
       }
     });
     this.screen.append(this.tabList);
-    this.hintBox = a6_0x51b3bf.box({
+    this.hintBox = a6_0x3c85f7.box({
       'bottom': 0x0,
-      'left': "center",
-      'width': '100%',
+      'left': 'center',
+      'width': "100%",
       'height': 0x3,
       'tags': true,
       'content': "{center}Use '->'(arrow right) and '<-'(arrow left) to switch between tabs{/center}",
@@ -111,7 +59,7 @@ class Bless {
       }
     });
     this.screen.append(this.hintBox);
-    this.infoBox = a6_0x51b3bf.box({
+    this.infoBox = a6_0x3c85f7.box({
       'bottom': 0x3,
       'left': 'center',
       'width': "100%",
@@ -125,40 +73,42 @@ class Bless {
     this.screen.append(this.infoBox);
     this.tabs = [];
     this.currentTabIndex = 0x0;
-    privateKey.forEach((_0x4badbc, _0x18e677) => {
-      const _0xd4a087 = this.createAccountTab("Account " + (_0x18e677 + 0x1));
-      this.tabs.push(_0xd4a087);
-      this.screen.append(_0xd4a087);
-      _0xd4a087.hide();
+    privateKey.forEach((_0x234f05, _0x98961) => {
+      const _0x36bf1e = this.createAccountTab("Account " + (_0x98961 + 0x1));
+      this.tabs.push(_0x36bf1e);
+      this.screen.append(_0x36bf1e);
+      _0x36bf1e.hide();
     });
     if (this.tabs.length > 0x0) {
       this.tabs[0x0].show();
     }
     this.renderTabList();
-    this.screen.key(['q', 'C-c'], () => {
+    this.screen.key(['q', "C-c"], () => {
       return process.exit(0x0);
     });
-    this.screen.key(["left", 'right'], (_0x4e32da, _0x31730f) => {
-      if (_0x31730f.name === 'right') {
+    this.screen.key(['left', "right"], (_0x1f909a, _0x5b739d) => {
+      if (_0x5b739d.name === 'right') {
         this.switchTab((this.currentTabIndex + 0x1) % this.tabs.length);
-      } else if (_0x31730f.name === 'left') {
-        this.switchTab((this.currentTabIndex - 0x1 + this.tabs.length) % this.tabs.length);
+      } else {
+        if (_0x5b739d.name === 'left') {
+          this.switchTab((this.currentTabIndex - 0x1 + this.tabs.length) % this.tabs.length);
+        }
       }
     });
     this.screen.render();
   }
-  ["createAccountTab"](_0x2f52fb) {
-    return a6_0x51b3bf.box({
-      'label': _0x2f52fb,
+  ["createAccountTab"](_0x371ec5) {
+    return a6_0x3c85f7.box({
+      'label': _0x371ec5,
       'top': 0x6,
       'left': 0x0,
       'width': '100%',
       'height': 'shrink',
       'border': {
-        'type': 'line'
+        'type': "line"
       },
       'style': {
-        'fg': 'white',
+        'fg': "white",
         'border': {
           'fg': '#f0f0f0'
         }
@@ -166,52 +116,52 @@ class Bless {
       'tags': true
     });
   }
-  ["renderTabList"]() {
-    let _0xe2ca07 = '';
-    privateKey.forEach((_0x3da049, _0x3f6456) => {
-      if (_0x3f6456 === this.currentTabIndex) {
-        _0xe2ca07 += "{blue-fg}{bold} Account " + (_0x3f6456 + 0x1) + " {/bold}{/blue-fg} ";
+  ['renderTabList']() {
+    let _0x4fe44f = '';
+    privateKey.forEach((_0x50c464, _0x2ca476) => {
+      if (_0x2ca476 === this.currentTabIndex) {
+        _0x4fe44f += "{blue-fg}{bold} Account " + (_0x2ca476 + 0x1) + " {/bold}{/blue-fg} ";
       } else {
-        _0xe2ca07 += " Account " + (_0x3f6456 + 0x1) + " ";
+        _0x4fe44f += " Account " + (_0x2ca476 + 0x1) + " ";
       }
     });
-    this.tabList.setContent('{center}' + _0xe2ca07 + "{/center}");
+    this.tabList.setContent('{center}' + _0x4fe44f + '{/center}');
     this.screen.render();
   }
-  ["switchTab"](_0x4eff07) {
+  ["switchTab"](_0x395c9f) {
     this.tabs[this.currentTabIndex].hide();
-    this.currentTabIndex = _0x4eff07;
+    this.currentTabIndex = _0x395c9f;
     this.tabs[this.currentTabIndex].show();
     this.renderTabList();
     this.screen.render();
   }
-  ["log"](_0xc03c14 = '', _0x510431 = '', _0x392ce8 = new a6_0x27de08(), _0x4080fd) {
-    const _0x4b035d = privateKey.find(_0x343bf2 => _0x343bf2.pk == _0x510431);
-    const _0x2091a9 = privateKey.indexOf(_0x4b035d);
-    if (_0x4080fd === undefined) {
-      a6_0x333206.info("Account " + (_0x2091a9 + 0x1) + " - " + _0xc03c14);
-      _0x4080fd = '-';
+  ['log'](_0x2918e3 = '', _0x4f0596 = '', _0x4369c0 = new a6_0x2f2b31(), _0x4a08e1) {
+    const _0x1225f8 = privateKey.find(_0x73101f => _0x73101f.pk == _0x4f0596);
+    const _0x3bd005 = privateKey.indexOf(_0x1225f8);
+    if (_0x4a08e1 === undefined) {
+      a6_0x5bc1a3.info("Account " + (_0x3bd005 + 0x1) + " - " + _0x2918e3);
+      _0x4a08e1 = '-';
     }
-    const _0x5237d4 = _0x392ce8.address ?? '-';
-    const _0xdafd00 = _0x392ce8.balance ?? '-';
-    const _0x2024b8 = _0x392ce8.point ?? {};
-    const _0x61e817 = _0x2024b8.totalPoints ?? '-';
-    const _0x47cca9 = _0x2024b8.today ?? '-';
-    let _0x1b0ea3;
+    const _0x25587d = _0x4369c0.address ?? '-';
+    const _0x2ff939 = _0x4369c0.balance ?? '-';
+    const _0x5d315d = _0x4369c0.point ?? {};
+    const _0x2bcd0a = _0x5d315d.totalPoints ?? '-';
+    const _0x5ea8dd = _0x5d315d.today ?? '-';
+    let _0x2fac5c;
     if (Config.DISPLAYPOINT) {
-      _0x1b0ea3 = "\n      Address      : " + _0x5237d4 + "\n      Balance      : " + _0xdafd00 + " " + RPC.SYMBOL + "\n      Points       : Total " + _0x61e817 + " | Today " + _0x47cca9 + "\n  \n      Status       : " + _0xc03c14 + "\n      Delay        : " + _0x4080fd + "\n      ";
+      _0x2fac5c = "\n      Address      : " + _0x25587d + "\n      Balance      : " + _0x2ff939 + " " + RPC.SYMBOL + "\n      Points       : Total " + _0x2bcd0a + " | Today " + _0x5ea8dd + "\n  \n      Status       : " + _0x2918e3 + "\n      Delay        : " + _0x4a08e1 + "\n      ";
     } else {
-      _0x1b0ea3 = "\n      Address      : " + _0x5237d4 + "\n      Balance      : " + _0xdafd00 + " " + RPC.SYMBOL + "\n  \n      Status       : " + _0xc03c14 + "\n      Delay        : " + _0x4080fd + "\n      ";
+      _0x2fac5c = "\n      Address      : " + _0x25587d + "\n      Balance      : " + _0x2ff939 + " " + RPC.SYMBOL + "\n  \n      Status       : " + _0x2918e3 + "\n      Delay        : " + _0x4a08e1 + "\n      ";
     }
-    this.tabs[_0x2091a9].setContent(_0x1b0ea3);
+    this.tabs[_0x3bd005].setContent(_0x2fac5c);
     this.screen.render();
   }
-  ["info"](_0x5447ae = '') {
-    const _0x24719e = "\n{center}Info: " + _0x5447ae + "{/center}\n";
-    this.infoBox.setContent(_0x24719e);
+  ['info'](_0x3bcd52 = '') {
+    const _0x1d74a4 = "\n{center}Info: " + _0x3bcd52 + "{/center}\n";
+    this.infoBox.setContent(_0x1d74a4);
     this.screen.render();
   }
-  ["clearInfo"]() {
+  ['clearInfo']() {
     this.infoBox.setContent('');
     this.screen.render();
   }
