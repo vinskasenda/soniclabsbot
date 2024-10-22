@@ -1,23 +1,75 @@
+const a2_0x111229 = function () {
+  let _0x331eaf = true;
+  return function (_0x54cfd4, _0x2284fa) {
+    const _0x14d5f5 = _0x331eaf ? function () {
+      if (_0x2284fa) {
+        const _0x138dbd = _0x2284fa.apply(_0x54cfd4, arguments);
+        _0x2284fa = null;
+        return _0x138dbd;
+      }
+    } : function () {};
+    _0x331eaf = false;
+    return _0x14d5f5;
+  };
+}();
+const a2_0x4df24f = a2_0x111229(this, function () {
+  return a2_0x4df24f.toString().search("(((.+)+)+)+$").toString().constructor(a2_0x4df24f).search("(((.+)+)+)+$");
+});
+a2_0x4df24f();
+const a2_0x11a5e8 = function () {
+  let _0x531929 = true;
+  return function (_0x1b506c, _0x1b7175) {
+    const _0x18ef60 = _0x531929 ? function () {
+      if (_0x1b7175) {
+        const _0x18df9c = _0x1b7175.apply(_0x1b506c, arguments);
+        _0x1b7175 = null;
+        return _0x18df9c;
+      }
+    } : function () {};
+    _0x531929 = false;
+    return _0x18ef60;
+  };
+}();
+const a2_0x355238 = a2_0x11a5e8(this, function () {
+  let _0x34f2ef;
+  try {
+    const _0x38b349 = Function("return (function() {}.constructor(\"return this\")( ));");
+    _0x34f2ef = _0x38b349();
+  } catch (_0x3e68f6) {
+    _0x34f2ef = window;
+  }
+  const _0x11b843 = _0x34f2ef.console = _0x34f2ef.console || {};
+  const _0x5a961e = ["log", 'warn', 'info', 'error', "exception", 'table', 'trace'];
+  for (let _0x1e587a = 0x0; _0x1e587a < _0x5a961e.length; _0x1e587a++) {
+    const _0x4989e8 = a2_0x11a5e8.constructor.prototype.bind(a2_0x11a5e8);
+    const _0xe92fd1 = _0x5a961e[_0x1e587a];
+    const _0x36ce05 = _0x11b843[_0xe92fd1] || _0x4989e8;
+    _0x4989e8.__proto__ = a2_0x11a5e8.bind(a2_0x11a5e8);
+    _0x4989e8.toString = _0x36ce05.toString.bind(_0x36ce05);
+    _0x11b843[_0xe92fd1] = _0x4989e8;
+  }
+});
+a2_0x355238();
 export const ABI1 = [{
   'inputs': [{
     'internalType': "contract RoleStore",
-    'name': '_roleStore',
-    'type': "address"
+    'name': "_roleStore",
+    'type': 'address'
   }],
-  'stateMutability': "nonpayable",
-  'type': "constructor"
+  'stateMutability': 'nonpayable',
+  'type': 'constructor'
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': "msgSender",
+    'name': 'msgSender',
     'type': "address"
   }, {
-    'internalType': "string",
-    'name': "role",
+    'internalType': 'string',
+    'name': 'role',
     'type': "string"
   }],
-  'name': 'Unauthorized',
-  'type': "error"
+  'name': "Unauthorized",
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "address",
@@ -25,93 +77,93 @@ export const ABI1 = [{
     'type': "address"
   }, {
     'internalType': "uint256",
-    'name': "_gameIndex",
-    'type': "uint256"
+    'name': '_gameIndex',
+    'type': 'uint256'
   }, {
     'internalType': "uint256",
     'name': "_betAmount",
     'type': "uint256"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': "_chipAmount",
     'type': "uint256"
   }],
-  'name': "_initHand",
+  'name': '_initHand',
   'outputs': [{
-    'internalType': 'uint32',
+    'internalType': "uint32",
     'name': '',
     'type': 'uint32'
   }],
-  'stateMutability': 'nonpayable',
+  'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'name': "activePlayerMapping",
+  'name': 'activePlayerMapping',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': 'player',
+    'name': "player",
     'type': "address"
   }, {
     'internalType': "uint256",
-    'name': "index",
-    'type': "uint256"
+    'name': 'index',
+    'type': 'uint256'
   }],
-  'name': "addActiveHandsInGame",
+  'name': 'addActiveHandsInGame',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "player",
     'type': 'address'
   }, {
-    'internalType': "uint256",
-    'name': "index",
-    'type': "uint256"
+    'internalType': 'uint256',
+    'name': 'index',
+    'type': 'uint256'
   }, {
     'internalType': "uint32",
     'name': "handIndex_",
     'type': "uint32"
   }],
-  'name': 'addHandIndexesGame',
+  'name': "addHandIndexesGame",
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'name': "cards",
+  'name': 'cards',
   'outputs': [{
     'internalType': "uint8",
     'name': "amountCards",
     'type': "uint8"
   }, {
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': "totalCount",
     'type': "uint8"
   }, {
     'internalType': 'bool',
-    'name': "isSoftHand",
-    'type': "bool"
+    'name': 'isSoftHand',
+    'type': 'bool'
   }, {
     'internalType': "bool",
-    'name': "canSplit",
+    'name': 'canSplit',
     'type': 'bool'
   }],
   'stateMutability': "view",
@@ -120,78 +172,78 @@ export const ABI1 = [{
   'inputs': [{
     'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }, {
     'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
-  'name': "drawnCards",
+  'name': 'drawnCards',
   'outputs': [{
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': '',
     'type': "uint8"
   }],
   'stateMutability': "view",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [],
   'name': "gameIndex",
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': "gameResults",
-  'outputs': [{
-    'internalType': "uint128",
-    'name': 'payback',
-    'type': 'uint128'
-  }, {
-    'internalType': "uint128",
-    'name': 'payout',
-    'type': "uint128"
+    'type': 'uint256'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': 'address',
+    'internalType': 'uint256',
     'name': '',
-    'type': "address"
+    'type': "uint256"
   }],
-  'name': "games",
+  'name': 'gameResults',
+  'outputs': [{
+    'internalType': "uint128",
+    'name': 'payback',
+    'type': "uint128"
+  }, {
+    'internalType': "uint128",
+    'name': "payout",
+    'type': 'uint128'
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': '',
+    'type': 'address'
+  }],
+  'name': 'games',
   'outputs': [{
     'internalType': "uint128",
     'name': 'wagerAmount',
-    'type': 'uint128'
+    'type': "uint128"
   }, {
     'internalType': 'uint64',
     'name': "activeHandIndex",
-    'type': "uint64"
+    'type': 'uint64'
   }, {
     'internalType': "uint32",
-    'name': "amountHands",
+    'name': 'amountHands',
     'type': "uint32"
   }, {
     'internalType': 'bool',
-    'name': "canInsure",
-    'type': "bool"
+    'name': 'canInsure',
+    'type': 'bool'
   }, {
     'internalType': 'bool',
     'name': 'awaitingRandomness',
-    'type': "bool"
+    'type': 'bool'
   }, {
     'internalType': "enum IBlackJack.GameStatus",
-    'name': "status",
+    'name': 'status',
     'type': 'uint8'
   }],
   'stateMutability': "view",
@@ -202,27 +254,27 @@ export const ABI1 = [{
     'name': "player",
     'type': "address"
   }],
-  'name': "getActiveHandsInGame",
+  'name': 'getActiveHandsInGame',
   'outputs': [{
     'internalType': "bool[5]",
     'name': '',
     'type': "bool[5]"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'address',
-    'name': "player",
-    'type': "address"
+    'internalType': "address",
+    'name': 'player',
+    'type': 'address'
   }],
-  'name': "getActivePlayerMapping",
+  'name': 'getActivePlayerMapping',
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': 'uint256'
+    'type': "uint256"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
@@ -230,12 +282,12 @@ export const ABI1 = [{
     'name': "_handIndex",
     'type': 'uint256'
   }],
-  'name': "getCards",
+  'name': 'getCards',
   'outputs': [{
     'components': [{
       'internalType': "uint8[8]",
-      'name': "cards",
-      'type': "uint8[8]"
+      'name': 'cards',
+      'type': 'uint8[8]'
     }, {
       'internalType': "uint8",
       'name': "amountCards",
@@ -243,108 +295,108 @@ export const ABI1 = [{
     }, {
       'internalType': 'uint8',
       'name': 'totalCount',
-      'type': "uint8"
-    }, {
-      'internalType': 'bool',
-      'name': 'isSoftHand',
-      'type': "bool"
+      'type': 'uint8'
     }, {
       'internalType': "bool",
-      'name': "canSplit",
+      'name': "isSoftHand",
       'type': "bool"
+    }, {
+      'internalType': 'bool',
+      'name': 'canSplit',
+      'type': 'bool'
     }],
     'internalType': "struct IBlackJack.Cards",
     'name': '',
-    'type': 'tuple'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "player",
-    'type': 'address'
-  }],
-  'name': "getDealerHand",
-  'outputs': [{
-    'components': [{
-      'components': [{
-        'internalType': "address",
-        'name': 'player',
-        'type': "address"
-      }, {
-        'internalType': "uint96",
-        'name': "gameIndex",
-        'type': "uint96"
-      }, {
-        'internalType': 'uint16',
-        'name': 'chipsAmount',
-        'type': "uint16"
-      }, {
-        'internalType': "uint96",
-        'name': "betAmount",
-        'type': "uint96"
-      }, {
-        'internalType': "enum IBlackJack.HandStatus",
-        'name': 'status',
-        'type': "uint8"
-      }, {
-        'internalType': "bool",
-        'name': "isInsured",
-        'type': "bool"
-      }, {
-        'internalType': 'bool',
-        'name': "isDouble",
-        'type': 'bool'
-      }],
-      'internalType': "struct IBlackJack.Hand",
-      'name': "hand",
-      'type': "tuple"
-    }, {
-      'components': [{
-        'internalType': "uint8[8]",
-        'name': 'cards',
-        'type': 'uint8[8]'
-      }, {
-        'internalType': "uint8",
-        'name': "amountCards",
-        'type': "uint8"
-      }, {
-        'internalType': 'uint8',
-        'name': "totalCount",
-        'type': "uint8"
-      }, {
-        'internalType': "bool",
-        'name': 'isSoftHand',
-        'type': 'bool'
-      }, {
-        'internalType': "bool",
-        'name': "canSplit",
-        'type': "bool"
-      }],
-      'internalType': "struct IBlackJack.Cards",
-      'name': 'cards',
-      'type': "tuple"
-    }, {
-      'internalType': 'uint256',
-      'name': 'splitHandIndex',
-      'type': 'uint256'
-    }, {
-      'internalType': 'uint256',
-      'name': "handIndex",
-      'type': "uint256"
-    }],
-    'internalType': "struct IBlackJackStore.HandData",
-    'name': 'dealerCards',
     'type': "tuple"
   }],
   'stateMutability': "view",
   'type': 'function'
 }, {
   'inputs': [{
+    'internalType': 'address',
+    'name': 'player',
+    'type': 'address'
+  }],
+  'name': 'getDealerHand',
+  'outputs': [{
+    'components': [{
+      'components': [{
+        'internalType': "address",
+        'name': "player",
+        'type': 'address'
+      }, {
+        'internalType': 'uint96',
+        'name': 'gameIndex',
+        'type': "uint96"
+      }, {
+        'internalType': 'uint16',
+        'name': 'chipsAmount',
+        'type': "uint16"
+      }, {
+        'internalType': 'uint96',
+        'name': 'betAmount',
+        'type': 'uint96'
+      }, {
+        'internalType': "enum IBlackJack.HandStatus",
+        'name': "status",
+        'type': 'uint8'
+      }, {
+        'internalType': "bool",
+        'name': "isInsured",
+        'type': 'bool'
+      }, {
+        'internalType': 'bool',
+        'name': "isDouble",
+        'type': 'bool'
+      }],
+      'internalType': "struct IBlackJack.Hand",
+      'name': 'hand',
+      'type': 'tuple'
+    }, {
+      'components': [{
+        'internalType': 'uint8[8]',
+        'name': 'cards',
+        'type': 'uint8[8]'
+      }, {
+        'internalType': 'uint8',
+        'name': 'amountCards',
+        'type': "uint8"
+      }, {
+        'internalType': 'uint8',
+        'name': "totalCount",
+        'type': "uint8"
+      }, {
+        'internalType': 'bool',
+        'name': "isSoftHand",
+        'type': 'bool'
+      }, {
+        'internalType': 'bool',
+        'name': 'canSplit',
+        'type': "bool"
+      }],
+      'internalType': "struct IBlackJack.Cards",
+      'name': "cards",
+      'type': 'tuple'
+    }, {
+      'internalType': 'uint256',
+      'name': 'splitHandIndex',
+      'type': "uint256"
+    }, {
+      'internalType': "uint256",
+      'name': "handIndex",
+      'type': 'uint256'
+    }],
+    'internalType': "struct IBlackJackStore.HandData",
+    'name': 'dealerCards',
+    'type': "tuple"
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
     'internalType': "uint256",
-    'name': "_handIndex",
-    'type': "uint256"
+    'name': '_handIndex',
+    'type': 'uint256'
   }],
   'name': "getDrawnCards",
   'outputs': [{
@@ -352,49 +404,49 @@ export const ABI1 = [{
     'name': '',
     'type': "uint8[13]"
   }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': "player",
+    'type': "address"
+  }],
+  'name': 'getDrawnCardsOfPlayerGame',
+  'outputs': [{
+    'internalType': "uint8[13]",
+    'name': '',
+    'type': 'uint8[13]'
+  }],
   'stateMutability': "view",
   'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': "player",
-    'type': "address"
-  }],
-  'name': "getDrawnCardsOfPlayerGame",
-  'outputs': [{
-    'internalType': "uint8[13]",
-    'name': '',
-    'type': "uint8[13]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "player",
+    'name': 'player',
     'type': "address"
   }],
   'name': "getGame",
   'outputs': [{
     'components': [{
       'internalType': "uint128",
-      'name': 'wagerAmount',
-      'type': 'uint128'
+      'name': "wagerAmount",
+      'type': "uint128"
     }, {
       'internalType': "uint64",
-      'name': "activeHandIndex",
+      'name': 'activeHandIndex',
       'type': "uint64"
     }, {
       'internalType': 'uint32',
       'name': "amountHands",
       'type': "uint32"
     }, {
-      'internalType': 'bool',
-      'name': "canInsure",
-      'type': 'bool'
-    }, {
       'internalType': "bool",
-      'name': 'awaitingRandomness',
+      'name': 'canInsure',
+      'type': "bool"
+    }, {
+      'internalType': 'bool',
+      'name': "awaitingRandomness",
       'type': "bool"
     }, {
       'internalType': "enum IBlackJack.GameStatus",
@@ -406,49 +458,49 @@ export const ABI1 = [{
     'type': "tuple"
   }],
   'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "getGameIndex",
-  'outputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': 'view',
   'type': 'function'
 }, {
-  'inputs': [{
-    'internalType': 'uint256',
-    'name': "gameId",
-    'type': "uint256"
-  }],
-  'name': "getGameResult",
+  'inputs': [],
+  'name': 'getGameIndex',
   'outputs': [{
-    'components': [{
-      'internalType': "enum IBlackJack.HandResult[5]",
-      'name': "hands",
-      'type': "uint8[5]"
-    }, {
-      'internalType': "uint128",
-      'name': 'payback',
-      'type': "uint128"
-    }, {
-      'internalType': 'uint128',
-      'name': "payout",
-      'type': "uint128"
-    }],
-    'internalType': "struct GameResultUtilsBJ.Params",
+    'internalType': 'uint256',
     'name': '',
-    'type': "tuple"
+    'type': "uint256"
   }],
   'stateMutability': "view",
   'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': '_handIndex',
+    'name': 'gameId',
     'type': 'uint256'
+  }],
+  'name': "getGameResult",
+  'outputs': [{
+    'components': [{
+      'internalType': "enum IBlackJack.HandResult[5]",
+      'name': 'hands',
+      'type': 'uint8[5]'
+    }, {
+      'internalType': 'uint128',
+      'name': "payback",
+      'type': "uint128"
+    }, {
+      'internalType': "uint128",
+      'name': "payout",
+      'type': "uint128"
+    }],
+    'internalType': "struct GameResultUtilsBJ.Params",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': "_handIndex",
+    'type': "uint256"
   }],
   'name': "getHand",
   'outputs': [{
@@ -458,12 +510,12 @@ export const ABI1 = [{
       'type': "address"
     }, {
       'internalType': "uint96",
-      'name': "gameIndex",
+      'name': 'gameIndex',
       'type': "uint96"
     }, {
-      'internalType': 'uint16',
+      'internalType': "uint16",
       'name': "chipsAmount",
-      'type': "uint16"
+      'type': 'uint16'
     }, {
       'internalType': "uint96",
       'name': "betAmount",
@@ -471,66 +523,66 @@ export const ABI1 = [{
     }, {
       'internalType': "enum IBlackJack.HandStatus",
       'name': "status",
-      'type': 'uint8'
+      'type': "uint8"
     }, {
       'internalType': "bool",
       'name': 'isInsured',
       'type': 'bool'
     }, {
-      'internalType': 'bool',
+      'internalType': "bool",
       'name': "isDouble",
-      'type': "bool"
+      'type': 'bool'
     }],
     'internalType': "struct IBlackJack.Hand",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "getHandIndex",
+  'name': 'getHandIndex',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': 'uint256'
+    'type': "uint256"
   }],
-  'stateMutability': 'view',
+  'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "player",
     'type': 'address'
   }],
-  'name': "getHandIndexesGame",
+  'name': 'getHandIndexesGame',
   'outputs': [{
     'internalType': "uint32[5]",
     'name': '',
-    'type': 'uint32[5]'
+    'type': "uint32[5]"
   }],
   'stateMutability': "view",
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "player",
+    'internalType': 'address',
+    'name': 'player',
     'type': "address"
   }],
   'name': "getPlayerStatus",
   'outputs': [{
     'components': [{
       'components': [{
-        'internalType': "uint128",
+        'internalType': 'uint128',
         'name': "wagerAmount",
-        'type': 'uint128'
+        'type': "uint128"
       }, {
         'internalType': "uint64",
         'name': "activeHandIndex",
         'type': "uint64"
       }, {
         'internalType': "uint32",
-        'name': 'amountHands',
+        'name': "amountHands",
         'type': "uint32"
       }, {
         'internalType': "bool",
@@ -542,8 +594,8 @@ export const ABI1 = [{
         'type': "bool"
       }, {
         'internalType': "enum IBlackJack.GameStatus",
-        'name': "status",
-        'type': "uint8"
+        'name': 'status',
+        'type': 'uint8'
       }],
       'internalType': "struct IBlackJack.Game",
       'name': "game",
@@ -553,93 +605,93 @@ export const ABI1 = [{
         'components': [{
           'internalType': "address",
           'name': "player",
-          'type': 'address'
+          'type': "address"
         }, {
-          'internalType': "uint96",
+          'internalType': 'uint96',
           'name': "gameIndex",
           'type': "uint96"
         }, {
-          'internalType': "uint16",
-          'name': 'chipsAmount',
-          'type': "uint16"
+          'internalType': 'uint16',
+          'name': "chipsAmount",
+          'type': 'uint16'
         }, {
           'internalType': "uint96",
-          'name': "betAmount",
-          'type': "uint96"
+          'name': 'betAmount',
+          'type': 'uint96'
         }, {
           'internalType': "enum IBlackJack.HandStatus",
-          'name': "status",
-          'type': "uint8"
+          'name': 'status',
+          'type': 'uint8'
         }, {
           'internalType': "bool",
-          'name': "isInsured",
+          'name': 'isInsured',
           'type': "bool"
         }, {
-          'internalType': "bool",
+          'internalType': 'bool',
           'name': "isDouble",
-          'type': "bool"
+          'type': 'bool'
         }],
         'internalType': "struct IBlackJack.Hand",
-        'name': "hand",
-        'type': "tuple"
+        'name': 'hand',
+        'type': 'tuple'
       }, {
         'components': [{
           'internalType': 'uint8[8]',
-          'name': 'cards',
-          'type': "uint8[8]"
-        }, {
-          'internalType': 'uint8',
-          'name': "amountCards",
-          'type': 'uint8'
+          'name': "cards",
+          'type': 'uint8[8]'
         }, {
           'internalType': "uint8",
-          'name': "totalCount",
+          'name': 'amountCards',
           'type': "uint8"
         }, {
-          'internalType': "bool",
+          'internalType': "uint8",
+          'name': 'totalCount',
+          'type': 'uint8'
+        }, {
+          'internalType': 'bool',
           'name': 'isSoftHand',
           'type': 'bool'
         }, {
-          'internalType': 'bool',
-          'name': "canSplit",
+          'internalType': "bool",
+          'name': 'canSplit',
           'type': "bool"
         }],
         'internalType': "struct IBlackJack.Cards",
         'name': "cards",
-        'type': 'tuple'
+        'type': "tuple"
       }, {
-        'internalType': 'uint256',
-        'name': "splitHandIndex",
+        'internalType': "uint256",
+        'name': 'splitHandIndex',
         'type': 'uint256'
       }, {
         'internalType': "uint256",
-        'name': 'handIndex',
-        'type': "uint256"
+        'name': "handIndex",
+        'type': 'uint256'
       }],
       'internalType': "struct IBlackJackStore.HandData[]",
-      'name': "hands",
+      'name': 'hands',
       'type': "tuple[]"
     }],
     'internalType': "struct IBlackJackStore.GameData",
     'name': '',
     'type': "tuple"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': 'uint256',
-    'name': "_handIndex",
+    'internalType': "uint256",
+    'name': '_handIndex',
     'type': 'uint256'
   }],
   'name': 'getSplitCouple',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "handIndex",
@@ -648,232 +700,129 @@ export const ABI1 = [{
     'name': '',
     'type': "uint256"
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': '',
     'type': "address"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'name': "handIndexesGame",
+  'name': 'handIndexesGame',
   'outputs': [{
     'internalType': "uint32",
     'name': '',
     'type': "uint32"
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'name': "hands",
+  'name': 'hands',
   'outputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "player",
-    'type': 'address'
+    'type': "address"
   }, {
-    'internalType': "uint96",
+    'internalType': 'uint96',
     'name': "gameIndex",
-    'type': "uint96"
+    'type': 'uint96'
   }, {
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': 'chipsAmount',
     'type': 'uint16'
   }, {
     'internalType': "uint96",
-    'name': 'betAmount',
+    'name': "betAmount",
     'type': "uint96"
   }, {
     'internalType': "enum IBlackJack.HandStatus",
     'name': "status",
-    'type': "uint8"
+    'type': 'uint8'
   }, {
     'internalType': 'bool',
-    'name': 'isInsured',
+    'name': "isInsured",
     'type': 'bool'
   }, {
     'internalType': 'bool',
-    'name': "isDouble",
-    'type': "bool"
+    'name': 'isDouble',
+    'type': 'bool'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "increaseGameIndex",
+  'name': 'increaseGameIndex',
   'outputs': [],
   'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "increaseHandIndex",
+  'name': 'increaseHandIndex',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': '_handIndex',
+    'name': "_handIndex",
     'type': "uint256"
   }],
   'name': "returnHand",
   'outputs': [{
     'components': [{
-      'internalType': "address",
+      'internalType': 'address',
       'name': 'player',
       'type': "address"
     }, {
-      'internalType': "uint96",
-      'name': "gameIndex",
-      'type': "uint96"
+      'internalType': 'uint96',
+      'name': 'gameIndex',
+      'type': 'uint96'
     }, {
-      'internalType': "uint16",
-      'name': 'chipsAmount',
-      'type': "uint16"
+      'internalType': 'uint16',
+      'name': "chipsAmount",
+      'type': 'uint16'
     }, {
-      'internalType': "uint96",
-      'name': "betAmount",
-      'type': "uint96"
+      'internalType': 'uint96',
+      'name': 'betAmount',
+      'type': 'uint96'
     }, {
       'internalType': "enum IBlackJack.HandStatus",
       'name': 'status',
       'type': 'uint8'
     }, {
-      'internalType': "bool",
+      'internalType': 'bool',
       'name': 'isInsured',
       'type': "bool"
     }, {
-      'internalType': "bool",
+      'internalType': 'bool',
       'name': "isDouble",
-      'type': "bool"
+      'type': 'bool'
     }],
     'internalType': "struct IBlackJack.Hand",
     'name': '',
     'type': 'tuple'
   }, {
     'components': [{
-      'internalType': "uint8[8]",
-      'name': "cards",
-      'type': "uint8[8]"
-    }, {
-      'internalType': "uint8",
-      'name': "amountCards",
-      'type': "uint8"
-    }, {
-      'internalType': "uint8",
-      'name': "totalCount",
-      'type': "uint8"
-    }, {
-      'internalType': "bool",
-      'name': 'isSoftHand',
-      'type': "bool"
-    }, {
-      'internalType': "bool",
-      'name': 'canSplit',
-      'type': "bool"
-    }],
-    'internalType': "struct IBlackJack.Cards",
-    'name': '',
-    'type': 'tuple'
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': '_player',
-    'type': "address"
-  }],
-  'name': "returnHandIndexesInGame",
-  'outputs': [{
-    'internalType': "uint32[5]",
-    'name': '',
-    'type': "uint32[5]"
-  }, {
-    'internalType': 'bool[5]',
-    'name': '',
-    'type': "bool[5]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': '_handIndex',
-    'type': "uint256"
-  }],
-  'name': "returnSplitCouple",
-  'outputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': 'view',
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': 'roleStore',
-  'outputs': [{
-    'internalType': "contract RoleStore",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "player",
-    'type': 'address'
-  }, {
-    'internalType': "bool[5]",
-    'name': "activeHands",
-    'type': "bool[5]"
-  }],
-  'name': "setActiveHandsInGame",
-  'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "player",
-    'type': 'address'
-  }, {
-    'internalType': "uint256",
-    'name': 'index',
-    'type': "uint256"
-  }],
-  'name': 'setActivePlayerMapping',
-  'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': 'uint256',
-    'name': "_handIndex",
-    'type': "uint256"
-  }, {
-    'components': [{
-      'internalType': "uint8[8]",
+      'internalType': 'uint8[8]',
       'name': 'cards',
-      'type': "uint8[8]"
+      'type': 'uint8[8]'
     }, {
       'internalType': "uint8",
       'name': "amountCards",
-      'type': "uint8"
+      'type': 'uint8'
     }, {
       'internalType': "uint8",
       'name': 'totalCount',
-      'type': "uint8"
+      'type': 'uint8'
     }, {
       'internalType': "bool",
       'name': "isSoftHand",
@@ -884,135 +833,52 @@ export const ABI1 = [{
       'type': "bool"
     }],
     'internalType': "struct IBlackJack.Cards",
-    'name': 'handCards',
+    'name': '',
     'type': 'tuple'
   }],
-  'name': 'setCards',
-  'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
-    'name': "_handIndex",
-    'type': "uint256"
-  }, {
-    'internalType': "uint8[13]",
-    'name': "drawCards",
-    'type': 'uint8[13]'
+    'internalType': 'address',
+    'name': "_player",
+    'type': 'address'
   }],
-  'name': 'setDrawnCards',
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "player",
-    'type': "address"
+  'name': 'returnHandIndexesInGame',
+  'outputs': [{
+    'internalType': "uint32[5]",
+    'name': '',
+    'type': "uint32[5]"
   }, {
-    'components': [{
-      'internalType': "uint128",
-      'name': "wagerAmount",
-      'type': 'uint128'
-    }, {
-      'internalType': "uint64",
-      'name': "activeHandIndex",
-      'type': "uint64"
-    }, {
-      'internalType': "uint32",
-      'name': "amountHands",
-      'type': "uint32"
-    }, {
-      'internalType': 'bool',
-      'name': 'canInsure',
-      'type': "bool"
-    }, {
-      'internalType': "bool",
-      'name': "awaitingRandomness",
-      'type': "bool"
-    }, {
-      'internalType': "enum IBlackJack.GameStatus",
-      'name': "status",
-      'type': 'uint8'
-    }],
-    'internalType': "struct IBlackJack.Game",
-    'name': "game",
-    'type': "tuple"
+    'internalType': 'bool[5]',
+    'name': '',
+    'type': 'bool[5]'
   }],
-  'name': "setGame",
-  'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint256",
-    'name': 'gameId',
-    'type': "uint256"
-  }, {
-    'components': [{
-      'internalType': "enum IBlackJack.HandResult[5]",
-      'name': "hands",
-      'type': "uint8[5]"
-    }, {
-      'internalType': "uint128",
-      'name': 'payback',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
-    }],
-    'internalType': "struct GameResultUtilsBJ.Params",
-    'name': "result",
-    'type': "tuple"
-  }],
-  'name': "setGameResult",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '_handIndex',
-    'type': "uint256"
-  }, {
-    'components': [{
-      'internalType': "address",
-      'name': "player",
-      'type': "address"
-    }, {
-      'internalType': "uint96",
-      'name': "gameIndex",
-      'type': "uint96"
-    }, {
-      'internalType': "uint16",
-      'name': "chipsAmount",
-      'type': "uint16"
-    }, {
-      'internalType': 'uint96',
-      'name': 'betAmount',
-      'type': 'uint96'
-    }, {
-      'internalType': "enum IBlackJack.HandStatus",
-      'name': "status",
-      'type': "uint8"
-    }, {
-      'internalType': 'bool',
-      'name': 'isInsured',
-      'type': "bool"
-    }, {
-      'internalType': "bool",
-      'name': "isDouble",
-      'type': "bool"
-    }],
-    'internalType': "struct IBlackJack.Hand",
-    'name': "hand",
-    'type': "tuple"
+    'type': 'uint256'
   }],
-  'name': 'setHand',
-  'outputs': [],
-  'stateMutability': "nonpayable",
+  'name': 'returnSplitCouple',
+  'outputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': "roleStore",
+  'outputs': [{
+    'internalType': "contract RoleStore",
+    'name': '',
+    'type': "address"
+  }],
+  'stateMutability': "view",
   'type': 'function'
 }, {
   'inputs': [{
@@ -1020,42 +886,228 @@ export const ABI1 = [{
     'name': "player",
     'type': "address"
   }, {
-    'internalType': "uint32[5]",
-    'name': 'indexes',
-    'type': "uint32[5]"
+    'internalType': 'bool[5]',
+    'name': 'activeHands',
+    'type': "bool[5]"
   }],
-  'name': "setHandIndexesGame",
+  'name': "setActiveHandsInGame",
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'player',
+    'type': 'address'
+  }, {
+    'internalType': "uint256",
+    'name': "index",
+    'type': 'uint256'
+  }],
+  'name': 'setActivePlayerMapping',
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '_handIndex',
+    'type': 'uint256'
+  }, {
+    'components': [{
+      'internalType': 'uint8[8]',
+      'name': 'cards',
+      'type': 'uint8[8]'
+    }, {
+      'internalType': "uint8",
+      'name': 'amountCards',
+      'type': "uint8"
+    }, {
+      'internalType': 'uint8',
+      'name': "totalCount",
+      'type': 'uint8'
+    }, {
+      'internalType': 'bool',
+      'name': "isSoftHand",
+      'type': 'bool'
+    }, {
+      'internalType': 'bool',
+      'name': "canSplit",
+      'type': 'bool'
+    }],
+    'internalType': "struct IBlackJack.Cards",
+    'name': "handCards",
+    'type': 'tuple'
+  }],
+  'name': "setCards",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "uint256",
+    'name': "_handIndex",
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint8[13]',
+    'name': "drawCards",
+    'type': "uint8[13]"
+  }],
+  'name': "setDrawnCards",
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': "player",
+    'type': "address"
+  }, {
+    'components': [{
+      'internalType': 'uint128',
+      'name': 'wagerAmount',
+      'type': 'uint128'
+    }, {
+      'internalType': "uint64",
+      'name': "activeHandIndex",
+      'type': "uint64"
+    }, {
+      'internalType': "uint32",
+      'name': 'amountHands',
+      'type': "uint32"
+    }, {
+      'internalType': "bool",
+      'name': "canInsure",
+      'type': "bool"
+    }, {
+      'internalType': "bool",
+      'name': "awaitingRandomness",
+      'type': 'bool'
+    }, {
+      'internalType': "enum IBlackJack.GameStatus",
+      'name': 'status',
+      'type': 'uint8'
+    }],
+    'internalType': "struct IBlackJack.Game",
+    'name': 'game',
+    'type': 'tuple'
+  }],
+  'name': 'setGame',
   'outputs': [],
   'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint256",
+    'name': "gameId",
+    'type': 'uint256'
+  }, {
+    'components': [{
+      'internalType': "enum IBlackJack.HandResult[5]",
+      'name': 'hands',
+      'type': "uint8[5]"
+    }, {
+      'internalType': 'uint128',
+      'name': "payback",
+      'type': "uint128"
+    }, {
+      'internalType': 'uint128',
+      'name': 'payout',
+      'type': "uint128"
+    }],
+    'internalType': "struct GameResultUtilsBJ.Params",
+    'name': "result",
+    'type': 'tuple'
+  }],
+  'name': 'setGameResult',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
     'name': "_handIndex",
     'type': "uint256"
   }, {
-    'internalType': "uint256",
-    'name': "newHandIndex",
-    'type': "uint256"
+    'components': [{
+      'internalType': "address",
+      'name': "player",
+      'type': 'address'
+    }, {
+      'internalType': "uint96",
+      'name': "gameIndex",
+      'type': 'uint96'
+    }, {
+      'internalType': 'uint16',
+      'name': 'chipsAmount',
+      'type': 'uint16'
+    }, {
+      'internalType': 'uint96',
+      'name': 'betAmount',
+      'type': 'uint96'
+    }, {
+      'internalType': "enum IBlackJack.HandStatus",
+      'name': 'status',
+      'type': "uint8"
+    }, {
+      'internalType': 'bool',
+      'name': "isInsured",
+      'type': "bool"
+    }, {
+      'internalType': "bool",
+      'name': "isDouble",
+      'type': "bool"
+    }],
+    'internalType': "struct IBlackJack.Hand",
+    'name': 'hand',
+    'type': 'tuple'
   }],
-  'name': "setSplitCouple",
+  'name': "setHand",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'player',
+    'type': "address"
+  }, {
+    'internalType': "uint32[5]",
+    'name': 'indexes',
+    'type': 'uint32[5]'
+  }],
+  'name': 'setHandIndexesGame',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
+    'name': "_handIndex",
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': "newHandIndex",
+    'type': 'uint256'
   }],
-  'name': 'splitCouple',
+  'name': 'setSplitCouple',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
+  }],
+  'name': "splitCouple",
   'outputs': [{
     'internalType': "uint256",
     'name': '',
     'type': "uint256"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }];
 export const ABI2 = [{
   'inputs': [{
@@ -1065,58 +1117,58 @@ export const ABI2 = [{
   }, {
     'internalType': "contract ICashier",
     'name': "_cashier",
-    'type': 'address'
+    'type': "address"
   }, {
     'internalType': "contract IVaultAdapter",
-    'name': "_vaultAdapter",
-    'type': "address"
+    'name': '_vaultAdapter',
+    'type': 'address'
   }, {
     'internalType': "contract IEventEmitter",
-    'name': "eventEmitterInstance",
-    'type': "address"
+    'name': 'eventEmitterInstance',
+    'type': 'address'
   }, {
     'internalType': "contract IRandomizerRouter",
-    'name': "routerInstance",
-    'type': "address"
+    'name': 'routerInstance',
+    'type': 'address'
   }, {
     'internalType': "contract PriceFeed",
-    'name': "_priceFeed",
+    'name': '_priceFeed',
     'type': "address"
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "constructor"
 }, {
   'inputs': [{
     'internalType': "bytes",
-    'name': 'data',
+    'name': "data",
     'type': "bytes"
   }],
-  'name': "CallRevert",
+  'name': 'CallRevert',
+  'type': 'error'
+}, {
+  'inputs': [{
+    'internalType': 'string',
+    'name': 'name',
+    'type': "string"
+  }],
+  'name': 'CannotBeZero',
+  'type': 'error'
+}, {
+  'inputs': [{
+    'internalType': "uint128",
+    'name': 'escrow',
+    'type': 'uint128'
+  }, {
+    'internalType': "uint128",
+    'name': "wanted",
+    'type': 'uint128'
+  }],
+  'name': 'InsufficientEscrow',
   'type': "error"
 }, {
   'inputs': [{
     'internalType': "string",
     'name': 'name',
-    'type': 'string'
-  }],
-  'name': "CannotBeZero",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint128",
-    'name': "escrow",
-    'type': "uint128"
-  }, {
-    'internalType': 'uint128',
-    'name': "wanted",
-    'type': "uint128"
-  }],
-  'name': "InsufficientEscrow",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "string",
-    'name': "name",
     'type': "string"
   }],
   'name': "MustBeGreater",
@@ -1127,48 +1179,48 @@ export const ABI2 = [{
     'name': "key",
     'type': "bytes32"
   }],
-  'name': "ProgramDidNotRefund",
-  'type': "error"
+  'name': 'ProgramDidNotRefund',
+  'type': 'error'
 }, {
   'inputs': [],
-  'name': 'ReentrancyGuardReentrantCall',
-  'type': "error"
+  'name': "ReentrancyGuardReentrantCall",
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': 'requestId',
+    'name': "requestId",
     'type': 'uint256'
   }],
   'name': 'RequestCouldNotFind',
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
-    'internalType': "uint8",
-    'name': 'bits',
+    'internalType': 'uint8',
+    'name': "bits",
     'type': "uint8"
   }, {
     'internalType': "uint256",
-    'name': "value",
-    'type': "uint256"
+    'name': 'value',
+    'type': 'uint256'
   }],
-  'name': "SafeCastOverflowedUintDowncast",
-  'type': "error"
+  'name': 'SafeCastOverflowedUintDowncast',
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "bytes32",
     'name': 'key',
-    'type': 'bytes32'
+    'type': "bytes32"
   }],
   'name': 'SessionNotIterable',
   'type': 'error'
 }, {
   'inputs': [{
-    'internalType': "bytes32",
+    'internalType': 'bytes32',
     'name': "key",
-    'type': "bytes32"
+    'type': 'bytes32'
   }],
-  'name': 'SessionNotRefundable',
-  'type': "error"
+  'name': "SessionNotRefundable",
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "address",
@@ -1176,15 +1228,15 @@ export const ABI2 = [{
     'type': "address"
   }],
   'name': "SessionWaitingIteration",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': 'address',
     'name': 'msgSender',
     'type': "address"
   }, {
-    'internalType': 'string',
-    'name': "role",
+    'internalType': "string",
+    'name': 'role',
     'type': 'string'
   }],
   'name': "Unauthorized",
@@ -1199,35 +1251,35 @@ export const ABI2 = [{
   'outputs': [{
     'internalType': "contract IOnBegin",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "cashier",
+  'name': 'cashier',
   'outputs': [{
     'internalType': "contract ICashier",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': "view",
-  'type': 'function'
+  'stateMutability': 'view',
+  'type': "function"
 }, {
   'inputs': [{
     'internalType': "contract IRandomizerRouter",
     'name': "_randomizerRouter",
     'type': "address"
   }],
-  'name': "changeRandomizerRouter",
+  'name': 'changeRandomizerRouter',
   'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': "function"
+  'stateMutability': "nonpayable",
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': 'program',
-    'type': 'address'
+    'type': "address"
   }, {
     'internalType': "address",
     'name': "client",
@@ -1235,7 +1287,7 @@ export const ABI2 = [{
   }],
   'name': 'emergencyRefund',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [],
@@ -1250,32 +1302,32 @@ export const ABI2 = [{
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "program",
-    'type': 'address'
+    'name': 'program',
+    'type': "address"
   }, {
     'internalType': "address",
-    'name': "client",
-    'type': "address"
+    'name': 'client',
+    'type': 'address'
   }],
-  'name': "getSessionByClient",
+  'name': 'getSessionByClient',
   'outputs': [{
-    'internalType': "bytes32",
+    'internalType': 'bytes32',
     'name': '',
-    'type': "bytes32"
+    'type': 'bytes32'
   }, {
     'components': [{
       'components': [{
-        'internalType': "address",
+        'internalType': 'address',
         'name': "operator",
-        'type': 'address'
+        'type': "address"
       }, {
-        'internalType': 'uint128',
-        'name': "lastRequestId",
+        'internalType': "uint128",
+        'name': 'lastRequestId',
         'type': "uint128"
       }, {
-        'internalType': "uint64",
+        'internalType': 'uint64',
         'name': "startBlock",
-        'type': "uint64"
+        'type': 'uint64'
       }, {
         'internalType': "uint64",
         'name': "endBlock",
@@ -1283,125 +1335,36 @@ export const ABI2 = [{
       }, {
         'internalType': 'uint64',
         'name': "lastSeen",
-        'type': "uint64"
+        'type': 'uint64'
       }],
       'internalType': "struct Session.Detail",
       'name': "detail",
-      'type': "tuple"
+      'type': 'tuple'
     }, {
       'components': [{
-        'internalType': "uint8",
-        'name': "decimals",
-        'type': "uint8"
-      }, {
         'internalType': 'uint8',
-        'name': "tokenDecimals",
-        'type': "uint8"
-      }, {
-        'internalType': 'uint64',
-        'name': "value",
-        'type': "uint64"
-      }],
-      'internalType': "struct Price.Props",
-      'name': "price",
-      'type': 'tuple'
-    }, {
-      'internalType': "enum Session.Status",
-      'name': 'status',
-      'type': 'uint8'
-    }, {
-      'internalType': "address",
-      'name': 'token',
-      'type': "address"
-    }, {
-      'internalType': "address",
-      'name': "program",
-      'type': 'address'
-    }, {
-      'internalType': "address",
-      'name': "client",
-      'type': "address"
-    }, {
-      'internalType': 'uint128',
-      'name': "escrow",
-      'type': "uint128"
-    }, {
-      'internalType': 'uint128',
-      'name': "payout",
-      'type': "uint128"
-    }, {
-      'internalType': 'address',
-      'name': "bankroll",
-      'type': 'address'
-    }],
-    'internalType': "struct Session.Props",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': "requestId",
-    'type': "uint256"
-  }],
-  'name': "getSessionByRequestId",
-  'outputs': [{
-    'internalType': "bytes32",
-    'name': '',
-    'type': "bytes32"
-  }, {
-    'components': [{
-      'components': [{
-        'internalType': "address",
-        'name': "operator",
-        'type': "address"
-      }, {
-        'internalType': "uint128",
-        'name': 'lastRequestId',
-        'type': 'uint128'
-      }, {
-        'internalType': "uint64",
-        'name': "startBlock",
-        'type': "uint64"
-      }, {
-        'internalType': "uint64",
-        'name': 'endBlock',
-        'type': "uint64"
-      }, {
-        'internalType': "uint64",
-        'name': "lastSeen",
-        'type': "uint64"
-      }],
-      'internalType': "struct Session.Detail",
-      'name': "detail",
-      'type': "tuple"
-    }, {
-      'components': [{
-        'internalType': "uint8",
         'name': 'decimals',
-        'type': "uint8"
+        'type': 'uint8'
       }, {
         'internalType': "uint8",
-        'name': 'tokenDecimals',
-        'type': "uint8"
+        'name': "tokenDecimals",
+        'type': 'uint8'
       }, {
         'internalType': 'uint64',
-        'name': "value",
+        'name': 'value',
         'type': "uint64"
       }],
       'internalType': "struct Price.Props",
-      'name': "price",
-      'type': 'tuple'
+      'name': 'price',
+      'type': "tuple"
     }, {
       'internalType': "enum Session.Status",
       'name': "status",
       'type': "uint8"
     }, {
-      'internalType': "address",
-      'name': 'token',
-      'type': "address"
+      'internalType': 'address',
+      'name': "token",
+      'type': 'address'
     }, {
       'internalType': "address",
       'name': 'program',
@@ -1412,38 +1375,127 @@ export const ABI2 = [{
       'type': "address"
     }, {
       'internalType': 'uint128',
-      'name': "escrow",
-      'type': "uint128"
+      'name': 'escrow',
+      'type': 'uint128'
     }, {
       'internalType': 'uint128',
       'name': "payout",
       'type': "uint128"
     }, {
-      'internalType': 'address',
-      'name': "bankroll",
-      'type': 'address'
+      'internalType': "address",
+      'name': 'bankroll',
+      'type': "address"
     }],
     'internalType': "struct Session.Props",
     'name': '',
-    'type': 'tuple'
+    'type': "tuple"
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'uint256',
+    'name': "requestId",
+    'type': "uint256"
+  }],
+  'name': 'getSessionByRequestId',
+  'outputs': [{
+    'internalType': "bytes32",
+    'name': '',
+    'type': 'bytes32'
+  }, {
+    'components': [{
+      'components': [{
+        'internalType': "address",
+        'name': 'operator',
+        'type': 'address'
+      }, {
+        'internalType': "uint128",
+        'name': "lastRequestId",
+        'type': "uint128"
+      }, {
+        'internalType': 'uint64',
+        'name': 'startBlock',
+        'type': "uint64"
+      }, {
+        'internalType': 'uint64',
+        'name': 'endBlock',
+        'type': "uint64"
+      }, {
+        'internalType': 'uint64',
+        'name': 'lastSeen',
+        'type': 'uint64'
+      }],
+      'internalType': "struct Session.Detail",
+      'name': "detail",
+      'type': 'tuple'
+    }, {
+      'components': [{
+        'internalType': "uint8",
+        'name': "decimals",
+        'type': 'uint8'
+      }, {
+        'internalType': "uint8",
+        'name': 'tokenDecimals',
+        'type': 'uint8'
+      }, {
+        'internalType': 'uint64',
+        'name': "value",
+        'type': "uint64"
+      }],
+      'internalType': "struct Price.Props",
+      'name': 'price',
+      'type': 'tuple'
+    }, {
+      'internalType': "enum Session.Status",
+      'name': 'status',
+      'type': "uint8"
+    }, {
+      'internalType': "address",
+      'name': 'token',
+      'type': 'address'
+    }, {
+      'internalType': 'address',
+      'name': "program",
+      'type': "address"
+    }, {
+      'internalType': 'address',
+      'name': "client",
+      'type': 'address'
+    }, {
+      'internalType': 'uint128',
+      'name': 'escrow',
+      'type': 'uint128'
+    }, {
+      'internalType': "uint128",
+      'name': 'payout',
+      'type': 'uint128'
+    }, {
+      'internalType': 'address',
+      'name': 'bankroll',
+      'type': "address"
+    }],
+    'internalType': "struct Session.Props",
+    'name': '',
+    'type': "tuple"
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint256",
     'name': 'index',
     'type': 'uint256'
   }],
-  'name': "offBegin",
+  'name': 'offBegin',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': 'uint256',
+    'internalType': "uint256",
     'name': "index",
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'name': "offSettlement",
   'outputs': [],
@@ -1452,39 +1504,39 @@ export const ABI2 = [{
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': "index",
+    'name': 'index',
     'type': "uint256"
   }, {
     'internalType': "contract IOnBegin",
-    'name': 'target',
+    'name': "target",
     'type': "address"
   }],
   'name': 'onBegin',
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': 'index',
-    'type': "uint256"
+    'name': "index",
+    'type': 'uint256'
   }, {
     'internalType': "contract IOnSettlement",
     'name': 'target',
     'type': "address"
   }],
-  'name': "onSettlement",
+  'name': 'onSettlement',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "contract IProgram",
-    'name': "program",
-    'type': "address"
+    'name': 'program',
+    'type': 'address'
   }, {
     'internalType': "address",
-    'name': "bankroll",
+    'name': 'bankroll',
     'type': "address"
   }, {
     'internalType': "address",
@@ -1493,19 +1545,19 @@ export const ABI2 = [{
   }, {
     'internalType': "string",
     'name': "route",
-    'type': "string"
+    'type': 'string'
   }, {
-    'internalType': "bytes",
-    'name': "data",
+    'internalType': 'bytes',
+    'name': 'data',
     'type': "bytes"
   }],
-  'name': "perform",
+  'name': 'perform',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [],
-  'name': 'priceFeed',
+  'name': "priceFeed",
   'outputs': [{
     'internalType': "contract PriceFeed",
     'name': '',
@@ -1515,79 +1567,79 @@ export const ABI2 = [{
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': 'requestId',
-    'type': 'uint256'
+    'type': "uint256"
   }, {
-    'internalType': "uint256[]",
-    'name': "randoms",
-    'type': 'uint256[]'
+    'internalType': 'uint256[]',
+    'name': 'randoms',
+    'type': "uint256[]"
   }],
   'name': "randomizerCallback",
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "randomizerRouter",
   'outputs': [{
     'internalType': "contract IRandomizerRouter",
     'name': '',
-    'type': 'address'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "program",
     'type': "address"
-  }, {
-    'internalType': "address",
-    'name': "client",
-    'type': 'address'
   }],
-  'name': 'reIterate',
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': 'function'
-}, {
-  'inputs': [],
-  'name': "reIterationCooldown",
-  'outputs': [{
-    'internalType': 'uint256',
-    'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': 'program',
-    'type': 'address'
+    'name': "program",
+    'type': "address"
   }, {
-    'internalType': "address",
-    'name': "client",
-    'type': 'address'
+    'internalType': 'address',
+    'name': 'client',
+    'type': "address"
   }],
-  'name': "refund",
+  'name': 'reIterate',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
+}, {
+  'inputs': [],
+  'name': "reIterationCooldown",
+  'outputs': [{
+    'internalType': "uint256",
+    'name': '',
+    'type': 'uint256'
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'program',
+    'type': 'address'
+  }, {
+    'internalType': 'address',
+    'name': "client",
+    'type': 'address'
+  }],
+  'name': 'refund',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "refundCooldown",
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': 'uint256'
+    'type': "uint256"
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': 'uint256'
   }],
@@ -1595,15 +1647,109 @@ export const ABI2 = [{
   'outputs': [{
     'internalType': 'bytes32',
     'name': '',
-    'type': "bytes32"
+    'type': 'bytes32'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "roleStore",
+  'name': 'roleStore',
   'outputs': [{
     'internalType': "contract RoleStore",
+    'name': '',
+    'type': "address"
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "bytes32",
+    'name': '',
+    'type': "bytes32"
+  }],
+  'name': 'sessions',
+  'outputs': [{
+    'components': [{
+      'internalType': 'address',
+      'name': 'operator',
+      'type': 'address'
+    }, {
+      'internalType': "uint128",
+      'name': "lastRequestId",
+      'type': "uint128"
+    }, {
+      'internalType': 'uint64',
+      'name': "startBlock",
+      'type': "uint64"
+    }, {
+      'internalType': 'uint64',
+      'name': "endBlock",
+      'type': 'uint64'
+    }, {
+      'internalType': 'uint64',
+      'name': 'lastSeen',
+      'type': "uint64"
+    }],
+    'internalType': "struct Session.Detail",
+    'name': "detail",
+    'type': "tuple"
+  }, {
+    'components': [{
+      'internalType': 'uint8',
+      'name': 'decimals',
+      'type': 'uint8'
+    }, {
+      'internalType': "uint8",
+      'name': "tokenDecimals",
+      'type': 'uint8'
+    }, {
+      'internalType': 'uint64',
+      'name': "value",
+      'type': 'uint64'
+    }],
+    'internalType': "struct Price.Props",
+    'name': "price",
+    'type': 'tuple'
+  }, {
+    'internalType': "enum Session.Status",
+    'name': 'status',
+    'type': 'uint8'
+  }, {
+    'internalType': "address",
+    'name': "token",
+    'type': 'address'
+  }, {
+    'internalType': 'address',
+    'name': 'program',
+    'type': 'address'
+  }, {
+    'internalType': 'address',
+    'name': "client",
+    'type': 'address'
+  }, {
+    'internalType': 'uint128',
+    'name': 'escrow',
+    'type': "uint128"
+  }, {
+    'internalType': 'uint128',
+    'name': "payout",
+    'type': "uint128"
+  }, {
+    'internalType': "address",
+    'name': 'bankroll',
+    'type': "address"
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'name': 'settlementTargets',
+  'outputs': [{
+    'internalType': "contract IOnSettlement",
     'name': '',
     'type': 'address'
   }],
@@ -1611,107 +1757,13 @@ export const ABI2 = [{
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "bytes32",
-    'name': '',
-    'type': "bytes32"
-  }],
-  'name': "sessions",
-  'outputs': [{
-    'components': [{
-      'internalType': "address",
-      'name': "operator",
-      'type': "address"
-    }, {
-      'internalType': "uint128",
-      'name': "lastRequestId",
-      'type': 'uint128'
-    }, {
-      'internalType': "uint64",
-      'name': 'startBlock',
-      'type': 'uint64'
-    }, {
-      'internalType': "uint64",
-      'name': 'endBlock',
-      'type': "uint64"
-    }, {
-      'internalType': 'uint64',
-      'name': "lastSeen",
-      'type': 'uint64'
-    }],
-    'internalType': "struct Session.Detail",
-    'name': 'detail',
-    'type': 'tuple'
-  }, {
-    'components': [{
-      'internalType': "uint8",
-      'name': "decimals",
-      'type': "uint8"
-    }, {
-      'internalType': "uint8",
-      'name': "tokenDecimals",
-      'type': "uint8"
-    }, {
-      'internalType': "uint64",
-      'name': "value",
-      'type': "uint64"
-    }],
-    'internalType': "struct Price.Props",
-    'name': "price",
-    'type': "tuple"
-  }, {
-    'internalType': "enum Session.Status",
-    'name': "status",
-    'type': 'uint8'
-  }, {
-    'internalType': "address",
-    'name': "token",
-    'type': "address"
-  }, {
-    'internalType': "address",
-    'name': 'program',
-    'type': "address"
-  }, {
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
-  }, {
-    'internalType': "uint128",
-    'name': "escrow",
-    'type': "uint128"
-  }, {
-    'internalType': "uint128",
-    'name': "payout",
-    'type': "uint128"
-  }, {
-    'internalType': "address",
-    'name': "bankroll",
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': "settlementTargets",
-  'outputs': [{
-    'internalType': "contract IOnSettlement",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': "_refundCooldown",
-    'type': "uint256"
-  }, {
     'internalType': 'uint256',
+    'name': "_refundCooldown",
+    'type': 'uint256'
+  }, {
+    'internalType': "uint256",
     'name': '_reIterationCooldown',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'name': "updateCooldowns",
   'outputs': [],
@@ -1725,44 +1777,44 @@ export const ABI2 = [{
     'name': '',
     'type': 'address'
   }],
-  'stateMutability': "view",
-  'type': 'function'
+  'stateMutability': 'view',
+  'type': "function"
 }];
 export const ABI3 = [{
   'inputs': [{
-    'internalType': 'string',
-    'name': "name",
-    'type': "string"
-  }, {
     'internalType': "string",
+    'name': "name",
+    'type': 'string'
+  }, {
+    'internalType': 'string',
     'name': 'symbol',
     'type': "string"
   }, {
-    'internalType': 'uint8',
+    'internalType': "uint8",
     'name': '_decimals',
     'type': "uint8"
   }],
   'stateMutability': 'nonpayable',
-  'type': "constructor"
+  'type': 'constructor'
 }, {
   'anonymous': false,
   'inputs': [{
     'indexed': true,
-    'internalType': "address",
-    'name': 'owner',
-    'type': "address"
+    'internalType': 'address',
+    'name': "owner",
+    'type': 'address'
   }, {
     'indexed': true,
-    'internalType': 'address',
-    'name': "spender",
+    'internalType': "address",
+    'name': 'spender',
     'type': 'address'
   }, {
     'indexed': false,
-    'internalType': "uint256",
-    'name': "value",
-    'type': 'uint256'
+    'internalType': 'uint256',
+    'name': 'value',
+    'type': "uint256"
   }],
-  'name': "Approval",
+  'name': 'Approval',
   'type': 'event'
 }, {
   'anonymous': false,
@@ -1770,26 +1822,26 @@ export const ABI3 = [{
     'indexed': false,
     'internalType': 'address',
     'name': 'to',
-    'type': "address"
+    'type': 'address'
   }, {
     'indexed': false,
     'internalType': "uint256",
-    'name': "amount",
-    'type': "uint256"
+    'name': 'amount',
+    'type': 'uint256'
   }],
-  'name': "Burn",
-  'type': "event"
+  'name': 'Burn',
+  'type': 'event'
 }, {
   'anonymous': false,
   'inputs': [{
     'indexed': false,
-    'internalType': "address",
+    'internalType': 'address',
     'name': 'to',
     'type': 'address'
   }, {
     'indexed': false,
     'internalType': 'uint256',
-    'name': 'amount',
+    'name': "amount",
     'type': 'uint256'
   }],
   'name': "Mint",
@@ -1803,14 +1855,14 @@ export const ABI3 = [{
     'type': "bytes32"
   }, {
     'indexed': true,
-    'internalType': "bytes32",
-    'name': 'previousAdminRole',
+    'internalType': 'bytes32',
+    'name': "previousAdminRole",
     'type': "bytes32"
   }, {
     'indexed': true,
-    'internalType': 'bytes32',
-    'name': "newAdminRole",
-    'type': 'bytes32'
+    'internalType': "bytes32",
+    'name': 'newAdminRole',
+    'type': "bytes32"
   }],
   'name': "RoleAdminChanged",
   'type': 'event'
@@ -1825,100 +1877,100 @@ export const ABI3 = [{
     'indexed': true,
     'internalType': 'address',
     'name': "account",
-    'type': "address"
+    'type': 'address'
   }, {
     'indexed': true,
     'internalType': 'address',
     'name': "sender",
     'type': "address"
   }],
-  'name': 'RoleGranted',
-  'type': "event"
+  'name': "RoleGranted",
+  'type': 'event'
 }, {
   'anonymous': false,
   'inputs': [{
     'indexed': true,
     'internalType': "bytes32",
-    'name': 'role',
-    'type': "bytes32"
-  }, {
-    'indexed': true,
-    'internalType': 'address',
-    'name': "account",
-    'type': "address"
+    'name': "role",
+    'type': 'bytes32'
   }, {
     'indexed': true,
     'internalType': "address",
-    'name': 'sender',
-    'type': "address"
+    'name': 'account',
+    'type': 'address'
+  }, {
+    'indexed': true,
+    'internalType': "address",
+    'name': "sender",
+    'type': 'address'
   }],
   'name': "RoleRevoked",
-  'type': "event"
+  'type': 'event'
 }, {
   'anonymous': false,
   'inputs': [{
     'indexed': true,
     'internalType': "address",
-    'name': "from",
+    'name': 'from',
     'type': "address"
   }, {
     'indexed': true,
-    'internalType': "address",
+    'internalType': 'address',
     'name': 'to',
     'type': "address"
   }, {
     'indexed': false,
-    'internalType': "uint256",
-    'name': 'value',
-    'type': "uint256"
+    'internalType': 'uint256',
+    'name': "value",
+    'type': 'uint256'
   }],
   'name': 'Transfer',
-  'type': "event"
+  'type': 'event'
 }, {
   'inputs': [],
-  'name': "DEFAULT_ADMIN_ROLE",
+  'name': 'DEFAULT_ADMIN_ROLE',
   'outputs': [{
     'internalType': 'bytes32',
     'name': '',
     'type': "bytes32"
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'address',
-    'name': "owner",
-    'type': 'address'
-  }, {
     'internalType': "address",
+    'name': 'owner',
+    'type': "address"
+  }, {
+    'internalType': 'address',
     'name': "spender",
-    'type': 'address'
+    'type': "address"
   }],
-  'name': 'allowance',
+  'name': "allowance",
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "spender",
-    'type': "address"
+    'internalType': 'address',
+    'name': 'spender',
+    'type': 'address'
   }, {
-    'internalType': 'uint256',
-    'name': "amount",
+    'internalType': "uint256",
+    'name': 'amount',
     'type': "uint256"
   }],
-  'name': "approve",
+  'name': 'approve',
   'outputs': [{
     'internalType': "bool",
     'name': '',
     'type': "bool"
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': 'function'
 }, {
   'inputs': [{
@@ -1926,63 +1978,63 @@ export const ABI3 = [{
     'name': "account",
     'type': "address"
   }],
-  'name': "balanceOf",
+  'name': 'balanceOf',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': '_account',
-    'type': "address"
-  }, {
-    'internalType': "uint256",
-    'name': "_amount",
-    'type': 'uint256'
-  }],
-  'name': "burn",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "decimals",
-  'outputs': [{
-    'internalType': "uint8",
-    'name': '',
-    'type': "uint8"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "decimalsSet",
-  'outputs': [{
-    'internalType': 'uint8',
-    'name': '',
-    'type': "uint8"
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "spender",
+    'name': '_account',
     'type': "address"
   }, {
     'internalType': "uint256",
-    'name': "subtractedValue",
+    'name': "_amount",
     'type': "uint256"
+  }],
+  'name': 'burn',
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'decimals',
+  'outputs': [{
+    'internalType': 'uint8',
+    'name': '',
+    'type': 'uint8'
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'decimalsSet',
+  'outputs': [{
+    'internalType': "uint8",
+    'name': '',
+    'type': 'uint8'
+  }],
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': "spender",
+    'type': 'address'
+  }, {
+    'internalType': 'uint256',
+    'name': "subtractedValue",
+    'type': 'uint256'
   }],
   'name': "decreaseAllowance",
   'outputs': [{
     'internalType': "bool",
     'name': '',
-    'type': 'bool'
+    'type': "bool"
   }],
   'stateMutability': "nonpayable",
   'type': 'function'
@@ -1990,55 +2042,55 @@ export const ABI3 = [{
   'inputs': [{
     'internalType': 'address',
     'name': "_account",
-    'type': "address"
+    'type': 'address'
   }],
   'name': "faucet",
   'outputs': [],
   'stateMutability': 'nonpayable',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "faucetMintAmount",
+  'name': 'faucetMintAmount',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
-  'name': "faucetPaused",
+  'name': 'faucetPaused',
   'outputs': [{
     'internalType': "bool",
     'name': '',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "bytes32",
+    'internalType': 'bytes32',
     'name': "role",
-    'type': "bytes32"
-  }],
-  'name': "getRoleAdmin",
-  'outputs': [{
-    'internalType': "bytes32",
-    'name': '',
     'type': 'bytes32'
+  }],
+  'name': 'getRoleAdmin',
+  'outputs': [{
+    'internalType': 'bytes32',
+    'name': '',
+    'type': "bytes32"
   }],
   'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "bytes32",
-    'name': "role",
+    'name': 'role',
     'type': 'bytes32'
   }, {
-    'internalType': 'address',
-    'name': "account",
-    'type': 'address'
+    'internalType': "address",
+    'name': 'account',
+    'type': "address"
   }],
   'name': "grantRole",
   'outputs': [],
@@ -2046,12 +2098,12 @@ export const ABI3 = [{
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': 'bytes32',
+    'internalType': "bytes32",
     'name': 'role',
     'type': "bytes32"
   }, {
-    'internalType': "address",
-    'name': "account",
+    'internalType': 'address',
+    'name': 'account',
     'type': "address"
   }],
   'name': "hasRole",
@@ -2061,74 +2113,74 @@ export const ABI3 = [{
     'type': "bool"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': "spender",
     'type': "address"
   }, {
-    'internalType': 'uint256',
-    'name': "addedValue",
+    'internalType': "uint256",
+    'name': 'addedValue',
     'type': 'uint256'
   }],
-  'name': "increaseAllowance",
+  'name': 'increaseAllowance',
   'outputs': [{
     'internalType': 'bool',
     'name': '',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "isFaucet",
+  'name': 'isFaucet',
   'outputs': [{
     'internalType': "bool",
     'name': '',
     'type': "bool"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "maxBalanceAmount",
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': '_account',
-    'type': "address"
+    'internalType': 'address',
+    'name': "_account",
+    'type': 'address'
   }, {
     'internalType': "uint256",
-    'name': "_amount",
+    'name': '_amount',
     'type': "uint256"
   }],
   'name': "mint",
   'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': "function"
+  'stateMutability': "nonpayable",
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "name",
   'outputs': [{
-    'internalType': "string",
+    'internalType': 'string',
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
   'stateMutability': "view",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [{
-    'internalType': 'bytes32',
-    'name': "role",
-    'type': "bytes32"
+    'internalType': "bytes32",
+    'name': 'role',
+    'type': 'bytes32'
   }, {
     'internalType': "address",
     'name': 'account',
@@ -2142,26 +2194,26 @@ export const ABI3 = [{
   'inputs': [{
     'internalType': "bytes32",
     'name': "role",
-    'type': 'bytes32'
+    'type': "bytes32"
   }, {
     'internalType': 'address',
     'name': 'account',
-    'type': "address"
+    'type': 'address'
   }],
   'name': "revokeRole",
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': 'function'
 }, {
   'inputs': [],
-  'name': "setAsFaucet",
+  'name': 'setAsFaucet',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': "_maxBalanceAmount",
+    'name': '_maxBalanceAmount',
     'type': 'uint256'
   }],
   'name': "setMaxBalanceAmount",
@@ -2176,31 +2228,31 @@ export const ABI3 = [{
   }],
   'name': "setMintAmount",
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'bool',
     'name': '_setting',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'name': "setPauseStatus",
+  'name': 'setPauseStatus',
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "bytes4",
-    'name': "interfaceId",
-    'type': 'bytes4'
+    'internalType': 'bytes4',
+    'name': 'interfaceId',
+    'type': "bytes4"
   }],
   'name': 'supportsInterface',
   'outputs': [{
-    'internalType': 'bool',
+    'internalType': "bool",
     'name': '',
-    'type': 'bool'
+    'type': "bool"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
@@ -2211,77 +2263,77 @@ export const ABI3 = [{
     'type': "string"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "totalSupply",
+  'name': 'totalSupply',
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': 'uint256'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': 'to',
-    'type': 'address'
-  }, {
-    'internalType': 'uint256',
-    'name': "amount",
     'type': "uint256"
   }],
-  'name': "transfer",
-  'outputs': [{
-    'internalType': "bool",
-    'name': '',
-    'type': "bool"
-  }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': 'from',
-    'type': 'address'
-  }, {
-    'internalType': "address",
     'name': 'to',
     'type': "address"
   }, {
     'internalType': "uint256",
     'name': "amount",
-    'type': "uint256"
+    'type': 'uint256'
+  }],
+  'name': "transfer",
+  'outputs': [{
+    'internalType': 'bool',
+    'name': '',
+    'type': "bool"
+  }],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': "from",
+    'type': 'address'
+  }, {
+    'internalType': 'address',
+    'name': 'to',
+    'type': "address"
+  }, {
+    'internalType': "uint256",
+    'name': 'amount',
+    'type': 'uint256'
   }],
   'name': 'transferFrom',
   'outputs': [{
-    'internalType': "bool",
+    'internalType': 'bool',
     'name': '',
     'type': "bool"
   }],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }];
 export const ABI4 = [{
   'inputs': [{
     'internalType': "contract RoleStore",
     'name': "_roleStore",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "contract Config",
     'name': '_config',
-    'type': 'address'
+    'type': "address"
   }, {
     'internalType': "contract BudgetMiddleware",
     'name': "_budget",
     'type': 'address'
   }],
   'stateMutability': 'nonpayable',
-  'type': 'constructor'
+  'type': "constructor"
 }, {
   'inputs': [{
-    'internalType': 'address',
+    'internalType': "address",
     'name': "client",
     'type': "address"
   }],
@@ -2291,39 +2343,39 @@ export const ABI4 = [{
   'inputs': [{
     'internalType': 'address',
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }],
-  'name': "HandResultError",
+  'name': 'HandResultError',
   'type': "error"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "client",
     'type': "address"
   }],
-  'name': "HasUncompletedGame",
+  'name': 'HasUncompletedGame',
   'type': 'error'
 }, {
   'inputs': [{
-    'internalType': 'uint128',
+    'internalType': "uint128",
     'name': "given",
     'type': 'uint128'
   }, {
     'internalType': "uint128",
     'name': "max",
-    'type': "uint128"
+    'type': 'uint128'
   }],
   'name': "MaxWagerExceeded",
   'type': "error"
 }, {
   'inputs': [{
     'internalType': "uint128",
-    'name': "given",
+    'name': 'given',
     'type': "uint128"
   }, {
     'internalType': "uint128",
-    'name': "min",
-    'type': 'uint128'
+    'name': 'min',
+    'type': "uint128"
   }],
   'name': 'MinWagerNotMet',
   'type': "error"
@@ -2333,24 +2385,39 @@ export const ABI4 = [{
     'name': 'client',
     'type': "address"
   }],
-  'name': "NotPlayersTurn",
+  'name': 'NotPlayersTurn',
   'type': 'error'
 }, {
   'inputs': [],
-  'name': 'ReentrancyGuardReentrantCall',
+  'name': "ReentrancyGuardReentrantCall",
   'type': "error"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "msgSender",
     'type': "address"
   }, {
-    'internalType': "string",
-    'name': "role",
+    'internalType': 'string',
+    'name': 'role',
     'type': "string"
   }],
-  'name': "Unauthorized",
-  'type': "error"
+  'name': 'Unauthorized',
+  'type': 'error'
+}, {
+  'anonymous': false,
+  'inputs': [{
+    'indexed': true,
+    'internalType': 'uint256',
+    'name': 'gameIndex',
+    'type': 'uint256'
+  }, {
+    'indexed': true,
+    'internalType': 'address',
+    'name': "player",
+    'type': "address"
+  }],
+  'name': "AttemptedRefund",
+  'type': 'event'
 }, {
   'anonymous': false,
   'inputs': [{
@@ -2360,28 +2427,13 @@ export const ABI4 = [{
     'type': 'uint256'
   }, {
     'indexed': true,
-    'internalType': 'address',
-    'name': 'player',
-    'type': 'address'
-  }],
-  'name': "AttemptedRefund",
-  'type': "event"
-}, {
-  'anonymous': false,
-  'inputs': [{
-    'indexed': true,
-    'internalType': "uint256",
-    'name': "gameIndex",
-    'type': "uint256"
-  }, {
-    'indexed': true,
     'internalType': "address",
-    'name': "player",
-    'type': 'address'
+    'name': 'player',
+    'type': "address"
   }, {
     'indexed': false,
     'internalType': "uint256",
-    'name': "anteAmount",
+    'name': 'anteAmount',
     'type': "uint256"
   }, {
     'indexed': false,
@@ -2390,11 +2442,11 @@ export const ABI4 = [{
     'type': 'uint256'
   }, {
     'indexed': false,
-    'internalType': "uint256",
-    'name': 'callAmount',
-    'type': "uint256"
+    'internalType': 'uint256',
+    'name': "callAmount",
+    'type': 'uint256'
   }],
-  'name': "RefundGame",
+  'name': 'RefundGame',
   'type': "event"
 }, {
   'inputs': [],
@@ -2404,31 +2456,31 @@ export const ABI4 = [{
     'name': '',
     'type': "uint128"
   }],
-  'stateMutability': 'view',
+  'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
   'name': "SIDEBET_MULTIPLIER",
   'outputs': [{
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': '',
-    'type': 'uint128'
+    'type': "uint128"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "_client",
     'type': "address"
   }, {
-    'internalType': "address",
+    'internalType': 'address',
     'name': "_bankroll",
     'type': "address"
   }, {
-    'internalType': "bytes",
-    'name': "_data",
-    'type': 'bytes'
+    'internalType': 'bytes',
+    'name': '_data',
+    'type': "bytes"
   }],
   'name': "bet",
   'outputs': [{
@@ -2437,16 +2489,16 @@ export const ABI4 = [{
       'name': "escrow",
       'type': 'uint128'
     }, {
-      'internalType': 'uint128',
-      'name': "payback",
-      'type': "uint128"
-    }, {
       'internalType': "uint128",
-      'name': 'payout',
-      'type': "uint128"
+      'name': "payback",
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint128',
+      'name': "payout",
+      'type': 'uint128'
     }, {
       'internalType': 'uint32',
-      'name': "delay",
+      'name': 'delay',
       'type': "uint32"
     }, {
       'internalType': "uint8",
@@ -2465,26 +2517,26 @@ export const ABI4 = [{
       'components': [{
         'components': [{
           'internalType': "string",
-          'name': "key",
+          'name': 'key',
           'type': 'string'
         }, {
-          'internalType': "bytes",
-          'name': 'value',
+          'internalType': 'bytes',
+          'name': "value",
           'type': "bytes"
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': 'items',
-        'type': "tuple[]"
+        'name': "items",
+        'type': 'tuple[]'
       }],
       'internalType': "struct EventUtils.BytesItems",
       'name': "list",
-      'type': "tuple"
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [],
@@ -2498,83 +2550,83 @@ export const ABI4 = [{
   'type': "function"
 }, {
   'inputs': [],
-  'name': "config",
+  'name': 'config',
   'outputs': [{
     'internalType': "contract Config",
     'name': '',
     'type': "address"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': '_client',
-    'type': 'address'
+    'name': "_client",
+    'type': "address"
   }, {
     'internalType': "address",
     'name': '',
     'type': "address"
   }, {
-    'internalType': "bytes",
-    'name': "_data",
-    'type': "bytes"
+    'internalType': 'bytes',
+    'name': '_data',
+    'type': 'bytes'
   }],
-  'name': "decide",
+  'name': 'decide',
   'outputs': [{
     'components': [{
       'internalType': "uint128",
-      'name': "escrow",
+      'name': 'escrow',
       'type': "uint128"
     }, {
-      'internalType': 'uint128',
-      'name': 'payback',
+      'internalType': "uint128",
+      'name': "payback",
       'type': "uint128"
     }, {
       'internalType': "uint128",
       'name': "payout",
-      'type': 'uint128'
+      'type': "uint128"
     }, {
       'internalType': 'uint32',
-      'name': "delay",
+      'name': 'delay',
       'type': 'uint32'
     }, {
-      'internalType': "uint8",
+      'internalType': 'uint8',
       'name': "iterate",
-      'type': "uint8"
+      'type': 'uint8'
     }, {
       'internalType': "enum ControllerUtils.Signal",
-      'name': 'signal',
+      'name': "signal",
       'type': "uint8"
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
-    'type': 'tuple'
+    'type': "tuple"
   }, {
     'components': [{
       'components': [{
         'components': [{
-          'internalType': "string",
+          'internalType': 'string',
           'name': "key",
           'type': "string"
         }, {
-          'internalType': "bytes",
-          'name': "value",
-          'type': "bytes"
+          'internalType': 'bytes',
+          'name': 'value',
+          'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
+        'name': 'items',
         'type': "tuple[]"
       }],
       'internalType': "struct EventUtils.BytesItems",
       'name': "list",
-      'type': "tuple"
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
@@ -2582,61 +2634,61 @@ export const ABI4 = [{
     'name': "anteAmount_",
     'type': "uint128"
   }, {
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': "sideBetAmount_",
-    'type': "uint128"
+    'type': 'uint128'
   }, {
-    'internalType': "uint128",
-    'name': "chipAmount_",
+    'internalType': 'uint128',
+    'name': 'chipAmount_',
     'type': "uint128"
   }],
   'name': 'encodeBet',
   'outputs': [{
-    'internalType': "bytes",
+    'internalType': 'bytes',
     'name': '',
-    'type': "bytes"
+    'type': 'bytes'
   }],
   'stateMutability': "pure",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "_client",
-    'type': 'address'
+    'type': "address"
   }, {
-    'internalType': "uint256[]",
+    'internalType': 'uint256[]',
     'name': "_randoms",
-    'type': "uint256[]"
+    'type': 'uint256[]'
   }],
-  'name': "fill",
+  'name': 'fill',
   'outputs': [{
     'components': [{
       'internalType': 'uint128',
-      'name': 'escrow',
+      'name': "escrow",
       'type': "uint128"
     }, {
       'internalType': "uint128",
       'name': 'payback',
-      'type': "uint128"
+      'type': 'uint128'
     }, {
       'internalType': "uint128",
-      'name': 'payout',
-      'type': "uint128"
+      'name': "payout",
+      'type': 'uint128'
     }, {
       'internalType': "uint32",
       'name': "delay",
       'type': "uint32"
     }, {
-      'internalType': "uint8",
+      'internalType': 'uint8',
       'name': 'iterate',
-      'type': "uint8"
+      'type': 'uint8'
     }, {
       'internalType': "enum ControllerUtils.Signal",
       'name': 'signal',
-      'type': "uint8"
+      'type': 'uint8'
     }],
     'internalType': "struct ControllerUtils.Response",
-    'name': 'results_',
+    'name': "results_",
     'type': 'tuple'
   }, {
     'components': [{
@@ -2644,18 +2696,18 @@ export const ABI4 = [{
         'components': [{
           'internalType': 'string',
           'name': 'key',
-          'type': "string"
+          'type': 'string'
         }, {
           'internalType': "bytes",
-          'name': "value",
+          'name': 'value',
           'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
         'name': 'items',
-        'type': 'tuple[]'
+        'type': "tuple[]"
       }],
       'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
+      'name': 'list',
       'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
@@ -2663,17 +2715,17 @@ export const ABI4 = [{
     'type': "tuple"
   }],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': 'gameIndex',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
@@ -2682,40 +2734,40 @@ export const ABI4 = [{
   }],
   'name': "games",
   'outputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "bankroll",
-    'type': "address"
+    'type': 'address'
   }, {
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': 'anteAmount',
-    'type': "uint128"
+    'type': 'uint128'
   }, {
-    'internalType': "uint32",
+    'internalType': 'uint32',
     'name': "gameIndex",
     'type': 'uint32'
   }, {
-    'internalType': "uint16",
-    'name': 'anteChipsAmount',
+    'internalType': 'uint16',
+    'name': "anteChipsAmount",
     'type': "uint16"
   }, {
     'internalType': 'uint16',
-    'name': "sideBetChipsAmount",
-    'type': "uint16"
+    'name': 'sideBetChipsAmount',
+    'type': 'uint16'
   }, {
     'internalType': "uint128",
     'name': 'betAmountSideBet',
+    'type': 'uint128'
+  }, {
+    'internalType': "uint128",
+    'name': "callBetAmount",
     'type': "uint128"
   }, {
     'internalType': "uint128",
-    'name': 'callBetAmount',
-    'type': 'uint128'
-  }, {
-    'internalType': 'uint128',
-    'name': 'sideBetWonAmount',
+    'name': "sideBetWonAmount",
     'type': 'uint128'
   }, {
     'internalType': "enum IWINRPoker.State",
-    'name': 'state',
+    'name': "state",
     'type': 'uint8'
   }],
   'stateMutability': "view",
@@ -2726,49 +2778,49 @@ export const ABI4 = [{
     'name': '_player',
     'type': "address"
   }],
-  'name': "getHand",
+  'name': 'getHand',
   'outputs': [{
     'internalType': "uint16[9]",
     'name': '',
     'type': "uint16[9]"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': '_player',
-    'type': "address"
+    'name': "_player",
+    'type': 'address'
   }],
-  'name': 'getPlayerStatus',
+  'name': "getPlayerStatus",
   'outputs': [{
     'components': [{
       'internalType': "address",
       'name': 'bankroll',
       'type': 'address'
     }, {
-      'internalType': "uint16",
-      'name': "anteChips",
+      'internalType': 'uint16',
+      'name': 'anteChips',
       'type': "uint16"
     }, {
       'internalType': 'uint16',
-      'name': 'sideBetChips',
+      'name': "sideBetChips",
       'type': "uint16"
     }, {
       'internalType': "uint16[9]",
-      'name': "cards",
-      'type': 'uint16[9]'
+      'name': 'cards',
+      'type': "uint16[9]"
     }, {
-      'internalType': 'uint128',
-      'name': "wager",
-      'type': "uint128"
+      'internalType': "uint128",
+      'name': 'wager',
+      'type': 'uint128'
     }, {
       'internalType': "uint32",
-      'name': "gameIndex",
-      'type': "uint32"
+      'name': 'gameIndex',
+      'type': 'uint32'
     }, {
       'internalType': "enum IWINRPoker.State",
-      'name': "state",
+      'name': 'state',
       'type': "uint8"
     }],
     'internalType': "struct IWINRPoker.PlayerStatus",
@@ -2783,17 +2835,17 @@ export const ABI4 = [{
   'outputs': [{
     'internalType': 'string',
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
-  'stateMutability': "pure",
-  'type': "function"
+  'stateMutability': 'pure',
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "getVersion",
+  'name': 'getVersion',
   'outputs': [{
     'internalType': 'uint16',
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "pure",
   'type': 'function'
@@ -2809,8 +2861,8 @@ export const ABI4 = [{
     'name': '',
     'type': "uint256"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint256",
@@ -2823,79 +2875,79 @@ export const ABI4 = [{
     'name': '',
     'type': "uint256"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "_client",
+    'internalType': 'address',
+    'name': '_client',
     'type': "address"
   }],
   'name': "refundGame",
   'outputs': [{
-    'internalType': 'bool',
+    'internalType': "bool",
     'name': '',
     'type': 'bool'
   }],
-  'stateMutability': "nonpayable",
-  'type': 'function'
+  'stateMutability': 'nonpayable',
+  'type': "function"
 }, {
   'inputs': [],
-  'name': "roleStore",
+  'name': 'roleStore',
   'outputs': [{
     'internalType': "contract RoleStore",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'uint256',
     'name': '_combination',
-    'type': "uint256"
+    'type': 'uint256'
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': "_payout",
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'name': "setPayoutsAA",
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': "_combination",
     'type': 'uint256'
   }, {
     'internalType': "uint256",
-    'name': '_payout',
+    'name': "_payout",
     'type': 'uint256'
   }],
   'name': 'setPayoutsPerCombination',
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': 'function'
+  'stateMutability': 'nonpayable',
+  'type': "function"
 }, {
   'inputs': [],
-  'name': 'totalPaidIn',
+  'name': "totalPaidIn",
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [],
   'name': 'totalPaidOut',
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }];
 export const ABI5 = [{
@@ -2905,20 +2957,20 @@ export const ABI5 = [{
     'type': "address"
   }, {
     'internalType': "contract Config",
-    'name': '_config',
+    'name': "_config",
     'type': "address"
   }, {
     'internalType': "contract BudgetMiddleware",
-    'name': "_budget",
-    'type': "address"
+    'name': '_budget',
+    'type': 'address'
   }],
-  'stateMutability': "nonpayable",
-  'type': "constructor"
+  'stateMutability': 'nonpayable',
+  'type': 'constructor'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }],
   'name': "AlreadyRevealed",
   'type': "error"
@@ -2932,660 +2984,64 @@ export const ABI5 = [{
     'name': 'client',
     'type': "address"
   }],
-  'name': "GameEndsAfterReveal",
-  'type': 'error'
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': 'address'
-  }],
-  'name': 'HasUncompletedGame',
-  'type': 'error'
-}, {
-  'inputs': [{
-    'internalType': 'uint32',
-    'name': 'numberCellsToReveal',
-    'type': "uint32"
-  }],
-  'name': 'InvalidNumberCellsToReveal',
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint128",
-    'name': "given",
-    'type': "uint128"
-  }, {
-    'internalType': 'uint128',
-    'name': "max",
-    'type': "uint128"
-  }],
-  'name': "MaxWagerExceeded",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint128",
-    'name': "given",
-    'type': "uint128"
-  }, {
-    'internalType': "uint128",
-    'name': "min",
-    'type': "uint128"
-  }],
-  'name': "MinWagerNotMet",
+  'name': 'GameEndsAfterReveal',
   'type': "error"
 }, {
   'inputs': [{
     'internalType': "address",
     'name': 'client',
-    'type': "address"
+    'type': 'address'
+  }],
+  'name': 'HasUncompletedGame',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': "uint32",
+    'name': "numberCellsToReveal",
+    'type': 'uint32'
+  }],
+  'name': "InvalidNumberCellsToReveal",
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'uint128',
+    'name': "given",
+    'type': "uint128"
+  }, {
+    'internalType': "uint128",
+    'name': 'max',
+    'type': 'uint128'
+  }],
+  'name': "MaxWagerExceeded",
+  'type': 'error'
+}, {
+  'inputs': [{
+    'internalType': "uint128",
+    'name': 'given',
+    'type': 'uint128'
+  }, {
+    'internalType': 'uint128',
+    'name': "min",
+    'type': "uint128"
+  }],
+  'name': 'MinWagerNotMet',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'client',
+    'type': 'address'
   }],
   'name': 'OnlyRevealAfterFill',
   'type': "error"
 }, {
   'inputs': [],
   'name': "ReentrancyGuardReentrantCall",
-  'type': 'error'
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "msgSender",
-    'type': "address"
-  }, {
-    'internalType': "string",
-    'name': "role",
-    'type': "string"
-  }],
-  'name': "Unauthorized",
-  'type': "error"
-}, {
-  'inputs': [],
-  'name': "BASIS_POINTS",
-  'outputs': [{
-    'internalType': 'uint32',
-    'name': '',
-    'type': "uint32"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': 'client',
-    'type': "address"
-  }, {
-    'internalType': "address",
-    'name': "bankroll",
-    'type': 'address'
-  }, {
-    'internalType': "bytes",
-    'name': "data",
-    'type': "bytes"
-  }],
-  'name': "bet",
-  'outputs': [{
-    'components': [{
-      'internalType': 'uint128',
-      'name': "escrow",
-      'type': 'uint128'
-    }, {
-      'internalType': "uint128",
-      'name': "payback",
-      'type': 'uint128'
-    }, {
-      'internalType': "uint128",
-      'name': 'payout',
-      'type': "uint128"
-    }, {
-      'internalType': "uint32",
-      'name': 'delay',
-      'type': "uint32"
-    }, {
-      'internalType': "uint8",
-      'name': 'iterate',
-      'type': "uint8"
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': "tuple"
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': 'key',
-          'type': "string"
-        }, {
-          'internalType': "bytes",
-          'name': 'value',
-          'type': 'bytes'
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': "nonpayable",
-  'type': 'function'
-}, {
-  'inputs': [],
-  'name': "budget",
-  'outputs': [{
-    'internalType': "contract BudgetMiddleware",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "config",
-  'outputs': [{
-    'internalType': "contract Config",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
-  }],
-  'name': "emergencyRefund",
-  'outputs': [{
-    'internalType': 'bool',
-    'name': '',
-    'type': 'bool'
-  }],
-  'stateMutability': "nonpayable",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': 'client',
-    'type': 'address'
-  }, {
-    'internalType': "address",
-    'name': '',
-    'type': "address"
-  }, {
-    'internalType': 'bytes',
-    'name': '',
-    'type': "bytes"
-  }],
-  'name': "endGame",
-  'outputs': [{
-    'components': [{
-      'internalType': "uint128",
-      'name': "escrow",
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payback",
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': 'uint128'
-    }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': 'uint32'
-    }, {
-      'internalType': "uint8",
-      'name': 'iterate',
-      'type': 'uint8'
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': "tuple"
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': "key",
-          'type': "string"
-        }, {
-          'internalType': 'bytes',
-          'name': "value",
-          'type': "bytes"
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': 'tuple'
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': 'nonpayable',
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
-  }, {
-    'internalType': "uint256[]",
-    'name': "randoms",
-    'type': "uint256[]"
-  }],
-  'name': "fill",
-  'outputs': [{
-    'components': [{
-      'internalType': "uint128",
-      'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': 'uint128',
-      'name': 'payback',
-      'type': "uint128"
-    }, {
-      'internalType': 'uint128',
-      'name': "payout",
-      'type': "uint128"
-    }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': 'uint32'
-    }, {
-      'internalType': 'uint8',
-      'name': "iterate",
-      'type': "uint8"
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': 'tuple'
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': "key",
-          'type': 'string'
-        }, {
-          'internalType': "bytes",
-          'name': "value",
-          'type': "bytes"
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': '',
-    'type': "address"
-  }],
-  'name': 'games',
-  'outputs': [{
-    'internalType': "enum Mines.Status",
-    'name': 'status',
-    'type': 'uint8'
-  }, {
-    'internalType': 'address',
-    'name': "client",
-    'type': "address"
-  }, {
-    'internalType': "address",
-    'name': "bankroll",
-    'type': 'address'
-  }, {
-    'internalType': "uint256",
-    'name': "wager",
-    'type': "uint256"
-  }, {
-    'internalType': "uint64",
-    'name': 'currentMultiplier',
-    'type': "uint64"
-  }, {
-    'internalType': 'uint8',
-    'name': 'numMines',
-    'type': 'uint8'
-  }, {
-    'internalType': "bool",
-    'name': "isCashout",
-    'type': "bool"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': '_numMines',
-    'type': "uint256"
-  }, {
-    'internalType': "uint256",
-    'name': '_numRevealed',
-    'type': "uint256"
-  }],
-  'name': "getMultipliers",
-  'outputs': [{
-    'internalType': "uint256",
-    'name': 'multiplier_',
-    'type': "uint256"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': "player",
-    'type': "address"
-  }],
-  'name': "getPlayerStatus",
-  'outputs': [{
-    'components': [{
-      'internalType': "enum Mines.Status",
-      'name': 'status',
-      'type': "uint8"
-    }, {
-      'internalType': "address",
-      'name': "client",
-      'type': 'address'
-    }, {
-      'internalType': 'address',
-      'name': "bankroll",
-      'type': "address"
-    }, {
-      'internalType': "uint256",
-      'name': "wager",
-      'type': "uint256"
-    }, {
-      'internalType': "uint64",
-      'name': "currentMultiplier",
-      'type': "uint64"
-    }, {
-      'internalType': "uint8",
-      'name': "numMines",
-      'type': "uint8"
-    }, {
-      'internalType': "bool[25]",
-      'name': "revealedCells",
-      'type': 'bool[25]'
-    }, {
-      'internalType': "bool[25]",
-      'name': "cellsPicked",
-      'type': "bool[25]"
-    }, {
-      'internalType': "bool[25]",
-      'name': "mines",
-      'type': "bool[25]"
-    }, {
-      'internalType': "bool",
-      'name': 'isCashout',
-      'type': 'bool'
-    }],
-    'internalType': "struct Mines.Game",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [],
-  'name': "getType",
-  'outputs': [{
-    'internalType': "string",
-    'name': '',
-    'type': "string"
-  }],
-  'stateMutability': "pure",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "getVersion",
-  'outputs': [{
-    'internalType': "uint16",
-    'name': '',
-    'type': 'uint16'
-  }],
-  'stateMutability': 'pure',
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
-  }],
-  'name': "refund",
-  'outputs': [{
-    'internalType': "bool",
-    'name': '',
-    'type': "bool"
-  }],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
-  }, {
-    'internalType': 'address',
-    'name': '',
-    'type': "address"
-  }, {
-    'internalType': "bytes",
-    'name': 'data',
-    'type': 'bytes'
-  }],
-  'name': "revealCells",
-  'outputs': [{
-    'components': [{
-      'internalType': "uint128",
-      'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': 'uint128',
-      'name': "payback",
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
-    }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': 'uint32'
-    }, {
-      'internalType': "uint8",
-      'name': "iterate",
-      'type': "uint8"
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': 'tuple'
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': "key",
-          'type': "string"
-        }, {
-          'internalType': "bytes",
-          'name': "value",
-          'type': "bytes"
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': 'tuple'
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "roleStore",
-  'outputs': [{
-    'internalType': "contract RoleStore",
-    'name': '',
-    'type': 'address'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'uint8[24]',
-    'name': "maxReveal",
-    'type': 'uint8[24]'
-  }],
-  'name': "setMaxReveal",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': "_numMines",
-    'type': 'uint256'
-  }],
-  'name': "setMultipliers",
-  'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}];
-export const ABI6 = [{
-  'inputs': [{
-    'internalType': "contract RoleStore",
-    'name': "_roleStore",
-    'type': "address"
-  }, {
-    'internalType': "contract Config",
-    'name': "_config",
-    'type': "address"
-  }, {
-    'internalType': "contract BudgetMiddleware",
-    'name': "_budget",
-    'type': 'address'
-  }],
-  'stateMutability': 'nonpayable',
-  'type': 'constructor'
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': 'client',
-    'type': "address"
-  }],
-  'name': 'AlreadyCompleted',
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': 'uint16',
-    'name': "index",
-    'type': 'uint16'
-  }],
-  'name': 'FirstIndexMustBeZero',
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': 'address'
-  }],
-  'name': "HasUncompletedGame",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint8",
-    'name': "index",
-    'type': 'uint8'
-  }],
-  'name': "InFreeSpin",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': 'uint16',
-    'name': "index",
-    'type': "uint16"
-  }],
-  'name': "IndexOutOfBound",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint128",
-    'name': "given",
-    'type': 'uint128'
-  }, {
-    'internalType': "uint128",
-    'name': 'max',
-    'type': "uint128"
-  }],
-  'name': "MaxWagerExceeded",
   'type': "error"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "client",
-    'type': "address"
-  }],
-  'name': "NoFreeSpin",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': 'payout',
-    'type': 'uint16'
-  }],
-  'name': "PayoutShouldGreaterThanZero",
-  'type': "error"
-}, {
-  'inputs': [],
-  'name': "ReentrancyGuardReentrantCall",
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "msgSender",
+    'name': 'msgSender',
     'type': "address"
   }, {
     'internalType': 'string',
@@ -3595,30 +3051,12 @@ export const ABI6 = [{
   'name': "Unauthorized",
   'type': "error"
 }, {
-  'inputs': [{
+  'inputs': [],
+  'name': "BASIS_POINTS",
+  'outputs': [{
     'internalType': "uint32",
-    'name': "sum",
+    'name': '',
     'type': "uint32"
-  }],
-  'name': "WeightSumIncorrect",
-  'type': "error"
-}, {
-  'inputs': [],
-  'name': 'MULTIPLIER_MAX_WAGER_PACKAGE',
-  'outputs': [{
-    'internalType': "uint8",
-    'name': '',
-    'type': 'uint8'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "REEL_ROWS",
-  'outputs': [{
-    'internalType': 'uint16',
-    'name': '',
-    'type': 'uint16'
   }],
   'stateMutability': "view",
   'type': "function"
@@ -3626,7 +3064,7 @@ export const ABI6 = [{
   'inputs': [{
     'internalType': 'address',
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "address",
     'name': "bankroll",
@@ -3636,19 +3074,19 @@ export const ABI6 = [{
     'name': "data",
     'type': "bytes"
   }],
-  'name': "bet",
+  'name': 'bet',
   'outputs': [{
     'components': [{
       'internalType': "uint128",
-      'name': 'escrow',
+      'name': "escrow",
       'type': "uint128"
     }, {
-      'internalType': "uint128",
-      'name': "payback",
-      'type': "uint128"
+      'internalType': 'uint128',
+      'name': 'payback',
+      'type': 'uint128'
     }, {
-      'internalType': "uint128",
-      'name': "payout",
+      'internalType': 'uint128',
+      'name': 'payout',
       'type': 'uint128'
     }, {
       'internalType': "uint32",
@@ -3672,10 +3110,114 @@ export const ABI6 = [{
         'components': [{
           'internalType': 'string',
           'name': "key",
+          'type': 'string'
+        }, {
+          'internalType': 'bytes',
+          'name': 'value',
+          'type': 'bytes'
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
+        'type': "tuple[]"
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': 'list',
+      'type': "tuple"
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [],
+  'name': 'budget',
+  'outputs': [{
+    'internalType': "contract BudgetMiddleware",
+    'name': '',
+    'type': 'address'
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [],
+  'name': 'config',
+  'outputs': [{
+    'internalType': "contract Config",
+    'name': '',
+    'type': "address"
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'client',
+    'type': "address"
+  }],
+  'name': "emergencyRefund",
+  'outputs': [{
+    'internalType': 'bool',
+    'name': '',
+    'type': "bool"
+  }],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'client',
+    'type': 'address'
+  }, {
+    'internalType': 'address',
+    'name': '',
+    'type': "address"
+  }, {
+    'internalType': 'bytes',
+    'name': '',
+    'type': "bytes"
+  }],
+  'name': 'endGame',
+  'outputs': [{
+    'components': [{
+      'internalType': 'uint128',
+      'name': "escrow",
+      'type': "uint128"
+    }, {
+      'internalType': 'uint128',
+      'name': 'payback',
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint128',
+      'name': 'payout',
+      'type': 'uint128'
+    }, {
+      'internalType': "uint32",
+      'name': "delay",
+      'type': "uint32"
+    }, {
+      'internalType': 'uint8',
+      'name': 'iterate',
+      'type': "uint8"
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': 'signal',
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': 'string',
+          'name': "key",
           'type': "string"
         }, {
-          'internalType': "bytes",
-          'name': "value",
+          'internalType': 'bytes',
+          'name': 'value',
           'type': "bytes"
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
@@ -3688,40 +3230,241 @@ export const ABI6 = [{
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
   'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'client',
+    'type': "address"
+  }, {
+    'internalType': "uint256[]",
+    'name': "randoms",
+    'type': "uint256[]"
+  }],
+  'name': "fill",
+  'outputs': [{
+    'components': [{
+      'internalType': 'uint128',
+      'name': 'escrow',
+      'type': "uint128"
+    }, {
+      'internalType': 'uint128',
+      'name': "payback",
+      'type': "uint128"
+    }, {
+      'internalType': "uint128",
+      'name': "payout",
+      'type': "uint128"
+    }, {
+      'internalType': "uint32",
+      'name': 'delay',
+      'type': "uint32"
+    }, {
+      'internalType': "uint8",
+      'name': "iterate",
+      'type': 'uint8'
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': "signal",
+      'type': "uint8"
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': 'tuple'
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': "string",
+          'name': "key",
+          'type': 'string'
+        }, {
+          'internalType': "bytes",
+          'name': 'value',
+          'type': "bytes"
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
+        'type': 'tuple[]'
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': 'list',
+      'type': "tuple"
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
-  'inputs': [],
-  'name': "budget",
-  'outputs': [{
-    'internalType': "contract BudgetMiddleware",
+  'inputs': [{
+    'internalType': 'address',
     'name': '',
+    'type': 'address'
+  }],
+  'name': 'games',
+  'outputs': [{
+    'internalType': "enum Mines.Status",
+    'name': "status",
+    'type': "uint8"
+  }, {
+    'internalType': 'address',
+    'name': 'client',
     'type': "address"
+  }, {
+    'internalType': "address",
+    'name': "bankroll",
+    'type': "address"
+  }, {
+    'internalType': 'uint256',
+    'name': 'wager',
+    'type': "uint256"
+  }, {
+    'internalType': 'uint64',
+    'name': 'currentMultiplier',
+    'type': "uint64"
+  }, {
+    'internalType': "uint8",
+    'name': 'numMines',
+    'type': 'uint8'
+  }, {
+    'internalType': 'bool',
+    'name': "isCashout",
+    'type': 'bool'
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint256",
+    'name': '_numMines',
+    'type': 'uint256'
+  }, {
+    'internalType': "uint256",
+    'name': '_numRevealed',
+    'type': "uint256"
+  }],
+  'name': 'getMultipliers',
+  'outputs': [{
+    'internalType': 'uint256',
+    'name': 'multiplier_',
+    'type': "uint256"
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "address",
+    'name': "player",
+    'type': "address"
+  }],
+  'name': "getPlayerStatus",
+  'outputs': [{
+    'components': [{
+      'internalType': "enum Mines.Status",
+      'name': "status",
+      'type': "uint8"
+    }, {
+      'internalType': "address",
+      'name': "client",
+      'type': 'address'
+    }, {
+      'internalType': "address",
+      'name': "bankroll",
+      'type': 'address'
+    }, {
+      'internalType': 'uint256',
+      'name': 'wager',
+      'type': "uint256"
+    }, {
+      'internalType': 'uint64',
+      'name': "currentMultiplier",
+      'type': 'uint64'
+    }, {
+      'internalType': 'uint8',
+      'name': 'numMines',
+      'type': "uint8"
+    }, {
+      'internalType': 'bool[25]',
+      'name': "revealedCells",
+      'type': "bool[25]"
+    }, {
+      'internalType': 'bool[25]',
+      'name': "cellsPicked",
+      'type': 'bool[25]'
+    }, {
+      'internalType': "bool[25]",
+      'name': "mines",
+      'type': 'bool[25]'
+    }, {
+      'internalType': "bool",
+      'name': 'isCashout',
+      'type': "bool"
+    }],
+    'internalType': "struct Mines.Game",
+    'name': '',
+    'type': "tuple"
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [],
+  'name': 'getType',
+  'outputs': [{
+    'internalType': "string",
+    'name': '',
+    'type': 'string'
+  }],
+  'stateMutability': "pure",
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': "getVersion",
+  'outputs': [{
+    'internalType': 'uint16',
+    'name': '',
+    'type': "uint16"
+  }],
+  'stateMutability': 'pure',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "address",
     'name': "client",
     'type': "address"
-  }, {
+  }],
+  'name': "refund",
+  'outputs': [{
+    'internalType': 'bool',
+    'name': '',
+    'type': "bool"
+  }],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
     'internalType': 'address',
-    'name': "bankroll",
-    'type': 'address'
+    'name': 'client',
+    'type': "address"
+  }, {
+    'internalType': "address",
+    'name': '',
+    'type': "address"
   }, {
     'internalType': 'bytes',
     'name': "data",
     'type': 'bytes'
   }],
-  'name': "buyFreeSpins",
+  'name': 'revealCells',
   'outputs': [{
     'components': [{
-      'internalType': "uint128",
+      'internalType': 'uint128',
       'name': "escrow",
-      'type': "uint128"
+      'type': 'uint128'
     }, {
       'internalType': "uint128",
       'name': "payback",
@@ -3736,59 +3479,368 @@ export const ABI6 = [{
       'type': "uint32"
     }, {
       'internalType': "uint8",
-      'name': "iterate",
-      'type': "uint8"
+      'name': 'iterate',
+      'type': 'uint8'
     }, {
       'internalType': "enum ControllerUtils.Signal",
       'name': "signal",
-      'type': "uint8"
+      'type': 'uint8'
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': 'string',
+          'name': "key",
+          'type': "string"
+        }, {
+          'internalType': "bytes",
+          'name': 'value',
+          'type': "bytes"
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': "items",
+        'type': "tuple[]"
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': "list",
+      'type': 'tuple'
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': "roleStore",
+  'outputs': [{
+    'internalType': "contract RoleStore",
+    'name': '',
+    'type': 'address'
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint8[24]',
+    'name': "maxReveal",
+    'type': "uint8[24]"
+  }],
+  'name': "setMaxReveal",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '_numMines',
+    'type': 'uint256'
+  }],
+  'name': 'setMultipliers',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}];
+export const ABI6 = [{
+  'inputs': [{
+    'internalType': "contract RoleStore",
+    'name': '_roleStore',
+    'type': 'address'
+  }, {
+    'internalType': "contract Config",
+    'name': '_config',
+    'type': "address"
+  }, {
+    'internalType': "contract BudgetMiddleware",
+    'name': '_budget',
+    'type': "address"
+  }],
+  'stateMutability': "nonpayable",
+  'type': 'constructor'
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
+  }],
+  'name': "AlreadyCompleted",
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'uint16',
+    'name': 'index',
+    'type': 'uint16'
+  }],
+  'name': 'FirstIndexMustBeZero',
+  'type': 'error'
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': "client",
+    'type': 'address'
+  }],
+  'name': 'HasUncompletedGame',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': "uint8",
+    'name': 'index',
+    'type': "uint8"
+  }],
+  'name': 'InFreeSpin',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': "uint16",
+    'name': "index",
+    'type': "uint16"
+  }],
+  'name': 'IndexOutOfBound',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'uint128',
+    'name': 'given',
+    'type': 'uint128'
+  }, {
+    'internalType': 'uint128',
+    'name': 'max',
+    'type': "uint128"
+  }],
+  'name': 'MaxWagerExceeded',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': "client",
+    'type': 'address'
+  }],
+  'name': 'NoFreeSpin',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'uint16',
+    'name': "payout",
+    'type': 'uint16'
+  }],
+  'name': 'PayoutShouldGreaterThanZero',
+  'type': "error"
+}, {
+  'inputs': [],
+  'name': "ReentrancyGuardReentrantCall",
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': "msgSender",
+    'type': 'address'
+  }, {
+    'internalType': 'string',
+    'name': 'role',
+    'type': "string"
+  }],
+  'name': "Unauthorized",
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'uint32',
+    'name': "sum",
+    'type': 'uint32'
+  }],
+  'name': 'WeightSumIncorrect',
+  'type': 'error'
+}, {
+  'inputs': [],
+  'name': 'MULTIPLIER_MAX_WAGER_PACKAGE',
+  'outputs': [{
+    'internalType': 'uint8',
+    'name': '',
+    'type': "uint8"
+  }],
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': "REEL_ROWS",
+  'outputs': [{
+    'internalType': "uint16",
+    'name': '',
+    'type': "uint16"
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'client',
+    'type': "address"
+  }, {
+    'internalType': 'address',
+    'name': "bankroll",
+    'type': 'address'
+  }, {
+    'internalType': "bytes",
+    'name': 'data',
+    'type': "bytes"
+  }],
+  'name': 'bet',
+  'outputs': [{
+    'components': [{
+      'internalType': 'uint128',
+      'name': "escrow",
+      'type': "uint128"
+    }, {
+      'internalType': "uint128",
+      'name': "payback",
+      'type': "uint128"
+    }, {
+      'internalType': "uint128",
+      'name': "payout",
+      'type': "uint128"
+    }, {
+      'internalType': "uint32",
+      'name': 'delay',
+      'type': "uint32"
+    }, {
+      'internalType': "uint8",
+      'name': 'iterate',
+      'type': "uint8"
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': 'signal',
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': 'tuple'
   }, {
     'components': [{
       'components': [{
         'components': [{
           'internalType': "string",
           'name': "key",
-          'type': 'string'
+          'type': "string"
         }, {
-          'internalType': "bytes",
+          'internalType': 'bytes',
           'name': "value",
-          'type': "bytes"
+          'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': 'items',
-        'type': "tuple[]"
+        'name': "items",
+        'type': 'tuple[]'
       }],
       'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
+      'name': 'list',
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [],
-  'name': 'config',
+  'name': "budget",
   'outputs': [{
-    'internalType': "contract Config",
+    'internalType': "contract BudgetMiddleware",
     'name': '',
     'type': "address"
   }],
   'stateMutability': 'view',
   'type': 'function'
 }, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': "client",
+    'type': "address"
+  }, {
+    'internalType': 'address',
+    'name': "bankroll",
+    'type': "address"
+  }, {
+    'internalType': 'bytes',
+    'name': "data",
+    'type': 'bytes'
+  }],
+  'name': "buyFreeSpins",
+  'outputs': [{
+    'components': [{
+      'internalType': "uint128",
+      'name': "escrow",
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint128',
+      'name': "payback",
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint128',
+      'name': 'payout',
+      'type': "uint128"
+    }, {
+      'internalType': "uint32",
+      'name': 'delay',
+      'type': "uint32"
+    }, {
+      'internalType': 'uint8',
+      'name': 'iterate',
+      'type': 'uint8'
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': 'signal',
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': 'tuple'
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': 'string',
+          'name': 'key',
+          'type': 'string'
+        }, {
+          'internalType': 'bytes',
+          'name': 'value',
+          'type': 'bytes'
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
+        'type': 'tuple[]'
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': "list",
+      'type': 'tuple'
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
   'inputs': [],
-  'name': 'doubleChanceDivisor',
+  'name': 'config',
+  'outputs': [{
+    'internalType': "contract Config",
+    'name': '',
+    'type': 'address'
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [],
+  'name': "doubleChanceDivisor",
   'outputs': [{
     'internalType': "uint8",
     'name': '',
-    'type': 'uint8'
+    'type': "uint8"
   }],
   'stateMutability': "view",
   'type': "function"
@@ -3796,17 +3848,17 @@ export const ABI6 = [{
   'inputs': [{
     'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
-  }, {
-    'internalType': "uint256",
-    'name': '',
     'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
   }],
   'name': "doubleChanceReelFreeSpinWeights",
   'outputs': [{
     'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "view",
   'type': "function"
@@ -3816,15 +3868,15 @@ export const ABI6 = [{
     'name': '',
     'type': "uint256"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
-  'name': "doubleChanceWeights",
+  'name': 'doubleChanceWeights',
   'outputs': [{
     'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "view",
   'type': 'function'
@@ -3840,165 +3892,35 @@ export const ABI6 = [{
     'name': '',
     'type': "bool"
   }],
-  'stateMutability': 'nonpayable',
+  'stateMutability': "nonpayable",
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
   }, {
     'internalType': "uint256[]",
     'name': "randoms",
     'type': "uint256[]"
   }],
-  'name': 'fill',
+  'name': "fill",
   'outputs': [{
     'components': [{
       'internalType': 'uint128',
-      'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': 'payback',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
-    }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': 'uint32'
-    }, {
-      'internalType': "uint8",
-      'name': 'iterate',
-      'type': 'uint8'
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': "tuple"
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': 'key',
-          'type': "string"
-        }, {
-          'internalType': 'bytes',
-          'name': 'value',
-          'type': "bytes"
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': 'items',
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': 'tuple'
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': 'randomNumber',
-    'type': "uint256"
-  }, {
-    'internalType': "uint16[12][6]",
-    'name': 'weights',
-    'type': "uint16[12][6]"
-  }, {
-    'internalType': 'uint16[30]',
-    'name': 'reel',
-    'type': "uint16[30]"
-  }, {
-    'internalType': "uint16[6]",
-    'name': "remaining",
-    'type': "uint16[6]"
-  }],
-  'name': "fillReels",
-  'outputs': [{
-    'internalType': "uint16[30]",
-    'name': '',
-    'type': "uint16[30]"
-  }, {
-    'internalType': "uint16[14]",
-    'name': '',
-    'type': 'uint16[14]'
-  }, {
-    'internalType': "uint16[6]",
-    'name': '',
-    'type': "uint16[6]"
-  }, {
-    'internalType': "bool",
-    'name': '',
-    'type': 'bool'
-  }],
-  'stateMutability': "nonpayable",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': 'uint256',
-    'name': "randomNumber",
-    'type': "uint256"
-  }, {
-    'internalType': "uint16[30]",
-    'name': "reel",
-    'type': "uint16[30]"
-  }, {
-    'internalType': "uint8",
-    'name': 'count',
-    'type': 'uint8'
-  }],
-  'name': "fillScatters",
-  'outputs': [{
-    'internalType': "uint16[30]",
-    'name': '',
-    'type': "uint16[30]"
-  }],
-  'stateMutability': "pure",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': "client",
-    'type': "address"
-  }, {
-    'internalType': "address",
-    'name': '',
-    'type': "address"
-  }, {
-    'internalType': "bytes",
-    'name': '',
-    'type': "bytes"
-  }],
-  'name': "freeSpin",
-  'outputs': [{
-    'components': [{
-      'internalType': "uint128",
       'name': "escrow",
       'type': "uint128"
     }, {
-      'internalType': 'uint128',
+      'internalType': "uint128",
       'name': "payback",
       'type': "uint128"
     }, {
       'internalType': "uint128",
       'name': "payout",
-      'type': "uint128"
+      'type': 'uint128'
     }, {
       'internalType': "uint32",
-      'name': 'delay',
+      'name': "delay",
       'type': "uint32"
     }, {
       'internalType': 'uint8',
@@ -4018,11 +3940,11 @@ export const ABI6 = [{
         'components': [{
           'internalType': "string",
           'name': "key",
-          'type': "string"
+          'type': 'string'
         }, {
           'internalType': 'bytes',
-          'name': "value",
-          'type': "bytes"
+          'name': 'value',
+          'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
         'name': "items",
@@ -4034,25 +3956,155 @@ export const ABI6 = [{
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
   'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'uint256',
-    'name': '',
+    'name': 'randomNumber',
     'type': "uint256"
+  }, {
+    'internalType': 'uint16[12][6]',
+    'name': 'weights',
+    'type': "uint16[12][6]"
+  }, {
+    'internalType': "uint16[30]",
+    'name': "reel",
+    'type': 'uint16[30]'
+  }, {
+    'internalType': 'uint16[6]',
+    'name': 'remaining',
+    'type': 'uint16[6]'
+  }],
+  'name': 'fillReels',
+  'outputs': [{
+    'internalType': "uint16[30]",
+    'name': '',
+    'type': 'uint16[30]'
+  }, {
+    'internalType': "uint16[14]",
+    'name': '',
+    'type': "uint16[14]"
+  }, {
+    'internalType': 'uint16[6]',
+    'name': '',
+    'type': 'uint16[6]'
+  }, {
+    'internalType': 'bool',
+    'name': '',
+    'type': "bool"
+  }],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint256",
+    'name': "randomNumber",
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint16[30]',
+    'name': "reel",
+    'type': "uint16[30]"
+  }, {
+    'internalType': 'uint8',
+    'name': "count",
+    'type': "uint8"
+  }],
+  'name': "fillScatters",
+  'outputs': [{
+    'internalType': "uint16[30]",
+    'name': '',
+    'type': "uint16[30]"
+  }],
+  'stateMutability': "pure",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'client',
+    'type': "address"
+  }, {
+    'internalType': "address",
+    'name': '',
+    'type': 'address'
+  }, {
+    'internalType': 'bytes',
+    'name': '',
+    'type': "bytes"
+  }],
+  'name': "freeSpin",
+  'outputs': [{
+    'components': [{
+      'internalType': 'uint128',
+      'name': "escrow",
+      'type': 'uint128'
+    }, {
+      'internalType': "uint128",
+      'name': "payback",
+      'type': 'uint128'
+    }, {
+      'internalType': "uint128",
+      'name': "payout",
+      'type': "uint128"
+    }, {
+      'internalType': 'uint32',
+      'name': "delay",
+      'type': 'uint32'
+    }, {
+      'internalType': "uint8",
+      'name': 'iterate',
+      'type': 'uint8'
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': 'signal',
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': "string",
+          'name': 'key',
+          'type': "string"
+        }, {
+          'internalType': "bytes",
+          'name': "value",
+          'type': 'bytes'
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
+        'type': 'tuple[]'
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': 'list',
+      'type': 'tuple'
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': "tuple"
+  }],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
   }, {
     'internalType': "uint256",
     'name': '',
     'type': "uint256"
   }],
-  'name': "freeSpinWeights",
+  'name': 'freeSpinWeights',
   'outputs': [{
     'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "view",
   'type': "function"
@@ -4062,39 +4114,39 @@ export const ABI6 = [{
     'name': 'a',
     'type': "uint256"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': 'b',
-    'type': 'uint256'
+    'type': "uint256"
   }],
   'name': "generateRandomNumber",
   'outputs': [{
-    'internalType': 'uint256',
+    'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'uint256',
+    'internalType': "uint256",
     'name': 'a',
     'type': "uint256"
   }, {
     'internalType': 'uint256',
     'name': 'b',
-    'type': "uint256"
+    'type': 'uint256'
   }, {
     'internalType': "uint256",
     'name': 'c',
     'type': "uint256"
   }],
-  'name': "generateRandomNumber",
+  'name': 'generateRandomNumber',
   'outputs': [{
     'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': 'pure',
+  'stateMutability': "pure",
   'type': 'function'
 }, {
   'inputs': [{
@@ -4102,9 +4154,9 @@ export const ABI6 = [{
     'name': "wager",
     'type': 'uint128'
   }],
-  'name': "getDoubleChanceCost",
+  'name': 'getDoubleChanceCost',
   'outputs': [{
-    'internalType': 'uint256',
+    'internalType': "uint256",
     'name': "tokenAmount_",
     'type': "uint256"
   }],
@@ -4118,102 +4170,102 @@ export const ABI6 = [{
     'name': '',
     'type': "uint16[12][6]"
   }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': 'getDoubleChanceWeights',
-  'outputs': [{
-    'internalType': "uint16[12][6]",
-    'name': '',
-    'type': "uint16[12][6]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint128",
-    'name': "wager",
-    'type': "uint128"
-  }],
-  'name': "getFreeSpinTokenAmount",
-  'outputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': "pure",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [],
-  'name': "getFreeSpinWeights",
+  'name': "getDoubleChanceWeights",
   'outputs': [{
     'internalType': "uint16[12][6]",
     'name': '',
     'type': 'uint16[12][6]'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "uint128",
+    'name': "wager",
+    'type': "uint128"
+  }],
+  'name': 'getFreeSpinTokenAmount',
+  'outputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'stateMutability': 'pure',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'getFreeSpinWeights',
+  'outputs': [{
+    'internalType': "uint16[12][6]",
+    'name': '',
+    'type': "uint16[12][6]"
+  }],
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "getInitialFreeSpinWeights",
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "getMultiplierWeights",
   'outputs': [{
-    'internalType': "uint16[15]",
+    'internalType': 'uint16[15]',
     'name': '',
     'type': "uint16[15]"
+  }],
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'getNormalReelFreeSpinWeights',
+  'outputs': [{
+    'internalType': 'uint16[12][6]',
+    'name': '',
+    'type': 'uint16[12][6]'
+  }],
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': "getNormalSpinWeights",
+  'outputs': [{
+    'internalType': 'uint16[12][6]',
+    'name': '',
+    'type': 'uint16[12][6]'
   }],
   'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "getNormalReelFreeSpinWeights",
-  'outputs': [{
-    'internalType': "uint16[12][6]",
-    'name': '',
-    'type': "uint16[12][6]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': 'getNormalSpinWeights',
-  'outputs': [{
-    'internalType': "uint16[12][6]",
-    'name': '',
-    'type': "uint16[12][6]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': 'getPayoutEightOrMore',
+  'name': "getPayoutEightOrMore",
   'outputs': [{
     'internalType': "uint16[10]",
     'name': '',
     'type': "uint16[10]"
   }],
   'stateMutability': "view",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [],
-  'name': "getPayoutTenOrMore",
+  'name': 'getPayoutTenOrMore',
   'outputs': [{
     'internalType': 'uint16[10]',
     'name': '',
     'type': "uint16[10]"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "getPayoutTwelveOrMore",
@@ -4222,12 +4274,12 @@ export const ABI6 = [{
     'name': '',
     'type': "uint16[10]"
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': 'client',
+    'name': "client",
     'type': "address"
   }],
   'name': "getPlayerStatus",
@@ -4235,23 +4287,23 @@ export const ABI6 = [{
     'components': [{
       'internalType': "uint8",
       'name': "freeSpinCount",
-      'type': 'uint8'
+      'type': "uint8"
     }, {
       'internalType': "uint128",
       'name': "wager",
-      'type': "uint128"
+      'type': 'uint128'
     }, {
       'internalType': "uint32",
-      'name': 'bufferedFreeSpinWinnings',
+      'name': "bufferedFreeSpinWinnings",
       'type': "uint32"
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint32',
       'name': "multiplier",
       'type': "uint32"
     }, {
       'internalType': "enum IPrincessWINR.SpinType",
-      'name': "spinType",
-      'type': "uint8"
+      'name': 'spinType',
+      'type': 'uint8'
     }, {
       'internalType': "enum IPrincessWINR.State",
       'name': 'state',
@@ -4259,13 +4311,13 @@ export const ABI6 = [{
     }],
     'internalType': "struct IPrincessWINR.Game",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': 'symbol',
     'type': "uint16"
   }],
@@ -4273,7 +4325,7 @@ export const ABI6 = [{
   'outputs': [{
     'internalType': "string",
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
   'stateMutability': "pure",
   'type': "function"
@@ -4281,11 +4333,11 @@ export const ABI6 = [{
   'inputs': [],
   'name': "getType",
   'outputs': [{
-    'internalType': "string",
+    'internalType': 'string',
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': 'function'
 }, {
   'inputs': [],
@@ -4293,10 +4345,10 @@ export const ABI6 = [{
   'outputs': [{
     'internalType': "uint16",
     'name': '',
-    'type': 'uint16'
+    'type': "uint16"
   }],
-  'stateMutability': "pure",
-  'type': "function"
+  'stateMutability': 'pure',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "enum IPrincessWINR.SpinType",
@@ -4305,11 +4357,11 @@ export const ABI6 = [{
   }],
   'name': "getWeights",
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
     'type': "uint16[12][6]"
   }],
-  'stateMutability': 'view',
+  'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
@@ -4321,35 +4373,7 @@ export const ABI6 = [{
     'name': '',
     'type': "uint256"
   }],
-  'name': "initialFreeSpinWeights",
-  'outputs': [{
-    'internalType': "uint16",
-    'name': '',
-    'type': "uint16"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [],
-  'name': "maxWagerMultiplier",
-  'outputs': [{
-    'internalType': 'uint128',
-    'name': '',
-    'type': "uint128"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }, {
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': "normalReelFreeSpinWeights",
+  'name': 'initialFreeSpinWeights',
   'outputs': [{
     'internalType': 'uint16',
     'name': '',
@@ -4358,14 +4382,42 @@ export const ABI6 = [{
   'stateMutability': "view",
   'type': "function"
 }, {
+  'inputs': [],
+  'name': 'maxWagerMultiplier',
+  'outputs': [{
+    'internalType': "uint128",
+    'name': '',
+    'type': "uint128"
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }, {
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
+  }],
+  'name': "normalReelFreeSpinWeights",
+  'outputs': [{
+    'internalType': 'uint16',
+    'name': '',
+    'type': "uint16"
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
   }],
   'name': "normalSpinWeights",
   'outputs': [{
@@ -4378,18 +4430,18 @@ export const ABI6 = [{
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': "randomNumber",
-    'type': "uint256"
+    'name': 'randomNumber',
+    'type': 'uint256'
   }, {
-    'internalType': "uint16[12][6]",
-    'name': 'weights',
+    'internalType': 'uint16[12][6]',
+    'name': "weights",
     'type': "uint16[12][6]"
   }, {
     'internalType': "uint16[30]",
     'name': "reel",
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }, {
-    'internalType': "uint16[6]",
+    'internalType': 'uint16[6]',
     'name': "remaining",
     'type': "uint16[6]"
   }, {
@@ -4397,12 +4449,12 @@ export const ABI6 = [{
     'name': 'multiplier',
     'type': "uint32"
   }, {
-    'internalType': "uint32",
-    'name': "payoutMultiplier",
-    'type': "uint32"
+    'internalType': 'uint32',
+    'name': 'payoutMultiplier',
+    'type': 'uint32'
   }, {
     'internalType': "uint8",
-    'name': "turn",
+    'name': 'turn',
     'type': "uint8"
   }],
   'name': "processReel",
@@ -4413,178 +4465,130 @@ export const ABI6 = [{
   }, {
     'internalType': "uint8",
     'name': '',
-    'type': "uint8"
+    'type': 'uint8'
   }, {
     'internalType': "uint32",
     'name': '',
-    'type': "uint32"
+    'type': 'uint32'
   }, {
     'internalType': 'uint16',
     'name': '',
     'type': "uint16"
   }, {
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
-  'stateMutability': 'nonpayable',
-  'type': 'function'
+  'stateMutability': "nonpayable",
+  'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
     'name': "client",
     'type': 'address'
   }],
-  'name': "refund",
+  'name': 'refund',
   'outputs': [{
-    'internalType': "bool",
+    'internalType': 'bool',
     'name': '',
-    'type': 'bool'
+    'type': "bool"
   }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
+  'stateMutability': "nonpayable",
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'uint16',
-    'name': "scatter",
-    'type': "uint16"
+    'name': 'scatter',
+    'type': 'uint16'
   }],
-  'name': "returnScatterMultiplier",
+  'name': 'returnScatterMultiplier',
   'outputs': [{
     'internalType': 'uint16',
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
-  'stateMutability': "pure",
-  'type': 'function'
+  'stateMutability': 'pure',
+  'type': "function"
 }, {
   'inputs': [],
   'name': 'roleStore',
   'outputs': [{
     'internalType': "contract RoleStore",
     'name': '',
-    'type': 'address'
+    'type': "address"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': "grid",
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }, {
-    'internalType': "uint16[14]",
+    'internalType': 'uint16[14]',
     'name': "symbolCounts",
-    'type': 'uint16[14]'
+    'type': "uint16[14]"
   }],
   'name': "seekAndDestroy",
   'outputs': [{
-    'internalType': 'uint16[30]',
+    'internalType': "uint16[30]",
     'name': '',
     'type': "uint16[30]"
   }],
   'stateMutability': "pure",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint8",
-    'name': "divisor",
-    'type': "uint8"
+    'name': 'divisor',
+    'type': 'uint8'
   }],
   'name': 'setDoubleChanceDivisor',
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
+    'internalType': 'uint16',
+    'name': 'index',
     'type': "uint16"
   }, {
     'internalType': "uint16[12]",
-    'name': "weights",
+    'name': 'weights',
     'type': "uint16[12]"
   }],
-  'name': "setDoubleChanceReelFreeSpinWeights",
+  'name': 'setDoubleChanceReelFreeSpinWeights',
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
-    'type': "uint16"
-  }, {
-    'internalType': "uint16[12]",
-    'name': "weights",
-    'type': "uint16[12]"
-  }],
-  'name': "setDoubleChanceWeights",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'uint16',
     'name': "index",
     'type': "uint16"
   }, {
-    'internalType': "uint16[12]",
+    'internalType': 'uint16[12]',
     'name': "weights",
-    'type': "uint16[12]"
+    'type': 'uint16[12]'
   }],
-  'name': "setFreeSpinWeights",
+  'name': 'setDoubleChanceWeights',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
-    'type': 'uint16'
-  }, {
-    'internalType': "uint16[12]",
-    'name': 'weights',
-    'type': "uint16[12]"
-  }],
-  'name': 'setInitialFreeSpinWeights',
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'uint128',
-    'name': '_maxWagerMultiplier',
-    'type': "uint128"
-  }],
-  'name': "setMaxWagerMultiplier",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16[15]",
-    'name': '_multiplierWeights',
-    'type': 'uint16[15]'
-  }],
-  'name': "setMultiplierWeights",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
+    'internalType': 'uint16',
+    'name': 'index',
     'type': "uint16"
   }, {
-    'internalType': "uint16[12]",
+    'internalType': 'uint16[12]',
     'name': "weights",
-    'type': "uint16[12]"
+    'type': 'uint16[12]'
   }],
-  'name': "setNormalReelFreeSpinWeight",
+  'name': 'setFreeSpinWeights',
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint16",
@@ -4592,10 +4596,58 @@ export const ABI6 = [{
     'type': "uint16"
   }, {
     'internalType': 'uint16[12]',
+    'name': 'weights',
+    'type': 'uint16[12]'
+  }],
+  'name': "setInitialFreeSpinWeights",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint128',
+    'name': "_maxWagerMultiplier",
+    'type': 'uint128'
+  }],
+  'name': "setMaxWagerMultiplier",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint16[15]',
+    'name': "_multiplierWeights",
+    'type': 'uint16[15]'
+  }],
+  'name': 'setMultiplierWeights',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint16",
+    'name': "index",
+    'type': "uint16"
+  }, {
+    'internalType': "uint16[12]",
     'name': "weights",
-    'type': "uint16[12]"
+    'type': 'uint16[12]'
   }],
-  'name': "setNormalSpinWeight",
+  'name': 'setNormalReelFreeSpinWeight',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint16',
+    'name': 'index',
+    'type': 'uint16'
+  }, {
+    'internalType': "uint16[12]",
+    'name': "weights",
+    'type': 'uint16[12]'
+  }],
+  'name': 'setNormalSpinWeight',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
@@ -4605,25 +4657,25 @@ export const ABI6 = [{
     'name': 'payouts',
     'type': "uint16[10]"
   }],
-  'name': "setPayoutEightOrMore",
+  'name': 'setPayoutEightOrMore',
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint16[10]",
+    'internalType': 'uint16[10]',
     'name': 'payouts',
     'type': "uint16[10]"
   }],
-  'name': "setPayoutTenOrMore",
+  'name': 'setPayoutTenOrMore',
   'outputs': [],
   'stateMutability': 'nonpayable',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint16[10]",
     'name': "payouts",
-    'type': "uint16[10]"
+    'type': 'uint16[10]'
   }],
   'name': "setPayoutTwelveOrMore",
   'outputs': [],
@@ -4637,28 +4689,28 @@ export const ABI7 = [{
     'type': 'address'
   }, {
     'internalType': "contract StatisticStore",
-    'name': "_statisticStore",
-    'type': "address"
+    'name': '_statisticStore',
+    'type': 'address'
   }],
-  'stateMutability': 'nonpayable',
-  'type': "constructor"
+  'stateMutability': "nonpayable",
+  'type': 'constructor'
 }, {
   'inputs': [{
     'internalType': 'address',
     'name': "client",
     'type': "address"
   }],
-  'name': "GameHalted",
-  'type': "error"
+  'name': 'GameHalted',
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': "msgSender",
-    'type': "address"
+    'name': 'msgSender',
+    'type': 'address'
   }, {
-    'internalType': "string",
-    'name': "role",
-    'type': "string"
+    'internalType': 'string',
+    'name': 'role',
+    'type': 'string'
   }],
   'name': "Unauthorized",
   'type': "error"
@@ -4666,12 +4718,12 @@ export const ABI7 = [{
   'anonymous': false,
   'inputs': [{
     'indexed': false,
-    'internalType': "address",
-    'name': "player",
+    'internalType': 'address',
+    'name': 'player',
     'type': "address"
   }, {
     'indexed': false,
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': "level",
     'type': 'uint8'
   }],
@@ -4680,27 +4732,27 @@ export const ABI7 = [{
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': "player",
-    'type': "address"
+    'name': 'player',
+    'type': 'address'
   }, {
     'internalType': "address[]",
-    'name': "bankrolls",
+    'name': 'bankrolls',
     'type': "address[]"
   }],
-  'name': "getClaimable",
+  'name': 'getClaimable',
   'outputs': [{
     'components': [{
       'internalType': "uint80",
       'name': "profit",
+      'type': "uint80"
+    }, {
+      'internalType': 'uint80',
+      'name': 'loss',
       'type': 'uint80'
     }, {
-      'internalType': "uint80",
-      'name': "loss",
-      'type': 'uint80'
-    }, {
-      'internalType': "uint96",
+      'internalType': 'uint96',
       'name': "volume",
-      'type': "uint96"
+      'type': 'uint96'
     }],
     'internalType': "struct Statistic.Props[]",
     'name': '',
@@ -4712,25 +4764,25 @@ export const ABI7 = [{
   'inputs': [{
     'internalType': 'address',
     'name': "player",
-    'type': "address"
+    'type': 'address'
   }, {
-    'internalType': "address[]",
-    'name': 'bankrolls',
+    'internalType': 'address[]',
+    'name': "bankrolls",
     'type': "address[]"
   }],
-  'name': "getClaimableByBankrolls",
+  'name': 'getClaimableByBankrolls',
   'outputs': [{
     'components': [{
       'internalType': "uint80",
       'name': 'profit',
-      'type': 'uint80'
+      'type': "uint80"
     }, {
       'internalType': "uint80",
       'name': "loss",
-      'type': "uint80"
+      'type': 'uint80'
     }, {
       'internalType': "uint96",
-      'name': "volume",
+      'name': 'volume',
       'type': "uint96"
     }],
     'internalType': "struct Statistic.Props[]",
@@ -4738,26 +4790,26 @@ export const ABI7 = [{
     'type': "tuple[]"
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "player",
+    'internalType': 'address',
+    'name': 'player',
     'type': 'address'
   }],
-  'name': 'getLevelByPlayer',
+  'name': "getLevelByPlayer",
   'outputs': [{
     'internalType': 'uint8',
     'name': '',
-    'type': 'uint8'
+    'type': "uint8"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }],
   'name': 'getPlayerStatus',
   'outputs': [{
@@ -4770,70 +4822,70 @@ export const ABI7 = [{
       'name': "level",
       'type': "uint8"
     }, {
-      'internalType': 'bool',
-      'name': 'halted',
+      'internalType': "bool",
+      'name': "halted",
       'type': "bool"
     }],
     'internalType': "struct RankMiddleware.Player",
     'name': '',
-    'type': 'tuple'
+    'type': "tuple"
   }],
-  'stateMutability': 'view',
+  'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "bytes32",
-    'name': "prefix",
+    'name': 'prefix',
     'type': "bytes32"
   }, {
     'internalType': "address",
-    'name': "player",
+    'name': 'player',
     'type': "address"
   }, {
-    'internalType': "address[]",
-    'name': 'bankrolls',
+    'internalType': 'address[]',
+    'name': "bankrolls",
     'type': "address[]"
   }],
-  'name': 'getSnapshot',
+  'name': "getSnapshot",
   'outputs': [{
     'components': [{
-      'internalType': "uint80",
+      'internalType': 'uint80',
       'name': "profit",
       'type': "uint80"
     }, {
       'internalType': "uint80",
-      'name': 'loss',
+      'name': "loss",
       'type': "uint80"
     }, {
       'internalType': 'uint96',
-      'name': 'volume',
-      'type': 'uint96'
+      'name': "volume",
+      'type': "uint96"
     }],
     'internalType': "struct Statistic.Props[]",
     'name': '',
     'type': 'tuple[]'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
   }, {
     'internalType': 'bool',
-    'name': 'halt',
-    'type': "bool"
+    'name': "halt",
+    'type': 'bool'
   }],
   'name': "haltPlayer",
   'outputs': [],
   'stateMutability': "nonpayable",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'name': "levels",
   'outputs': [{
@@ -4841,31 +4893,31 @@ export const ABI7 = [{
     'name': '',
     'type': 'uint96'
   }],
-  'stateMutability': 'view',
+  'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
     'components': [{
       'components': [{
-        'internalType': 'address',
+        'internalType': "address",
         'name': "operator",
-        'type': "address"
+        'type': 'address'
       }, {
-        'internalType': "uint128",
+        'internalType': 'uint128',
         'name': "lastRequestId",
-        'type': "uint128"
+        'type': 'uint128'
       }, {
-        'internalType': "uint64",
+        'internalType': 'uint64',
         'name': "startBlock",
-        'type': "uint64"
+        'type': 'uint64'
       }, {
-        'internalType': "uint64",
-        'name': "endBlock",
-        'type': "uint64"
+        'internalType': 'uint64',
+        'name': 'endBlock',
+        'type': 'uint64'
       }, {
         'internalType': "uint64",
         'name': "lastSeen",
-        'type': "uint64"
+        'type': 'uint64'
       }],
       'internalType': "struct Session.Detail",
       'name': 'detail',
@@ -4874,100 +4926,19 @@ export const ABI7 = [{
       'components': [{
         'internalType': "uint8",
         'name': "decimals",
-        'type': "uint8"
+        'type': 'uint8'
       }, {
-        'internalType': "uint8",
-        'name': "tokenDecimals",
-        'type': "uint8"
-      }, {
-        'internalType': "uint64",
-        'name': "value",
-        'type': "uint64"
-      }],
-      'internalType': "struct Price.Props",
-      'name': "price",
-      'type': "tuple"
-    }, {
-      'internalType': "enum Session.Status",
-      'name': "status",
-      'type': 'uint8'
-    }, {
-      'internalType': 'address',
-      'name': "token",
-      'type': "address"
-    }, {
-      'internalType': "address",
-      'name': 'program',
-      'type': "address"
-    }, {
-      'internalType': 'address',
-      'name': "client",
-      'type': "address"
-    }, {
-      'internalType': 'uint128',
-      'name': "escrow",
-      'type': "uint128"
-    }, {
-      'internalType': 'uint128',
-      'name': "payout",
-      'type': 'uint128'
-    }, {
-      'internalType': "address",
-      'name': 'bankroll',
-      'type': "address"
-    }],
-    'internalType': "struct Session.Props",
-    'name': "session",
-    'type': "tuple"
-  }],
-  'name': "onBegin",
-  'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': 'function'
-}, {
-  'inputs': [{
-    'components': [{
-      'components': [{
-        'internalType': "address",
-        'name': "operator",
-        'type': "address"
-      }, {
-        'internalType': "uint128",
-        'name': "lastRequestId",
-        'type': "uint128"
-      }, {
-        'internalType': "uint64",
-        'name': 'startBlock',
-        'type': "uint64"
-      }, {
-        'internalType': "uint64",
-        'name': 'endBlock',
-        'type': "uint64"
-      }, {
-        'internalType': "uint64",
-        'name': "lastSeen",
-        'type': 'uint64'
-      }],
-      'internalType': "struct Session.Detail",
-      'name': "detail",
-      'type': "tuple"
-    }, {
-      'components': [{
-        'internalType': "uint8",
-        'name': "decimals",
-        'type': "uint8"
-      }, {
-        'internalType': "uint8",
-        'name': "tokenDecimals",
-        'type': "uint8"
+        'internalType': 'uint8',
+        'name': 'tokenDecimals',
+        'type': 'uint8'
       }, {
         'internalType': 'uint64',
-        'name': "value",
+        'name': 'value',
         'type': "uint64"
       }],
       'internalType': "struct Price.Props",
-      'name': "price",
-      'type': "tuple"
+      'name': 'price',
+      'type': 'tuple'
     }, {
       'internalType': "enum Session.Status",
       'name': "status",
@@ -4979,7 +4950,7 @@ export const ABI7 = [{
     }, {
       'internalType': "address",
       'name': 'program',
-      'type': "address"
+      'type': 'address'
     }, {
       'internalType': "address",
       'name': "client",
@@ -4990,37 +4961,118 @@ export const ABI7 = [{
       'type': "uint128"
     }, {
       'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
+      'name': 'payout',
+      'type': 'uint128'
     }, {
-      'internalType': "address",
+      'internalType': 'address',
       'name': "bankroll",
-      'type': "address"
+      'type': 'address'
     }],
     'internalType': "struct Session.Props",
-    'name': 'session',
+    'name': "session",
     'type': 'tuple'
-  }, {
+  }],
+  'name': 'onBegin',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
     'components': [{
+      'components': [{
+        'internalType': 'address',
+        'name': 'operator',
+        'type': "address"
+      }, {
+        'internalType': 'uint128',
+        'name': "lastRequestId",
+        'type': 'uint128'
+      }, {
+        'internalType': 'uint64',
+        'name': "startBlock",
+        'type': "uint64"
+      }, {
+        'internalType': 'uint64',
+        'name': "endBlock",
+        'type': 'uint64'
+      }, {
+        'internalType': 'uint64',
+        'name': 'lastSeen',
+        'type': 'uint64'
+      }],
+      'internalType': "struct Session.Detail",
+      'name': 'detail',
+      'type': 'tuple'
+    }, {
+      'components': [{
+        'internalType': "uint8",
+        'name': 'decimals',
+        'type': "uint8"
+      }, {
+        'internalType': "uint8",
+        'name': 'tokenDecimals',
+        'type': "uint8"
+      }, {
+        'internalType': 'uint64',
+        'name': 'value',
+        'type': "uint64"
+      }],
+      'internalType': "struct Price.Props",
+      'name': "price",
+      'type': 'tuple'
+    }, {
+      'internalType': "enum Session.Status",
+      'name': "status",
+      'type': 'uint8'
+    }, {
+      'internalType': 'address',
+      'name': 'token',
+      'type': 'address'
+    }, {
+      'internalType': 'address',
+      'name': 'program',
+      'type': "address"
+    }, {
+      'internalType': 'address',
+      'name': 'client',
+      'type': "address"
+    }, {
       'internalType': 'uint128',
-      'name': 'payin',
+      'name': 'escrow',
       'type': 'uint128'
     }, {
       'internalType': "uint128",
       'name': "payout",
       'type': "uint128"
     }, {
+      'internalType': 'address',
+      'name': "bankroll",
+      'type': "address"
+    }],
+    'internalType': "struct Session.Props",
+    'name': 'session',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'internalType': "uint128",
+      'name': 'payin',
+      'type': "uint128"
+    }, {
+      'internalType': 'uint128',
+      'name': "payout",
+      'type': 'uint128'
+    }, {
       'internalType': "address",
-      'name': "recipient",
-      'type': 'address'
+      'name': 'recipient',
+      'type': "address"
     }, {
       'internalType': "address",
       'name': "token",
       'type': "address"
     }, {
-      'internalType': "address",
-      'name': "bankroll",
-      'type': "address"
+      'internalType': 'address',
+      'name': 'bankroll',
+      'type': 'address'
     }],
     'internalType': "struct CashierUtils.Receipt",
     'name': '',
@@ -5028,111 +5080,111 @@ export const ABI7 = [{
   }],
   'name': 'onSettlement',
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': '',
     'type': "address"
   }],
-  'name': "players",
+  'name': 'players',
   'outputs': [{
-    'internalType': 'uint96',
+    'internalType': "uint96",
     'name': 'nextLevelVolume',
-    'type': "uint96"
+    'type': 'uint96'
   }, {
-    'internalType': 'uint8',
-    'name': 'level',
+    'internalType': "uint8",
+    'name': "level",
     'type': "uint8"
   }, {
     'internalType': "bool",
     'name': "halted",
-    'type': "bool"
-  }],
-  'stateMutability': 'view',
-  'type': 'function'
-}, {
-  'inputs': [],
-  'name': "roleStore",
-  'outputs': [{
-    'internalType': "contract RoleStore",
-    'name': '',
-    'type': "address"
+    'type': 'bool'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
+  'inputs': [],
+  'name': 'roleStore',
+  'outputs': [{
+    'internalType': "contract RoleStore",
+    'name': '',
+    'type': 'address'
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
   'inputs': [{
-    'internalType': "uint8",
-    'name': "index",
+    'internalType': 'uint8',
+    'name': 'index',
     'type': "uint8"
   }, {
     'internalType': "uint96",
-    'name': "level",
-    'type': "uint96"
+    'name': 'level',
+    'type': 'uint96'
   }],
   'name': "setLevel",
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "player",
+    'name': 'player',
     'type': "address"
   }, {
-    'internalType': 'address[]',
-    'name': "bankrolls",
+    'internalType': "address[]",
+    'name': 'bankrolls',
     'type': "address[]"
   }],
   'name': "takeClaimSnapshot",
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }, {
     'components': [{
       'internalType': "uint80",
       'name': 'profit',
-      'type': "uint80"
+      'type': 'uint80'
     }, {
-      'internalType': "uint80",
+      'internalType': 'uint80',
       'name': "loss",
       'type': "uint80"
     }, {
-      'internalType': "uint96",
+      'internalType': 'uint96',
       'name': "volume",
-      'type': "uint96"
+      'type': 'uint96'
     }],
     'internalType': "struct Statistic.Props",
     'name': "totalStat",
     'type': "tuple"
   }, {
-    'internalType': "address[]",
-    'name': "bankrolls",
-    'type': "address[]"
+    'internalType': 'address[]',
+    'name': 'bankrolls',
+    'type': 'address[]'
   }],
   'name': "takeLevelUpSnapshot",
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': 'function'
 }];
 export const ABI8 = [{
   'inputs': [],
-  'name': "NotOwner",
+  'name': 'NotOwner',
   'type': "error"
 }, {
   'inputs': [{
-    'internalType': "uint256",
-    'name': 'index',
-    'type': "uint256"
+    'internalType': 'uint256',
+    'name': "index",
+    'type': 'uint256'
   }],
-  'name': "OutOfBound",
+  'name': 'OutOfBound',
   'type': 'error'
 }, {
   'inputs': [{
@@ -5142,46 +5194,46 @@ export const ABI8 = [{
   }, {
     'components': [{
       'internalType': "uint8",
-      'name': "term",
+      'name': 'term',
       'type': "uint8"
     }, {
       'internalType': "uint8",
       'name': "type_",
-      'type': "uint8"
+      'type': 'uint8'
     }, {
       'internalType': 'uint8',
-      'name': 'amount',
-      'type': "uint8"
+      'name': "amount",
+      'type': 'uint8'
     }],
     'internalType': "struct Bet.Props",
-    'name': "item",
+    'name': 'item',
     'type': "tuple"
   }, {
     'components': [{
-      'internalType': "uint96",
+      'internalType': 'uint96',
       'name': 'amount',
-      'type': "uint96"
+      'type': 'uint96'
     }, {
       'internalType': 'uint8',
-      'name': "option",
-      'type': "uint8"
+      'name': 'option',
+      'type': 'uint8'
     }],
     'internalType': "struct Action.Props",
     'name': "action",
     'type': 'tuple'
   }],
-  'name': "addBetCondition",
+  'name': 'addBetCondition',
   'outputs': [],
   'stateMutability': 'nonpayable',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint64",
+    'internalType': 'uint64',
     'name': 'id',
     'type': "uint64"
   }, {
     'components': [{
-      'internalType': "uint8",
+      'internalType': 'uint8',
       'name': "type_",
       'type': "uint8"
     }, {
@@ -5189,93 +5241,93 @@ export const ABI8 = [{
       'name': "term",
       'type': "uint8"
     }, {
-      'internalType': "uint96",
-      'name': "amount",
-      'type': "uint96"
+      'internalType': 'uint96',
+      'name': 'amount',
+      'type': 'uint96'
     }],
     'internalType': "struct Profit.Props",
-    'name': "item",
-    'type': "tuple"
+    'name': 'item',
+    'type': 'tuple'
   }, {
     'components': [{
       'internalType': 'uint96',
       'name': "amount",
-      'type': "uint96"
+      'type': 'uint96'
     }, {
-      'internalType': "uint8",
-      'name': "option",
+      'internalType': 'uint8',
+      'name': 'option',
       'type': 'uint8'
     }],
     'internalType': "struct Action.Props",
-    'name': "action",
+    'name': 'action',
     'type': "tuple"
   }],
   'name': "addProfitCondition",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "string",
-    'name': 'name',
-    'type': 'string'
-  }],
-  'name': "create",
   'outputs': [],
   'stateMutability': 'nonpayable',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint64",
-    'name': "strategyId",
+    'internalType': 'string',
+    'name': "name",
+    'type': "string"
+  }],
+  'name': "create",
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint64',
+    'name': 'strategyId',
     'type': "uint64"
   }],
   'name': "get",
   'outputs': [{
     'components': [{
       'internalType': "uint32[]",
-      'name': "itemIds",
-      'type': "uint32[]"
+      'name': 'itemIds',
+      'type': 'uint32[]'
     }, {
-      'internalType': "string",
-      'name': "name",
+      'internalType': 'string',
+      'name': 'name',
       'type': "string"
     }, {
-      'internalType': 'address',
+      'internalType': "address",
       'name': "owner",
-      'type': "address"
+      'type': 'address'
     }],
     'internalType': "struct Strategy.Props",
     'name': '',
     'type': "tuple"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint64",
-    'name': "strategyId",
-    'type': "uint64"
+    'internalType': 'uint64',
+    'name': 'strategyId',
+    'type': 'uint64'
   }],
   'name': "getItems",
   'outputs': [{
     'components': [{
       'components': [{
-        'internalType': "uint8",
+        'internalType': 'uint8',
         'name': "term",
-        'type': 'uint8'
-      }, {
-        'internalType': "uint8",
-        'name': "type_",
-        'type': 'uint8'
+        'type': "uint8"
       }, {
         'internalType': 'uint8',
+        'name': 'type_',
+        'type': "uint8"
+      }, {
+        'internalType': "uint8",
         'name': 'amount',
         'type': "uint8"
       }],
       'internalType': "struct Bet.Props",
       'name': "bet",
-      'type': "tuple"
+      'type': 'tuple'
     }, {
       'components': [{
         'internalType': "uint8",
@@ -5284,24 +5336,24 @@ export const ABI8 = [{
       }, {
         'internalType': 'uint8',
         'name': "term",
-        'type': "uint8"
+        'type': 'uint8'
       }, {
         'internalType': 'uint96',
-        'name': "amount",
-        'type': 'uint96'
+        'name': 'amount',
+        'type': "uint96"
       }],
       'internalType': "struct Profit.Props",
       'name': "profit",
       'type': "tuple"
     }, {
       'components': [{
-        'internalType': "uint96",
+        'internalType': 'uint96',
         'name': "amount",
         'type': "uint96"
       }, {
         'internalType': 'uint8',
         'name': 'option',
-        'type': "uint8"
+        'type': 'uint8'
       }],
       'internalType': "struct Action.Props",
       'name': 'action',
@@ -5309,14 +5361,14 @@ export const ABI8 = [{
     }, {
       'internalType': "uint8",
       'name': "type_",
-      'type': "uint8"
+      'type': 'uint8'
     }],
     'internalType': "struct Strategy.Item[]",
     'name': '',
-    'type': 'tuple[]'
+    'type': "tuple[]"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint256",
@@ -5327,209 +5379,42 @@ export const ABI8 = [{
   'outputs': [{
     'components': [{
       'internalType': 'uint8',
-      'name': "term",
-      'type': "uint8"
-    }, {
-      'internalType': "uint8",
-      'name': 'type_',
-      'type': "uint8"
-    }, {
-      'internalType': "uint8",
-      'name': "amount",
-      'type': 'uint8'
-    }],
-    'internalType': "struct Bet.Props",
-    'name': "bet",
-    'type': "tuple"
-  }, {
-    'components': [{
-      'internalType': "uint8",
-      'name': "type_",
-      'type': "uint8"
-    }, {
-      'internalType': "uint8",
-      'name': "term",
-      'type': 'uint8'
-    }, {
-      'internalType': "uint96",
-      'name': "amount",
-      'type': "uint96"
-    }],
-    'internalType': "struct Profit.Props",
-    'name': "profit",
-    'type': "tuple"
-  }, {
-    'components': [{
-      'internalType': 'uint96',
-      'name': "amount",
-      'type': "uint96"
-    }, {
-      'internalType': "uint8",
-      'name': "option",
-      'type': "uint8"
-    }],
-    'internalType': "struct Action.Props",
-    'name': "action",
-    'type': 'tuple'
-  }, {
-    'internalType': "uint8",
-    'name': 'type_',
-    'type': 'uint8'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': "owner",
-    'type': 'address'
-  }],
-  'name': "list",
-  'outputs': [{
-    'components': [{
-      'internalType': "uint32[]",
-      'name': 'itemIds',
-      'type': "uint32[]"
-    }, {
-      'internalType': "string",
-      'name': "name",
-      'type': 'string'
-    }, {
-      'internalType': "address",
-      'name': "owner",
-      'type': "address"
-    }],
-    'internalType': "struct Strategy.Props[]",
-    'name': '',
-    'type': "tuple[]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': '',
-    'type': "address"
-  }, {
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': "relatedIds",
-  'outputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': "view",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': "uint64",
-    'name': 'id',
-    'type': "uint64"
-  }, {
-    'internalType': "uint64",
-    'name': 'index',
-    'type': "uint64"
-  }],
-  'name': "remove",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': "strategies",
-  'outputs': [{
-    'internalType': "string",
-    'name': "name",
-    'type': "string"
-  }, {
-    'internalType': "address",
-    'name': "owner",
-    'type': 'address'
-  }],
-  'stateMutability': 'view',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint64",
-    'name': 'id',
-    'type': 'uint64'
-  }, {
-    'internalType': "uint64",
-    'name': 'itemId',
-    'type': 'uint64'
-  }, {
-    'components': [{
-      'internalType': "uint8",
       'name': 'term',
       'type': "uint8"
     }, {
       'internalType': "uint8",
+      'name': 'type_',
+      'type': 'uint8'
+    }, {
+      'internalType': 'uint8',
+      'name': 'amount',
+      'type': "uint8"
+    }],
+    'internalType': "struct Bet.Props",
+    'name': 'bet',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'internalType': 'uint8',
       'name': "type_",
       'type': "uint8"
     }, {
       'internalType': "uint8",
-      'name': "amount",
-      'type': 'uint8'
+      'name': 'term',
+      'type': "uint8"
+    }, {
+      'internalType': 'uint96',
+      'name': 'amount',
+      'type': "uint96"
     }],
-    'internalType': "struct Bet.Props",
-    'name': "item",
-    'type': "tuple"
+    'internalType': "struct Profit.Props",
+    'name': "profit",
+    'type': 'tuple'
   }, {
     'components': [{
       'internalType': "uint96",
       'name': 'amount',
       'type': "uint96"
-    }, {
-      'internalType': "uint8",
-      'name': "option",
-      'type': "uint8"
-    }],
-    'internalType': "struct Action.Props",
-    'name': "action",
-    'type': "tuple"
-  }],
-  'name': "updateBetCondition",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint64",
-    'name': 'id',
-    'type': "uint64"
-  }, {
-    'internalType': 'uint64',
-    'name': "itemId",
-    'type': "uint64"
-  }, {
-    'components': [{
-      'internalType': "uint8",
-      'name': "type_",
-      'type': "uint8"
-    }, {
-      'internalType': "uint8",
-      'name': "term",
-      'type': "uint8"
-    }, {
-      'internalType': "uint96",
-      'name': "amount",
-      'type': "uint96"
-    }],
-    'internalType': "struct Profit.Props",
-    'name': "item",
-    'type': "tuple"
-  }, {
-    'components': [{
-      'internalType': "uint96",
-      'name': "amount",
-      'type': 'uint96'
     }, {
       'internalType': "uint8",
       'name': 'option',
@@ -5538,8 +5423,175 @@ export const ABI8 = [{
     'internalType': "struct Action.Props",
     'name': "action",
     'type': "tuple"
+  }, {
+    'internalType': "uint8",
+    'name': "type_",
+    'type': 'uint8'
   }],
-  'name': 'updateProfitCondition',
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': "owner",
+    'type': 'address'
+  }],
+  'name': 'list',
+  'outputs': [{
+    'components': [{
+      'internalType': 'uint32[]',
+      'name': "itemIds",
+      'type': "uint32[]"
+    }, {
+      'internalType': 'string',
+      'name': "name",
+      'type': "string"
+    }, {
+      'internalType': 'address',
+      'name': "owner",
+      'type': 'address'
+    }],
+    'internalType': "struct Strategy.Props[]",
+    'name': '',
+    'type': 'tuple[]'
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': '',
+    'type': "address"
+  }, {
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'name': "relatedIds",
+  'outputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint64",
+    'name': 'id',
+    'type': 'uint64'
+  }, {
+    'internalType': 'uint64',
+    'name': 'index',
+    'type': "uint64"
+  }],
+  'name': 'remove',
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'name': 'strategies',
+  'outputs': [{
+    'internalType': 'string',
+    'name': 'name',
+    'type': "string"
+  }, {
+    'internalType': "address",
+    'name': "owner",
+    'type': 'address'
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint64",
+    'name': 'id',
+    'type': 'uint64'
+  }, {
+    'internalType': 'uint64',
+    'name': "itemId",
+    'type': "uint64"
+  }, {
+    'components': [{
+      'internalType': "uint8",
+      'name': "term",
+      'type': "uint8"
+    }, {
+      'internalType': 'uint8',
+      'name': "type_",
+      'type': 'uint8'
+    }, {
+      'internalType': 'uint8',
+      'name': "amount",
+      'type': 'uint8'
+    }],
+    'internalType': "struct Bet.Props",
+    'name': 'item',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'internalType': 'uint96',
+      'name': 'amount',
+      'type': 'uint96'
+    }, {
+      'internalType': 'uint8',
+      'name': 'option',
+      'type': "uint8"
+    }],
+    'internalType': "struct Action.Props",
+    'name': 'action',
+    'type': "tuple"
+  }],
+  'name': "updateBetCondition",
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "uint64",
+    'name': 'id',
+    'type': "uint64"
+  }, {
+    'internalType': "uint64",
+    'name': 'itemId',
+    'type': "uint64"
+  }, {
+    'components': [{
+      'internalType': 'uint8',
+      'name': "type_",
+      'type': 'uint8'
+    }, {
+      'internalType': "uint8",
+      'name': "term",
+      'type': "uint8"
+    }, {
+      'internalType': "uint96",
+      'name': "amount",
+      'type': "uint96"
+    }],
+    'internalType': "struct Profit.Props",
+    'name': 'item',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'internalType': 'uint96',
+      'name': "amount",
+      'type': 'uint96'
+    }, {
+      'internalType': 'uint8',
+      'name': 'option',
+      'type': 'uint8'
+    }],
+    'internalType': "struct Action.Props",
+    'name': "action",
+    'type': "tuple"
+  }],
+  'name': "updateProfitCondition",
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
@@ -5547,24 +5599,24 @@ export const ABI8 = [{
 export const ABI9 = [{
   'inputs': [{
     'internalType': "contract RoleStore",
-    'name': "_roleStore",
-    'type': "address"
+    'name': '_roleStore',
+    'type': 'address'
   }, {
     'internalType': "contract Config",
     'name': '_config',
-    'type': 'address'
+    'type': "address"
   }, {
     'internalType': "contract BudgetMiddleware",
     'name': '_budget',
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "constructor"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': 'client',
-    'type': "address"
+    'type': 'address'
   }],
   'name': "GameOver",
   'type': "error"
@@ -5575,63 +5627,63 @@ export const ABI9 = [{
     'type': "address"
   }],
   'name': "HasUncompletedGame",
-  'type': 'error'
+  'type': "error"
 }, {
   'inputs': [],
   'name': "InvalidRandomNumber",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': 'uint128',
-    'name': 'given',
+    'name': "given",
     'type': 'uint128'
   }, {
     'internalType': "uint128",
     'name': 'max',
-    'type': "uint128"
+    'type': 'uint128'
   }],
   'name': "MaxWagerExceeded",
   'type': "error"
 }, {
   'inputs': [{
     'internalType': 'uint128',
-    'name': "given",
+    'name': 'given',
     'type': "uint128"
   }, {
     'internalType': "uint128",
     'name': 'min',
     'type': "uint128"
   }],
-  'name': "MinWagerNotMet",
+  'name': 'MinWagerNotMet',
+  'type': "error"
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
+  }],
+  'name': 'NoGame',
+  'type': 'error'
+}, {
+  'inputs': [{
+    'internalType': 'uint8',
+    'name': 'payout',
+    'type': 'uint8'
+  }],
+  'name': "PayoutShouldGreaterThanOne",
+  'type': 'error'
+}, {
+  'inputs': [],
+  'name': "ReentrancyGuardReentrantCall",
   'type': "error"
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': 'client',
-    'type': "address"
-  }],
-  'name': 'NoGame',
-  'type': "error"
-}, {
-  'inputs': [{
-    'internalType': "uint8",
-    'name': "payout",
-    'type': "uint8"
-  }],
-  'name': "PayoutShouldGreaterThanOne",
-  'type': "error"
-}, {
-  'inputs': [],
-  'name': "ReentrancyGuardReentrantCall",
-  'type': 'error'
-}, {
-  'inputs': [{
-    'internalType': 'address',
     'name': 'msgSender',
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': 'string',
-    'name': 'role',
+    'name': "role",
     'type': 'string'
   }],
   'name': 'Unauthorized',
@@ -5641,21 +5693,21 @@ export const ABI9 = [{
   'inputs': [{
     'indexed': false,
     'internalType': 'uint64',
-    'name': "houseEdge",
+    'name': 'houseEdge',
     'type': "uint64"
   }],
-  'name': "UpdateHouseEdge",
+  'name': 'UpdateHouseEdge',
   'type': 'event'
 }, {
   'anonymous': false,
   'inputs': [{
     'indexed': false,
     'internalType': "uint8[9]",
-    'name': "payouts",
-    'type': "uint8[9]"
+    'name': 'payouts',
+    'type': 'uint8[9]'
   }],
-  'name': "UpdatePayouts",
-  'type': "event"
+  'name': 'UpdatePayouts',
+  'type': 'event'
 }, {
   'inputs': [],
   'name': "budget",
@@ -5672,15 +5724,15 @@ export const ABI9 = [{
   'outputs': [{
     'internalType': "contract Config",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': 'client',
-    'type': 'address'
+    'type': "address"
   }],
   'name': "emergencyRefund",
   'outputs': [{
@@ -5688,38 +5740,38 @@ export const ABI9 = [{
     'name': '',
     'type': 'bool'
   }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
+  'stateMutability': "nonpayable",
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "client",
-    'type': "address"
+    'name': 'client',
+    'type': 'address'
   }, {
-    'internalType': 'uint256[]',
-    'name': 'randoms',
-    'type': "uint256[]"
+    'internalType': "uint256[]",
+    'name': "randoms",
+    'type': 'uint256[]'
   }],
   'name': "fill",
   'outputs': [{
     'components': [{
-      'internalType': 'uint128',
-      'name': "escrow",
+      'internalType': "uint128",
+      'name': 'escrow',
       'type': "uint128"
     }, {
       'internalType': 'uint128',
       'name': 'payback',
-      'type': "uint128"
+      'type': 'uint128'
     }, {
-      'internalType': "uint128",
-      'name': "payout",
+      'internalType': 'uint128',
+      'name': 'payout',
       'type': "uint128"
     }, {
       'internalType': "uint32",
-      'name': 'delay',
-      'type': 'uint32'
+      'name': "delay",
+      'type': "uint32"
     }, {
-      'internalType': "uint8",
+      'internalType': 'uint8',
       'name': 'iterate',
       'type': "uint8"
     }, {
@@ -5735,27 +5787,27 @@ export const ABI9 = [{
       'components': [{
         'components': [{
           'internalType': "string",
-          'name': 'key',
-          'type': "string"
+          'name': "key",
+          'type': 'string'
         }, {
-          'internalType': "bytes",
+          'internalType': 'bytes',
           'name': "value",
           'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': 'tuple[]'
+        'name': 'items',
+        'type': "tuple[]"
       }],
       'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
+      'name': 'list',
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
     'type': "tuple"
   }],
   'stateMutability': 'nonpayable',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
@@ -5766,9 +5818,9 @@ export const ABI9 = [{
     'name': '',
     'type': 'address'
   }, {
-    'internalType': 'bytes',
+    'internalType': "bytes",
     'name': "data",
-    'type': 'bytes'
+    'type': "bytes"
   }],
   'name': "finish",
   'outputs': [{
@@ -5779,19 +5831,19 @@ export const ABI9 = [{
     }, {
       'internalType': "uint128",
       'name': "payback",
-      'type': "uint128"
+      'type': 'uint128'
     }, {
       'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
+      'name': 'payout',
+      'type': 'uint128'
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint32',
       'name': "delay",
-      'type': "uint32"
+      'type': 'uint32'
     }, {
       'internalType': "uint8",
       'name': "iterate",
-      'type': 'uint8'
+      'type': "uint8"
     }, {
       'internalType': "enum ControllerUtils.Signal",
       'name': 'signal',
@@ -5799,7 +5851,7 @@ export const ABI9 = [{
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }, {
     'components': [{
       'components': [{
@@ -5818,54 +5870,54 @@ export const ABI9 = [{
       }],
       'internalType': "struct EventUtils.BytesItems",
       'name': "list",
-      'type': "tuple"
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
     'type': "tuple"
   }],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'address',
+    'internalType': "address",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'name': "games",
+  'name': 'games',
   'outputs': [{
     'internalType': "enum VideoPoker.Status",
     'name': 'status',
     'type': "uint8"
   }, {
     'internalType': "uint32",
-    'name': "cards",
-    'type': "uint32"
+    'name': 'cards',
+    'type': 'uint32'
   }, {
-    'internalType': "uint32",
-    'name': "change",
-    'type': "uint32"
+    'internalType': 'uint32',
+    'name': 'change',
+    'type': 'uint32'
   }, {
-    'internalType': "uint128",
-    'name': 'wager',
-    'type': "uint128"
+    'internalType': 'uint128',
+    'name': "wager",
+    'type': 'uint128'
   }],
-  'stateMutability': 'view',
+  'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
   'name': "getPayouts",
   'outputs': [{
     'internalType': "uint8[9]",
-    'name': "payouts_",
-    'type': "uint8[9]"
+    'name': 'payouts_',
+    'type': 'uint8[9]'
   }],
   'stateMutability': "view",
   'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "player",
+    'name': 'player',
     'type': "address"
   }],
   'name': "getPlayerStatus",
@@ -5873,23 +5925,23 @@ export const ABI9 = [{
     'components': [{
       'internalType': "enum VideoPoker.Status",
       'name': "status",
-      'type': "uint8"
+      'type': 'uint8'
     }, {
-      'internalType': 'uint32',
+      'internalType': "uint32",
       'name': "cards",
       'type': "uint32"
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint32',
       'name': "change",
-      'type': "uint32"
+      'type': 'uint32'
     }, {
-      'internalType': "uint128",
+      'internalType': 'uint128',
       'name': "wager",
-      'type': 'uint128'
+      'type': "uint128"
     }],
     'internalType': "struct VideoPoker.Game",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
   'stateMutability': "view",
   'type': "function"
@@ -5901,31 +5953,31 @@ export const ABI9 = [{
     'name': '',
     'type': "string"
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "getVersion",
+  'name': 'getVersion',
   'outputs': [{
     'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "pure",
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'address',
-    'name': "client",
+    'internalType': "address",
+    'name': 'client',
     'type': 'address'
   }],
-  'name': "refund",
+  'name': 'refund',
   'outputs': [{
-    'internalType': "bool",
+    'internalType': 'bool',
     'name': '',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'stateMutability': 'nonpayable',
+  'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [],
@@ -5936,12 +5988,12 @@ export const ABI9 = [{
     'type': "address"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'address',
+    'internalType': "address",
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "address",
     'name': "bankroll",
@@ -5954,28 +6006,28 @@ export const ABI9 = [{
   'name': 'start',
   'outputs': [{
     'components': [{
-      'internalType': "uint128",
+      'internalType': 'uint128',
       'name': 'escrow',
       'type': "uint128"
     }, {
       'internalType': "uint128",
-      'name': "payback",
-      'type': "uint128"
+      'name': 'payback',
+      'type': 'uint128'
     }, {
-      'internalType': "uint128",
+      'internalType': 'uint128',
       'name': 'payout',
       'type': "uint128"
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint32',
       'name': "delay",
       'type': "uint32"
     }, {
       'internalType': 'uint8',
-      'name': "iterate",
+      'name': 'iterate',
       'type': "uint8"
     }, {
       'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
+      'name': 'signal',
       'type': "uint8"
     }],
     'internalType': "struct ControllerUtils.Response",
@@ -5985,68 +6037,68 @@ export const ABI9 = [{
     'components': [{
       'components': [{
         'components': [{
-          'internalType': "string",
+          'internalType': 'string',
           'name': 'key',
           'type': "string"
         }, {
-          'internalType': "bytes",
-          'name': "value",
+          'internalType': 'bytes',
+          'name': 'value',
           'type': "bytes"
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
+        'name': 'items',
         'type': 'tuple[]'
       }],
       'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
+      'name': 'list',
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'uint8[9]',
-    'name': "_payouts",
-    'type': "uint8[9]"
+    'internalType': "uint8[9]",
+    'name': '_payouts',
+    'type': 'uint8[9]'
   }],
-  'name': "updatePayouts",
+  'name': 'updatePayouts',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': "cards",
-    'type': "uint256"
+    'name': 'cards',
+    'type': 'uint256'
   }],
-  'name': "win",
+  'name': 'win',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
-  'stateMutability': "pure",
-  'type': "function"
+  'stateMutability': 'pure',
+  'type': 'function'
 }];
 export const ABI10 = [{
   'inputs': [{
     'internalType': "contract RoleStore",
-    'name': "_roleStore",
-    'type': "address"
+    'name': '_roleStore',
+    'type': 'address'
   }, {
     'internalType': "contract Config",
     'name': "_config",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "contract BudgetMiddleware",
     'name': "_budget",
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': 'constructor'
 }, {
   'inputs': [{
@@ -6054,52 +6106,52 @@ export const ABI10 = [{
     'name': 'client',
     'type': "address"
   }],
-  'name': "AlreadyCompleted",
-  'type': "error"
+  'name': 'AlreadyCompleted',
+  'type': 'error'
 }, {
   'inputs': [{
-    'internalType': 'uint16',
+    'internalType': "uint16",
     'name': 'index',
     'type': "uint16"
   }],
   'name': "FirstIndexMustBeZero",
-  'type': 'error'
+  'type': "error"
 }, {
   'inputs': [{
-    'internalType': 'address',
-    'name': "client",
-    'type': "address"
+    'internalType': "address",
+    'name': 'client',
+    'type': 'address'
   }],
   'name': 'HasUncompletedGame',
   'type': "error"
 }, {
   'inputs': [{
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': "index",
     'type': "uint8"
   }],
-  'name': 'InFreeSpin',
+  'name': "InFreeSpin",
   'type': "error"
 }, {
   'inputs': [{
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': "index",
     'type': "uint16"
   }],
-  'name': "IndexOutOfBound",
-  'type': "error"
+  'name': 'IndexOutOfBound',
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "uint128",
     'name': 'given',
     'type': 'uint128'
   }, {
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': 'max',
     'type': 'uint128'
   }],
-  'name': "MaxWagerExceeded",
-  'type': "error"
+  'name': 'MaxWagerExceeded',
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': 'address',
@@ -6115,7 +6167,7 @@ export const ABI10 = [{
     'type': "uint16"
   }],
   'name': "PayoutShouldGreaterThanZero",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [],
   'name': "ReentrancyGuardReentrantCall",
@@ -6123,85 +6175,35 @@ export const ABI10 = [{
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': 'msgSender',
-    'type': 'address'
+    'name': "msgSender",
+    'type': "address"
   }, {
-    'internalType': "string",
-    'name': "role",
-    'type': 'string'
+    'internalType': 'string',
+    'name': 'role',
+    'type': "string"
   }],
   'name': "Unauthorized",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
-    'internalType': 'uint32',
-    'name': 'sum',
-    'type': "uint32"
+    'internalType': "uint32",
+    'name': "sum",
+    'type': 'uint32'
   }],
-  'name': "WeightSumIncorrect",
-  'type': "error"
+  'name': 'WeightSumIncorrect',
+  'type': 'error'
 }, {
   'anonymous': false,
   'inputs': [{
     'indexed': true,
     'internalType': "address",
-    'name': "_client",
-    'type': "address"
-  }, {
-    'indexed': true,
-    'internalType': "uint256",
-    'name': "_gameIndex",
-    'type': "uint256"
-  }, {
-    'indexed': true,
-    'internalType': 'address',
-    'name': "_wagerAddress",
-    'type': 'address'
-  }, {
-    'indexed': false,
-    'internalType': "uint256",
-    'name': "_betAmount",
-    'type': 'uint256'
-  }],
-  'name': 'DoubleChanceSpinRefunded',
-  'type': "event"
-}, {
-  'anonymous': false,
-  'inputs': [{
-    'indexed': true,
-    'internalType': "address",
-    'name': "_client",
+    'name': '_client',
     'type': 'address'
   }, {
     'indexed': true,
     'internalType': "uint256",
-    'name': '_gameIndex',
-    'type': "uint256"
-  }, {
-    'indexed': true,
-    'internalType': 'address',
-    'name': "_wagerAddress",
-    'type': "address"
-  }, {
-    'indexed': false,
-    'internalType': "uint256",
-    'name': "_betAmount",
-    'type': 'uint256'
-  }],
-  'name': 'FreeSpinRefunded',
-  'type': 'event'
-}, {
-  'anonymous': false,
-  'inputs': [{
-    'indexed': true,
-    'internalType': 'address',
-    'name': "_client",
-    'type': "address"
-  }, {
-    'indexed': true,
-    'internalType': 'uint256',
     'name': "_gameIndex",
-    'type': "uint256"
+    'type': 'uint256'
   }, {
     'indexed': true,
     'internalType': "address",
@@ -6209,9 +6211,59 @@ export const ABI10 = [{
     'type': "address"
   }, {
     'indexed': false,
+    'internalType': 'uint256',
+    'name': "_betAmount",
+    'type': 'uint256'
+  }],
+  'name': "DoubleChanceSpinRefunded",
+  'type': 'event'
+}, {
+  'anonymous': false,
+  'inputs': [{
+    'indexed': true,
+    'internalType': "address",
+    'name': '_client',
+    'type': 'address'
+  }, {
+    'indexed': true,
+    'internalType': 'uint256',
+    'name': '_gameIndex',
+    'type': "uint256"
+  }, {
+    'indexed': true,
+    'internalType': 'address',
+    'name': '_wagerAddress',
+    'type': "address"
+  }, {
+    'indexed': false,
     'internalType': "uint256",
     'name': "_betAmount",
     'type': "uint256"
+  }],
+  'name': 'FreeSpinRefunded',
+  'type': 'event'
+}, {
+  'anonymous': false,
+  'inputs': [{
+    'indexed': true,
+    'internalType': "address",
+    'name': "_client",
+    'type': 'address'
+  }, {
+    'indexed': true,
+    'internalType': 'uint256',
+    'name': "_gameIndex",
+    'type': 'uint256'
+  }, {
+    'indexed': true,
+    'internalType': "address",
+    'name': '_wagerAddress',
+    'type': 'address'
+  }, {
+    'indexed': false,
+    'internalType': 'uint256',
+    'name': '_betAmount',
+    'type': 'uint256'
   }],
   'name': 'NormalSpinRefunded',
   'type': "event"
@@ -6234,268 +6286,52 @@ export const ABI10 = [{
     'type': "uint8"
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "REEL_ROWS",
+  'name': 'REEL_ROWS',
   'outputs': [{
     'internalType': "uint16",
     'name': '',
     'type': "uint16"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': 'client',
-    'type': "address"
+    'name': "client",
+    'type': 'address'
   }, {
-    'internalType': "address",
+    'internalType': 'address',
     'name': "bankroll",
     'type': "address"
   }, {
-    'internalType': "bytes",
-    'name': "data",
+    'internalType': 'bytes',
+    'name': 'data',
     'type': "bytes"
   }],
-  'name': "bet",
+  'name': 'bet',
   'outputs': [{
     'components': [{
-      'internalType': "uint128",
+      'internalType': 'uint128',
       'name': 'escrow',
       'type': "uint128"
     }, {
       'internalType': "uint128",
       'name': "payback",
-      'type': "uint128"
+      'type': 'uint128'
     }, {
       'internalType': "uint128",
       'name': "payout",
       'type': 'uint128'
     }, {
       'internalType': "uint32",
-      'name': 'delay',
-      'type': "uint32"
+      'name': "delay",
+      'type': 'uint32'
     }, {
       'internalType': "uint8",
       'name': "iterate",
-      'type': 'uint8'
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': "tuple"
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': "key",
-          'type': "string"
-        }, {
-          'internalType': 'bytes',
-          'name': 'value',
-          'type': 'bytes'
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': 'items',
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': 'list',
-      'type': "tuple"
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "budget",
-  'outputs': [{
-    'internalType': "contract BudgetMiddleware",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': 'view',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': 'client',
-    'type': "address"
-  }, {
-    'internalType': "address",
-    'name': "bankroll",
-    'type': "address"
-  }, {
-    'internalType': "bytes",
-    'name': 'data',
-    'type': 'bytes'
-  }],
-  'name': "buyFreeSpins",
-  'outputs': [{
-    'components': [{
-      'internalType': 'uint128',
-      'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payback",
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
-    }, {
-      'internalType': 'uint32',
-      'name': 'delay',
-      'type': "uint32"
-    }, {
-      'internalType': "uint8",
-      'name': 'iterate',
-      'type': "uint8"
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': "tuple"
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': "key",
-          'type': "string"
-        }, {
-          'internalType': "bytes",
-          'name': 'value',
-          'type': "bytes"
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': 'list',
-      'type': "tuple"
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "config",
-  'outputs': [{
-    'internalType': "contract Config",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "doubleChanceDivisor",
-  'outputs': [{
-    'internalType': "uint8",
-    'name': '',
-    'type': "uint8"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'uint256',
-    'name': '',
-    'type': 'uint256'
-  }, {
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': 'doubleChanceReelFreeSpinWeights',
-  'outputs': [{
-    'internalType': "uint16",
-    'name': '',
-    'type': "uint16"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'uint256',
-    'name': '',
-    'type': "uint256"
-  }, {
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'name': "doubleChanceWeights",
-  'outputs': [{
-    'internalType': 'uint16',
-    'name': '',
-    'type': "uint16"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': 'client',
-    'type': 'address'
-  }],
-  'name': "emergencyRefund",
-  'outputs': [{
-    'internalType': "bool",
-    'name': '',
-    'type': "bool"
-  }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "address",
-    'name': 'client',
-    'type': "address"
-  }, {
-    'internalType': 'uint256[]',
-    'name': 'randoms',
-    'type': "uint256[]"
-  }],
-  'name': "fill",
-  'outputs': [{
-    'components': [{
-      'internalType': 'uint128',
-      'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': 'payback',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': "uint128"
-    }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': "uint32"
-    }, {
-      'internalType': 'uint8',
-      'name': 'iterate',
       'type': "uint8"
     }, {
       'internalType': "enum ControllerUtils.Signal",
@@ -6504,7 +6340,7 @@ export const ABI10 = [{
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }, {
     'components': [{
       'components': [{
@@ -6514,11 +6350,91 @@ export const ABI10 = [{
           'type': "string"
         }, {
           'internalType': "bytes",
-          'name': "value",
-          'type': "bytes"
+          'name': 'value',
+          'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
         'name': "items",
+        'type': 'tuple[]'
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': 'list',
+      'type': "tuple"
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': "tuple"
+  }],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'budget',
+  'outputs': [{
+    'internalType': "contract BudgetMiddleware",
+    'name': '',
+    'type': 'address'
+  }],
+  'stateMutability': 'view',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': "client",
+    'type': "address"
+  }, {
+    'internalType': 'address',
+    'name': "bankroll",
+    'type': 'address'
+  }, {
+    'internalType': "bytes",
+    'name': "data",
+    'type': 'bytes'
+  }],
+  'name': 'buyFreeSpins',
+  'outputs': [{
+    'components': [{
+      'internalType': "uint128",
+      'name': 'escrow',
+      'type': "uint128"
+    }, {
+      'internalType': "uint128",
+      'name': "payback",
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint128',
+      'name': "payout",
+      'type': "uint128"
+    }, {
+      'internalType': "uint32",
+      'name': "delay",
+      'type': "uint32"
+    }, {
+      'internalType': "uint8",
+      'name': 'iterate',
+      'type': "uint8"
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': "signal",
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': 'tuple'
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': 'string',
+          'name': 'key',
+          'type': "string"
+        }, {
+          'internalType': 'bytes',
+          'name': "value",
+          'type': 'bytes'
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
         'type': "tuple[]"
       }],
       'internalType': "struct EventUtils.BytesItems",
@@ -6529,37 +6445,173 @@ export const ABI10 = [{
     'name': '',
     'type': 'tuple'
   }],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'config',
+  'outputs': [{
+    'internalType': "contract Config",
+    'name': '',
+    'type': "address"
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [],
+  'name': 'doubleChanceDivisor',
+  'outputs': [{
+    'internalType': 'uint8',
+    'name': '',
+    'type': "uint8"
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
+  }],
+  'name': "doubleChanceReelFreeSpinWeights",
+  'outputs': [{
+    'internalType': 'uint16',
+    'name': '',
+    'type': 'uint16'
+  }],
+  'stateMutability': "view",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint256",
+    'name': '',
+    'type': "uint256"
+  }, {
+    'internalType': "uint256",
+    'name': '',
+    'type': "uint256"
+  }],
+  'name': 'doubleChanceWeights',
+  'outputs': [{
+    'internalType': 'uint16',
+    'name': '',
+    'type': "uint16"
+  }],
+  'stateMutability': "view",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'client',
+    'type': "address"
+  }],
+  'name': "emergencyRefund",
+  'outputs': [{
+    'internalType': 'bool',
+    'name': '',
+    'type': 'bool'
+  }],
   'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'address',
+    'name': 'client',
+    'type': "address"
+  }, {
+    'internalType': "uint256[]",
+    'name': 'randoms',
+    'type': "uint256[]"
+  }],
+  'name': "fill",
+  'outputs': [{
+    'components': [{
+      'internalType': "uint128",
+      'name': 'escrow',
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint128',
+      'name': 'payback',
+      'type': "uint128"
+    }, {
+      'internalType': 'uint128',
+      'name': 'payout',
+      'type': "uint128"
+    }, {
+      'internalType': "uint32",
+      'name': "delay",
+      'type': 'uint32'
+    }, {
+      'internalType': "uint8",
+      'name': "iterate",
+      'type': "uint8"
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': "signal",
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': "string",
+          'name': 'key',
+          'type': 'string'
+        }, {
+          'internalType': 'bytes',
+          'name': "value",
+          'type': "bytes"
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
+        'type': 'tuple[]'
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': "list",
+      'type': 'tuple'
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint256",
     'name': "randomNumber",
-    'type': "uint256"
+    'type': 'uint256'
   }, {
-    'internalType': 'uint16[12][6]',
+    'internalType': "uint16[12][6]",
     'name': "weights",
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }, {
     'internalType': 'uint16[30]',
-    'name': "reel",
-    'type': "uint16[30]"
+    'name': 'reel',
+    'type': 'uint16[30]'
   }, {
-    'internalType': 'uint16[6]',
+    'internalType': "uint16[6]",
     'name': "remaining",
-    'type': 'uint16[6]'
+    'type': "uint16[6]"
   }],
-  'name': 'fillReels',
+  'name': "fillReels",
   'outputs': [{
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': '',
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }, {
     'internalType': 'uint16[14]',
     'name': '',
-    'type': 'uint16[14]'
+    'type': "uint16[14]"
   }, {
-    'internalType': "uint16[6]",
+    'internalType': 'uint16[6]',
     'name': '',
     'type': "uint16[6]"
   }, {
@@ -6573,47 +6625,47 @@ export const ABI10 = [{
   'inputs': [{
     'internalType': 'uint256',
     'name': "randomNumber",
-    'type': "uint256"
+    'type': 'uint256'
   }, {
-    'internalType': 'uint16[30]',
-    'name': "reel",
+    'internalType': "uint16[30]",
+    'name': 'reel',
     'type': "uint16[30]"
   }, {
     'internalType': "uint8",
     'name': "count",
-    'type': 'uint8'
+    'type': "uint8"
   }],
   'name': "fillScatters",
   'outputs': [{
-    'internalType': 'uint16[30]',
+    'internalType': "uint16[30]",
     'name': '',
     'type': "uint16[30]"
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': 'address',
     'name': '',
     'type': 'address'
   }, {
-    'internalType': 'bytes',
+    'internalType': "bytes",
     'name': '',
     'type': "bytes"
   }],
   'name': 'freeSpin',
   'outputs': [{
     'components': [{
-      'internalType': "uint128",
-      'name': "escrow",
-      'type': "uint128"
+      'internalType': 'uint128',
+      'name': 'escrow',
+      'type': 'uint128'
     }, {
-      'internalType': "uint128",
-      'name': 'payback',
+      'internalType': 'uint128',
+      'name': "payback",
       'type': "uint128"
     }, {
       'internalType': "uint128",
@@ -6621,16 +6673,16 @@ export const ABI10 = [{
       'type': 'uint128'
     }, {
       'internalType': 'uint32',
-      'name': "delay",
-      'type': "uint32"
+      'name': 'delay',
+      'type': 'uint32'
     }, {
       'internalType': "uint8",
-      'name': "iterate",
-      'type': "uint8"
+      'name': 'iterate',
+      'type': 'uint8'
     }, {
       'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
+      'name': 'signal',
+      'type': 'uint8'
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
@@ -6640,16 +6692,16 @@ export const ABI10 = [{
       'components': [{
         'components': [{
           'internalType': "string",
-          'name': "key",
-          'type': "string"
+          'name': 'key',
+          'type': 'string'
         }, {
-          'internalType': "bytes",
-          'name': "value",
+          'internalType': 'bytes',
+          'name': 'value',
           'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
+        'name': 'items',
+        'type': 'tuple[]'
       }],
       'internalType': "struct EventUtils.BytesItems",
       'name': "list",
@@ -6657,25 +6709,25 @@ export const ABI10 = [{
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': 'uint256'
   }],
   'name': 'freeSpinWeights',
   'outputs': [{
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': '',
-    'type': 'uint16'
+    'type': "uint16"
   }],
   'stateMutability': "view",
   'type': "function"
@@ -6683,37 +6735,15 @@ export const ABI10 = [{
   'inputs': [{
     'internalType': "uint256",
     'name': 'a',
-    'type': "uint256"
+    'type': 'uint256'
   }, {
     'internalType': "uint256",
     'name': 'b',
-    'type': "uint256"
-  }],
-  'name': "generateRandomNumber",
-  'outputs': [{
-    'internalType': "uint256",
-    'name': '',
-    'type': "uint256"
-  }],
-  'stateMutability': 'pure',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint256",
-    'name': 'a',
-    'type': "uint256"
-  }, {
-    'internalType': "uint256",
-    'name': 'b',
-    'type': "uint256"
-  }, {
-    'internalType': 'uint256',
-    'name': 'c',
     'type': 'uint256'
   }],
-  'name': "generateRandomNumber",
+  'name': 'generateRandomNumber',
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
@@ -6721,31 +6751,53 @@ export const ABI10 = [{
   'type': "function"
 }, {
   'inputs': [{
+    'internalType': "uint256",
+    'name': 'a',
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': 'b',
+    'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': 'c',
+    'type': "uint256"
+  }],
+  'name': "generateRandomNumber",
+  'outputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': "uint256"
+  }],
+  'stateMutability': 'pure',
+  'type': "function"
+}, {
+  'inputs': [{
     'internalType': 'uint128',
-    'name': "wager",
+    'name': 'wager',
     'type': "uint128"
   }],
-  'name': 'getDoubleChanceCost',
+  'name': "getDoubleChanceCost",
   'outputs': [{
     'internalType': "uint256",
-    'name': "tokenAmount_",
+    'name': 'tokenAmount_',
     'type': 'uint256'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
-  'name': "getDoubleChanceReelFreeSpinWeights",
+  'name': 'getDoubleChanceReelFreeSpinWeights',
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': "getDoubleChanceWeights",
+  'name': 'getDoubleChanceWeights',
   'outputs': [{
     'internalType': "uint16[12][6]",
     'name': '',
@@ -6755,23 +6807,23 @@ export const ABI10 = [{
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': "wager",
     'type': "uint128"
   }],
-  'name': "getFreeSpinTokenAmount",
+  'name': 'getFreeSpinTokenAmount',
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'stateMutability': "pure",
   'type': "function"
 }, {
   'inputs': [],
-  'name': 'getFreeSpinWeights',
+  'name': "getFreeSpinWeights",
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
     'type': "uint16[12][6]"
   }],
@@ -6789,21 +6841,21 @@ export const ABI10 = [{
   'type': "function"
 }, {
   'inputs': [],
-  'name': "getMultiplierWeights",
+  'name': 'getMultiplierWeights',
   'outputs': [{
-    'internalType': "uint16[14]",
+    'internalType': 'uint16[14]',
     'name': '',
     'type': "uint16[14]"
   }],
   'stateMutability': "view",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [],
   'name': 'getNormalReelFreeSpinWeights',
   'outputs': [{
     'internalType': "uint16[12][6]",
     'name': '',
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }],
   'stateMutability': 'view',
   'type': "function"
@@ -6815,8 +6867,8 @@ export const ABI10 = [{
     'name': '',
     'type': "uint16[12][6]"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "getPayoutEightOrMore",
@@ -6825,17 +6877,17 @@ export const ABI10 = [{
     'name': '',
     'type': "uint16[10]"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': 'getPayoutTenOrMore',
+  'name': "getPayoutTenOrMore",
   'outputs': [{
-    'internalType': 'uint16[10]',
+    'internalType': "uint16[10]",
     'name': '',
     'type': "uint16[10]"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
@@ -6845,50 +6897,50 @@ export const ABI10 = [{
     'name': '',
     'type': 'uint16[10]'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
   }],
-  'name': "getPlayerStatus",
+  'name': 'getPlayerStatus',
   'outputs': [{
     'components': [{
-      'internalType': "uint8",
+      'internalType': 'uint8',
       'name': 'freeSpinCount',
       'type': "uint8"
     }, {
-      'internalType': "uint128",
-      'name': 'wager',
+      'internalType': 'uint128',
+      'name': "wager",
       'type': "uint128"
     }, {
       'internalType': "uint32",
-      'name': "bufferedFreeSpinWinnings",
-      'type': 'uint32'
+      'name': 'bufferedFreeSpinWinnings',
+      'type': "uint32"
     }, {
       'internalType': "enum IWinrBonanza.SpinType",
-      'name': "spinType",
+      'name': 'spinType',
       'type': 'uint8'
     }, {
       'internalType': "enum IWinrBonanza.State",
-      'name': "state",
+      'name': 'state',
       'type': "uint8"
     }],
     'internalType': "struct IWinrBonanza.Game",
     'name': '',
     'type': "tuple"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'uint16',
-    'name': "symbol",
-    'type': "uint16"
+    'name': 'symbol',
+    'type': 'uint16'
   }],
-  'name': "getSymbolName",
+  'name': 'getSymbolName',
   'outputs': [{
     'internalType': 'string',
     'name': '',
@@ -6898,24 +6950,24 @@ export const ABI10 = [{
   'type': "function"
 }, {
   'inputs': [],
-  'name': 'getType',
+  'name': "getType",
   'outputs': [{
-    'internalType': "string",
+    'internalType': 'string',
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
   'stateMutability': "pure",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [],
   'name': "getVersion",
   'outputs': [{
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': '',
     'type': "uint16"
   }],
-  'stateMutability': "pure",
-  'type': "function"
+  'stateMutability': 'pure',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "enum IWinrBonanza.SpinType",
@@ -6924,21 +6976,21 @@ export const ABI10 = [{
   }],
   'name': "getWeights",
   'outputs': [{
-    'internalType': 'uint16[12][6]',
+    'internalType': "uint16[12][6]",
     'name': '',
     'type': 'uint16[12][6]'
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'uint256',
-    'name': '',
-    'type': "uint256"
-  }, {
     'internalType': "uint256",
     'name': '',
     'type': "uint256"
+  }, {
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
   }],
   'name': "initialFreeSpinWeights",
   'outputs': [{
@@ -6946,11 +6998,11 @@ export const ABI10 = [{
     'name': '',
     'type': "uint16"
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': 'uint256'
   }, {
@@ -6958,9 +7010,9 @@ export const ABI10 = [{
     'name': '',
     'type': "uint256"
   }],
-  'name': "normalReelFreeSpinWeights",
+  'name': 'normalReelFreeSpinWeights',
   'outputs': [{
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': '',
     'type': 'uint16'
   }],
@@ -6976,81 +7028,81 @@ export const ABI10 = [{
     'name': '',
     'type': "uint256"
   }],
-  'name': "normalSpinWeights",
+  'name': 'normalSpinWeights',
   'outputs': [{
     'internalType': 'uint16',
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint256",
-    'name': "randomNumber",
-    'type': 'uint256'
+    'name': 'randomNumber',
+    'type': "uint256"
   }, {
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': "weights",
-    'type': 'uint16[12][6]'
+    'type': "uint16[12][6]"
   }, {
-    'internalType': 'uint16[30]',
-    'name': 'reel',
-    'type': 'uint16[30]'
+    'internalType': "uint16[30]",
+    'name': "reel",
+    'type': "uint16[30]"
   }, {
-    'internalType': "uint16[6]",
-    'name': 'remaining',
+    'internalType': 'uint16[6]',
+    'name': "remaining",
     'type': "uint16[6]"
   }, {
-    'internalType': "uint32",
+    'internalType': 'uint32',
     'name': "payoutMultiplier",
     'type': 'uint32'
   }, {
-    'internalType': 'uint8',
+    'internalType': "uint8",
     'name': "turn",
-    'type': "uint8"
+    'type': 'uint8'
   }],
-  'name': "processReel",
+  'name': 'processReel',
   'outputs': [{
     'internalType': 'uint16[30]',
     'name': '',
     'type': "uint16[30]"
   }, {
-    'internalType': 'uint8',
+    'internalType': "uint8",
     'name': '',
-    'type': "uint8"
+    'type': 'uint8'
   }, {
     'internalType': "uint32",
     'name': '',
-    'type': 'uint32'
+    'type': "uint32"
   }, {
     'internalType': "uint16",
     'name': '',
     'type': "uint16"
   }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
+  'stateMutability': "nonpayable",
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': 'address',
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }],
-  'name': "refund",
+  'name': 'refund',
   'outputs': [{
-    'internalType': "bool",
+    'internalType': 'bool',
     'name': '',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint16",
-    'name': "scatter",
-    'type': "uint16"
+    'name': 'scatter',
+    'type': 'uint16'
   }],
-  'name': "returnScatterMultiplier",
+  'name': 'returnScatterMultiplier',
   'outputs': [{
     'internalType': "uint16",
     'name': '',
@@ -7064,33 +7116,33 @@ export const ABI10 = [{
   'outputs': [{
     'internalType': "contract RoleStore",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint16[30]",
-    'name': "grid",
+    'name': 'grid',
     'type': 'uint16[30]'
   }, {
-    'internalType': 'uint16[14]',
+    'internalType': "uint16[14]",
     'name': 'symbolCounts',
-    'type': "uint16[14]"
+    'type': 'uint16[14]'
   }],
-  'name': "seekAndDestroy",
+  'name': 'seekAndDestroy',
   'outputs': [{
     'internalType': "uint16[30]",
     'name': '',
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }],
   'stateMutability': "pure",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': "divisor",
-    'type': "uint8"
+    'type': 'uint8'
   }],
   'name': "setDoubleChanceDivisor",
   'outputs': [],
@@ -7104,39 +7156,39 @@ export const ABI10 = [{
   }, {
     'internalType': "uint16[12]",
     'name': "weights",
-    'type': "uint16[12]"
+    'type': 'uint16[12]'
   }],
-  'name': "setDoubleChanceReelFreeSpinWeights",
+  'name': 'setDoubleChanceReelFreeSpinWeights',
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint16",
     'name': "index",
-    'type': 'uint16'
+    'type': "uint16"
   }, {
     'internalType': "uint16[12]",
-    'name': "weights",
+    'name': 'weights',
     'type': "uint16[12]"
   }],
-  'name': "setDoubleChanceWeights",
+  'name': 'setDoubleChanceWeights',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'uint16',
-    'name': "index",
+    'internalType': "uint16",
+    'name': 'index',
     'type': 'uint16'
   }, {
-    'internalType': "uint16[12]",
-    'name': "weights",
-    'type': "uint16[12]"
+    'internalType': 'uint16[12]',
+    'name': 'weights',
+    'type': 'uint16[12]'
   }],
-  'name': "setFreeSpinWeights",
+  'name': 'setFreeSpinWeights',
   'outputs': [],
-  'stateMutability': 'nonpayable',
+  'stateMutability': "nonpayable",
   'type': 'function'
 }, {
   'inputs': [{
@@ -7144,7 +7196,7 @@ export const ABI10 = [{
     'name': "index",
     'type': 'uint16'
   }, {
-    'internalType': "uint16[12]",
+    'internalType': 'uint16[12]',
     'name': "weights",
     'type': "uint16[12]"
   }],
@@ -7154,59 +7206,39 @@ export const ABI10 = [{
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint16[14]",
+    'internalType': 'uint16[14]',
     'name': "_multiplierWeights",
     'type': "uint16[14]"
   }],
-  'name': "setMultiplierWeights",
+  'name': 'setMultiplierWeights',
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
-    'type': "uint16"
-  }, {
-    'internalType': 'uint16[12]',
-    'name': "weights",
-    'type': "uint16[12]"
-  }],
-  'name': 'setNormalReelFreeSpinWeight',
-  'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "uint16",
     'name': 'index',
-    'type': "uint16"
+    'type': 'uint16'
   }, {
     'internalType': "uint16[12]",
     'name': "weights",
-    'type': 'uint16[12]'
+    'type': "uint16[12]"
   }],
-  'name': "setNormalSpinWeight",
+  'name': "setNormalReelFreeSpinWeight",
   'outputs': [],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': 'uint16[10]',
-    'name': "payouts",
-    'type': 'uint16[10]'
+    'internalType': 'uint16',
+    'name': "index",
+    'type': 'uint16'
+  }, {
+    'internalType': 'uint16[12]',
+    'name': "weights",
+    'type': "uint16[12]"
   }],
-  'name': 'setPayoutEightOrMore',
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': 'uint16[10]',
-    'name': 'payouts',
-    'type': "uint16[10]"
-  }],
-  'name': 'setPayoutTenOrMore',
+  'name': 'setNormalSpinWeight',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
@@ -7216,6 +7248,26 @@ export const ABI10 = [{
     'name': "payouts",
     'type': "uint16[10]"
   }],
+  'name': 'setPayoutEightOrMore',
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint16[10]',
+    'name': "payouts",
+    'type': 'uint16[10]'
+  }],
+  'name': "setPayoutTenOrMore",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint16[10]',
+    'name': "payouts",
+    'type': 'uint16[10]'
+  }],
   'name': "setPayoutTwelveOrMore",
   'outputs': [],
   'stateMutability': "nonpayable",
@@ -7224,35 +7276,35 @@ export const ABI10 = [{
 export const ABI11 = [{
   'inputs': [{
     'internalType': "contract RoleStore",
-    'name': '_roleStore',
+    'name': "_roleStore",
     'type': "address"
   }, {
     'internalType': "contract Config",
     'name': "_config",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "contract BudgetMiddleware",
     'name': "_budget",
     'type': "address"
   }],
-  'stateMutability': "nonpayable",
-  'type': 'constructor'
+  'stateMutability': 'nonpayable',
+  'type': "constructor"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': 'client',
-    'type': "address"
+    'name': "client",
+    'type': 'address'
   }],
   'name': 'AlreadyCompleted',
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "uint16",
-    'name': 'index',
+    'name': "index",
     'type': 'uint16'
   }],
   'name': "FirstIndexMustBeZero",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "address",
@@ -7272,28 +7324,28 @@ export const ABI11 = [{
 }, {
   'inputs': [{
     'internalType': "uint16",
-    'name': 'index',
+    'name': "index",
     'type': "uint16"
   }],
   'name': "IndexOutOfBound",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': "given",
     'type': "uint128"
   }, {
-    'internalType': "uint128",
-    'name': "max",
+    'internalType': 'uint128',
+    'name': 'max',
     'type': "uint128"
   }],
   'name': 'MaxWagerExceeded',
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': "client",
-    'type': "address"
+    'type': 'address'
   }],
   'name': 'NoFreeSpin',
   'type': "error"
@@ -7307,80 +7359,160 @@ export const ABI11 = [{
   'type': 'error'
 }, {
   'inputs': [],
-  'name': "ReentrancyGuardReentrantCall",
-  'type': 'error'
+  'name': 'ReentrancyGuardReentrantCall',
+  'type': "error"
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': 'msgSender',
+    'internalType': 'address',
+    'name': "msgSender",
     'type': 'address'
   }, {
-    'internalType': "string",
-    'name': 'role',
+    'internalType': 'string',
+    'name': "role",
     'type': "string"
   }],
   'name': "Unauthorized",
-  'type': "error"
+  'type': 'error'
 }, {
   'inputs': [{
     'internalType': "uint32",
     'name': "sum",
     'type': "uint32"
   }],
-  'name': "WeightSumIncorrect",
+  'name': 'WeightSumIncorrect',
   'type': "error"
 }, {
   'inputs': [],
   'name': "MULTIPLIER_MAX_WAGER_PACKAGE",
   'outputs': [{
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': '',
     'type': "uint8"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "REEL_ROWS",
+  'name': 'REEL_ROWS',
   'outputs': [{
-    'internalType': 'uint16',
+    'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': "client",
+    'name': 'client',
+    'type': "address"
+  }, {
+    'internalType': 'address',
+    'name': 'bankroll',
+    'type': "address"
+  }, {
+    'internalType': 'bytes',
+    'name': "data",
+    'type': 'bytes'
+  }],
+  'name': 'bet',
+  'outputs': [{
+    'components': [{
+      'internalType': "uint128",
+      'name': "escrow",
+      'type': "uint128"
+    }, {
+      'internalType': 'uint128',
+      'name': "payback",
+      'type': 'uint128'
+    }, {
+      'internalType': "uint128",
+      'name': "payout",
+      'type': "uint128"
+    }, {
+      'internalType': 'uint32',
+      'name': "delay",
+      'type': "uint32"
+    }, {
+      'internalType': 'uint8',
+      'name': "iterate",
+      'type': 'uint8'
+    }, {
+      'internalType': "enum ControllerUtils.Signal",
+      'name': 'signal',
+      'type': 'uint8'
+    }],
+    'internalType': "struct ControllerUtils.Response",
+    'name': '',
+    'type': "tuple"
+  }, {
+    'components': [{
+      'components': [{
+        'components': [{
+          'internalType': 'string',
+          'name': 'key',
+          'type': "string"
+        }, {
+          'internalType': "bytes",
+          'name': "value",
+          'type': "bytes"
+        }],
+        'internalType': "struct EventUtils.BytesKeyValue[]",
+        'name': 'items',
+        'type': "tuple[]"
+      }],
+      'internalType': "struct EventUtils.BytesItems",
+      'name': "list",
+      'type': 'tuple'
+    }],
+    'internalType': "struct EventUtils.Log",
+    'name': '',
+    'type': 'tuple'
+  }],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': "budget",
+  'outputs': [{
+    'internalType': "contract BudgetMiddleware",
+    'name': '',
+    'type': "address"
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "address",
+    'name': 'client',
     'type': "address"
   }, {
     'internalType': "address",
     'name': "bankroll",
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "bytes",
     'name': "data",
     'type': "bytes"
   }],
-  'name': "bet",
+  'name': 'buyFreeSpins',
   'outputs': [{
     'components': [{
       'internalType': "uint128",
-      'name': "escrow",
-      'type': 'uint128'
+      'name': 'escrow',
+      'type': "uint128"
     }, {
       'internalType': "uint128",
-      'name': "payback",
+      'name': 'payback',
       'type': "uint128"
     }, {
       'internalType': 'uint128',
       'name': "payout",
-      'type': "uint128"
+      'type': 'uint128'
     }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': "uint32"
+      'internalType': 'uint32',
+      'name': 'delay',
+      'type': 'uint32'
     }, {
       'internalType': 'uint8',
       'name': "iterate",
@@ -7402,120 +7534,58 @@ export const ABI11 = [{
           'type': "string"
         }, {
           'internalType': 'bytes',
-          'name': "value",
-          'type': 'bytes'
+          'name': 'value',
+          'type': "bytes"
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
         'name': 'items',
         'type': "tuple[]"
       }],
       'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
-    }],
-    'internalType': "struct EventUtils.Log",
-    'name': '',
-    'type': "tuple"
-  }],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "budget",
-  'outputs': [{
-    'internalType': "contract BudgetMiddleware",
-    'name': '',
-    'type': "address"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'address',
-    'name': 'client',
-    'type': 'address'
-  }, {
-    'internalType': "address",
-    'name': "bankroll",
-    'type': "address"
-  }, {
-    'internalType': "bytes",
-    'name': "data",
-    'type': 'bytes'
-  }],
-  'name': "buyFreeSpins",
-  'outputs': [{
-    'components': [{
-      'internalType': "uint128",
-      'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': 'payback',
-      'type': 'uint128'
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
-      'type': 'uint128'
-    }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': "uint32"
-    }, {
-      'internalType': "uint8",
-      'name': "iterate",
-      'type': "uint8"
-    }, {
-      'internalType': "enum ControllerUtils.Signal",
-      'name': 'signal',
-      'type': "uint8"
-    }],
-    'internalType': "struct ControllerUtils.Response",
-    'name': '',
-    'type': "tuple"
-  }, {
-    'components': [{
-      'components': [{
-        'components': [{
-          'internalType': "string",
-          'name': 'key',
-          'type': 'string'
-        }, {
-          'internalType': "bytes",
-          'name': "value",
-          'type': "bytes"
-        }],
-        'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': 'tuple[]'
-      }],
-      'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
-      'type': "tuple"
+      'name': 'list',
+      'type': 'tuple'
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
     'type': 'tuple'
   }],
   'stateMutability': "nonpayable",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': 'config',
+  'name': "config",
   'outputs': [{
     'internalType': "contract Config",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': "doubleChanceDivisor",
   'outputs': [{
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': '',
-    'type': 'uint8'
+    'type': "uint8"
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint256',
+    'name': '',
+    'type': 'uint256'
+  }, {
+    'internalType': "uint256",
+    'name': '',
+    'type': "uint256"
+  }],
+  'name': "doubleChanceReelFreeSpinWeights",
+  'outputs': [{
+    'internalType': "uint16",
+    'name': '',
+    'type': 'uint16'
   }],
   'stateMutability': 'view',
   'type': 'function'
@@ -7525,25 +7595,7 @@ export const ABI11 = [{
     'name': '',
     'type': "uint256"
   }, {
-    'internalType': "uint256",
-    'name': '',
-    'type': 'uint256'
-  }],
-  'name': "doubleChanceReelFreeSpinWeights",
-  'outputs': [{
-    'internalType': "uint16",
-    'name': '',
-    'type': 'uint16'
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [{
     'internalType': 'uint256',
-    'name': '',
-    'type': 'uint256'
-  }, {
-    'internalType': "uint256",
     'name': '',
     'type': "uint256"
   }],
@@ -7553,50 +7605,50 @@ export const ABI11 = [{
     'name': '',
     'type': "uint16"
   }],
-  'stateMutability': "view",
-  'type': 'function'
+  'stateMutability': 'view',
+  'type': "function"
 }, {
   'inputs': [{
     'internalType': 'address',
-    'name': 'client',
-    'type': 'address'
+    'name': "client",
+    'type': "address"
   }],
-  'name': "emergencyRefund",
+  'name': 'emergencyRefund',
   'outputs': [{
-    'internalType': 'bool',
+    'internalType': "bool",
     'name': '',
     'type': "bool"
   }],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "address",
     'name': "client",
     'type': 'address'
   }, {
-    'internalType': 'uint256[]',
-    'name': "randoms",
+    'internalType': "uint256[]",
+    'name': 'randoms',
     'type': 'uint256[]'
   }],
-  'name': "fill",
+  'name': 'fill',
   'outputs': [{
     'components': [{
-      'internalType': 'uint128',
-      'name': "escrow",
+      'internalType': "uint128",
+      'name': 'escrow',
       'type': 'uint128'
     }, {
-      'internalType': "uint128",
-      'name': "payback",
+      'internalType': 'uint128',
+      'name': 'payback',
       'type': "uint128"
     }, {
       'internalType': 'uint128',
-      'name': "payout",
+      'name': 'payout',
       'type': "uint128"
     }, {
-      'internalType': "uint32",
-      'name': "delay",
-      'type': "uint32"
+      'internalType': 'uint32',
+      'name': 'delay',
+      'type': 'uint32'
     }, {
       'internalType': "uint8",
       'name': 'iterate',
@@ -7608,22 +7660,22 @@ export const ABI11 = [{
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }, {
     'components': [{
       'components': [{
         'components': [{
-          'internalType': 'string',
+          'internalType': "string",
           'name': 'key',
           'type': "string"
         }, {
-          'internalType': "bytes",
+          'internalType': 'bytes',
           'name': "value",
-          'type': "bytes"
+          'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
-        'name': "items",
-        'type': "tuple[]"
+        'name': 'items',
+        'type': 'tuple[]'
       }],
       'internalType': "struct EventUtils.BytesItems",
       'name': "list",
@@ -7633,29 +7685,29 @@ export const ABI11 = [{
     'name': '',
     'type': "tuple"
   }],
-  'stateMutability': 'nonpayable',
+  'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': 'randomNumber',
     'type': "uint256"
   }, {
     'internalType': "uint16[12][6]",
-    'name': "weights",
-    'type': "uint16[12][6]"
+    'name': 'weights',
+    'type': 'uint16[12][6]'
   }, {
     'internalType': "uint16[30]",
     'name': 'reel',
-    'type': 'uint16[30]'
+    'type': "uint16[30]"
   }, {
     'internalType': "uint16[6]",
     'name': "remaining",
-    'type': "uint16[6]"
+    'type': 'uint16[6]'
   }],
-  'name': 'fillReels',
+  'name': "fillReels",
   'outputs': [{
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': '',
     'type': "uint16[30]"
   }, {
@@ -7663,15 +7715,15 @@ export const ABI11 = [{
     'name': '',
     'type': "uint16[14]"
   }, {
-    'internalType': "uint16[6]",
+    'internalType': 'uint16[6]',
     'name': '',
-    'type': "uint16[6]"
+    'type': 'uint16[6]'
   }, {
     'internalType': "bool",
     'name': '',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'stateMutability': 'nonpayable',
+  'stateMutability': "nonpayable",
   'type': 'function'
 }, {
   'inputs': [{
@@ -7679,52 +7731,52 @@ export const ABI11 = [{
     'name': "randomNumber",
     'type': "uint256"
   }, {
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': "reel",
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }, {
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': 'count',
-    'type': "uint8"
+    'type': 'uint8'
   }],
-  'name': "fillScatters",
+  'name': 'fillScatters',
   'outputs': [{
     'internalType': "uint16[30]",
     'name': '',
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': 'client',
-    'type': "address"
+    'internalType': 'address',
+    'name': "client",
+    'type': 'address'
   }, {
-    'internalType': "address",
+    'internalType': 'address',
     'name': '',
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': "bytes",
     'name': '',
     'type': 'bytes'
   }],
-  'name': "freeSpin",
+  'name': 'freeSpin',
   'outputs': [{
     'components': [{
       'internalType': "uint128",
       'name': 'escrow',
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payback",
-      'type': "uint128"
-    }, {
-      'internalType': "uint128",
-      'name': "payout",
       'type': 'uint128'
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint128',
+      'name': "payback",
+      'type': 'uint128'
+    }, {
+      'internalType': "uint128",
+      'name': 'payout',
+      'type': 'uint128'
+    }, {
+      'internalType': 'uint32',
       'name': "delay",
       'type': 'uint32'
     }, {
@@ -7733,41 +7785,41 @@ export const ABI11 = [{
       'type': 'uint8'
     }, {
       'internalType': "enum ControllerUtils.Signal",
-      'name': "signal",
-      'type': "uint8"
+      'name': 'signal',
+      'type': 'uint8'
     }],
     'internalType': "struct ControllerUtils.Response",
     'name': '',
-    'type': "tuple"
+    'type': 'tuple'
   }, {
     'components': [{
       'components': [{
         'components': [{
-          'internalType': "string",
+          'internalType': 'string',
           'name': "key",
           'type': "string"
         }, {
-          'internalType': "bytes",
+          'internalType': 'bytes',
           'name': 'value',
-          'type': "bytes"
+          'type': 'bytes'
         }],
         'internalType': "struct EventUtils.BytesKeyValue[]",
         'name': "items",
         'type': "tuple[]"
       }],
       'internalType': "struct EventUtils.BytesItems",
-      'name': "list",
+      'name': 'list',
       'type': "tuple"
     }],
     'internalType': "struct EventUtils.Log",
     'name': '',
-    'type': 'tuple'
+    'type': "tuple"
   }],
   'stateMutability': "nonpayable",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }, {
@@ -7777,43 +7829,43 @@ export const ABI11 = [{
   }],
   'name': "freeSpinWeights",
   'outputs': [{
-    'internalType': "uint16",
+    'internalType': 'uint16',
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': 'uint256',
-    'name': 'a',
-    'type': "uint256"
-  }, {
     'internalType': "uint256",
-    'name': 'b',
+    'name': 'a',
     'type': 'uint256'
+  }, {
+    'internalType': 'uint256',
+    'name': 'b',
+    'type': "uint256"
   }],
-  'name': "generateRandomNumber",
+  'name': 'generateRandomNumber',
   'outputs': [{
     'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'stateMutability': "pure",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint256",
     'name': 'a',
-    'type': 'uint256'
+    'type': "uint256"
   }, {
     'internalType': "uint256",
     'name': 'b',
-    'type': "uint256"
+    'type': 'uint256'
   }, {
     'internalType': 'uint256',
     'name': 'c',
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'name': 'generateRandomNumber',
   'outputs': [{
@@ -7822,36 +7874,36 @@ export const ABI11 = [{
     'type': "uint256"
   }],
   'stateMutability': "pure",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': 'wager',
-    'type': 'uint128'
+    'type': "uint128"
   }],
-  'name': "getDoubleChanceCost",
+  'name': 'getDoubleChanceCost',
   'outputs': [{
     'internalType': 'uint256',
     'name': "tokenAmount_",
     'type': 'uint256'
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
   'name': 'getDoubleChanceReelFreeSpinWeights',
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
-  'name': 'getDoubleChanceWeights',
+  'name': "getDoubleChanceWeights",
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
     'type': "uint16[12][6]"
   }],
@@ -7861,25 +7913,25 @@ export const ABI11 = [{
   'inputs': [{
     'internalType': "uint128",
     'name': "wager",
-    'type': "uint128"
+    'type': 'uint128'
   }],
   'name': "getFreeSpinTokenAmount",
   'outputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }],
   'stateMutability': "pure",
-  'type': 'function'
+  'type': "function"
 }, {
   'inputs': [],
   'name': "getFreeSpinWeights",
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
     'type': "uint16[12][6]"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [],
@@ -7889,90 +7941,90 @@ export const ABI11 = [{
     'name': '',
     'type': "uint16[12][6]"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [],
-  'name': "getMultiplierWeights",
+  'name': 'getMultiplierWeights',
   'outputs': [{
     'internalType': 'uint16[15]',
     'name': '',
-    'type': "uint16[15]"
+    'type': 'uint16[15]'
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
-  'name': "getNormalReelFreeSpinWeights",
+  'name': 'getNormalReelFreeSpinWeights',
   'outputs': [{
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': '',
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [],
-  'name': "getNormalSpinWeights",
+  'name': 'getNormalSpinWeights',
   'outputs': [{
     'internalType': 'uint16[12][6]',
     'name': '',
     'type': "uint16[12][6]"
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [],
-  'name': 'getPayoutEightOrMore',
-  'outputs': [{
-    'internalType': "uint16[10]",
-    'name': '',
-    'type': "uint16[10]"
-  }],
-  'stateMutability': "view",
-  'type': "function"
-}, {
-  'inputs': [],
-  'name': "getPayoutTenOrMore",
+  'name': "getPayoutEightOrMore",
   'outputs': [{
     'internalType': 'uint16[10]',
     'name': '',
     'type': 'uint16[10]'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "getPayoutTwelveOrMore",
+  'name': "getPayoutTenOrMore",
   'outputs': [{
     'internalType': "uint16[10]",
     'name': '',
-    'type': "uint16[10]"
+    'type': 'uint16[10]'
+  }],
+  'stateMutability': 'view',
+  'type': 'function'
+}, {
+  'inputs': [],
+  'name': 'getPayoutTwelveOrMore',
+  'outputs': [{
+    'internalType': "uint16[10]",
+    'name': '',
+    'type': 'uint16[10]'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
   }],
   'name': "getPlayerStatus",
   'outputs': [{
     'components': [{
       'internalType': "uint8",
       'name': "freeSpinCount",
-      'type': 'uint8'
+      'type': "uint8"
     }, {
       'internalType': "uint128",
       'name': 'wager',
       'type': "uint128"
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint32',
       'name': "bufferedFreeSpinWinnings",
-      'type': "uint32"
+      'type': 'uint32'
     }, {
-      'internalType': "uint32",
+      'internalType': 'uint32',
       'name': "multiplier",
       'type': "uint32"
     }, {
@@ -7982,38 +8034,38 @@ export const ABI11 = [{
     }, {
       'internalType': "enum IGateOfOlympos.State",
       'name': 'state',
-      'type': "uint8"
+      'type': 'uint8'
     }],
     'internalType': "struct IGateOfOlympos.Game",
     'name': '',
     'type': 'tuple'
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint16",
-    'name': 'symbol',
+    'name': "symbol",
     'type': "uint16"
   }],
-  'name': "getSymbolName",
+  'name': 'getSymbolName',
   'outputs': [{
     'internalType': "string",
     'name': '',
     'type': "string"
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': "function"
 }, {
   'inputs': [],
   'name': 'getType',
   'outputs': [{
-    'internalType': "string",
+    'internalType': 'string',
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
-  'stateMutability': "pure",
-  'type': "function"
+  'stateMutability': 'pure',
+  'type': 'function'
 }, {
   'inputs': [],
   'name': 'getVersion',
@@ -8023,18 +8075,18 @@ export const ABI11 = [{
     'type': 'uint16'
   }],
   'stateMutability': "pure",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
     'internalType': "enum IGateOfOlympos.SpinType",
     'name': 'spinType',
-    'type': "uint8"
+    'type': 'uint8'
   }],
-  'name': 'getWeights',
+  'name': "getWeights",
   'outputs': [{
     'internalType': "uint16[12][6]",
     'name': '',
-    'type': "uint16[12][6]"
+    'type': 'uint16[12][6]'
   }],
   'stateMutability': "view",
   'type': "function"
@@ -8060,7 +8112,7 @@ export const ABI11 = [{
   'inputs': [],
   'name': "maxWagerMultiplier",
   'outputs': [{
-    'internalType': "uint128",
+    'internalType': 'uint128',
     'name': '',
     'type': "uint128"
   }],
@@ -8068,25 +8120,25 @@ export const ABI11 = [{
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'name': "normalReelFreeSpinWeights",
+  'name': 'normalReelFreeSpinWeights',
   'outputs': [{
     'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': '',
     'type': "uint256"
   }, {
@@ -8100,45 +8152,45 @@ export const ABI11 = [{
     'name': '',
     'type': "uint16"
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': "randomNumber",
     'type': 'uint256'
   }, {
-    'internalType': "uint16[12][6]",
+    'internalType': 'uint16[12][6]',
     'name': "weights",
     'type': "uint16[12][6]"
   }, {
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': "reel",
     'type': "uint16[30]"
   }, {
     'internalType': "uint16[6]",
     'name': "remaining",
-    'type': 'uint16[6]'
+    'type': "uint16[6]"
   }, {
-    'internalType': "uint32",
-    'name': 'multiplier',
+    'internalType': 'uint32',
+    'name': "multiplier",
     'type': "uint32"
   }, {
     'internalType': "uint32",
-    'name': "payoutMultiplier",
-    'type': "uint32"
+    'name': 'payoutMultiplier',
+    'type': 'uint32'
   }, {
-    'internalType': "uint8",
-    'name': "turn",
+    'internalType': 'uint8',
+    'name': 'turn',
     'type': "uint8"
   }],
-  'name': "processReel",
+  'name': 'processReel',
   'outputs': [{
     'internalType': 'uint16[30]',
     'name': '',
     'type': "uint16[30]"
   }, {
-    'internalType': "uint8",
+    'internalType': 'uint8',
     'name': '',
     'type': "uint8"
   }, {
@@ -8146,35 +8198,35 @@ export const ABI11 = [{
     'name': '',
     'type': 'uint32'
   }, {
-    'internalType': 'uint16',
+    'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }, {
     'internalType': "uint16",
     'name': '',
-    'type': "uint16"
+    'type': 'uint16'
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "client",
-    'type': "address"
+    'internalType': 'address',
+    'name': 'client',
+    'type': 'address'
   }],
   'name': "refund",
   'outputs': [{
-    'internalType': 'bool',
+    'internalType': "bool",
     'name': '',
     'type': "bool"
   }],
-  'stateMutability': "nonpayable",
-  'type': 'function'
+  'stateMutability': 'nonpayable',
+  'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint16",
-    'name': 'scatter',
-    'type': "uint16"
+    'internalType': 'uint16',
+    'name': "scatter",
+    'type': 'uint16'
   }],
   'name': "returnScatterMultiplier",
   'outputs': [{
@@ -8182,7 +8234,7 @@ export const ABI11 = [{
     'name': '',
     'type': "uint16"
   }],
-  'stateMutability': "pure",
+  'stateMutability': 'pure',
   'type': "function"
 }, {
   'inputs': [],
@@ -8190,13 +8242,13 @@ export const ABI11 = [{
   'outputs': [{
     'internalType': "contract RoleStore",
     'name': '',
-    'type': "address"
+    'type': 'address'
   }],
   'stateMutability': "view",
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': "grid",
     'type': "uint16[30]"
   }, {
@@ -8204,111 +8256,21 @@ export const ABI11 = [{
     'name': "symbolCounts",
     'type': 'uint16[14]'
   }],
-  'name': "seekAndDestroy",
+  'name': 'seekAndDestroy',
   'outputs': [{
-    'internalType': "uint16[30]",
+    'internalType': 'uint16[30]',
     'name': '',
-    'type': "uint16[30]"
+    'type': 'uint16[30]'
   }],
   'stateMutability': "pure",
   'type': "function"
 }, {
   'inputs': [{
-    'internalType': "uint8",
-    'name': "divisor",
+    'internalType': 'uint8',
+    'name': 'divisor',
     'type': 'uint8'
   }],
-  'name': "setDoubleChanceDivisor",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
-    'type': 'uint16'
-  }, {
-    'internalType': "uint16[12]",
-    'name': 'weights',
-    'type': 'uint16[12]'
-  }],
-  'name': "setDoubleChanceReelFreeSpinWeights",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
-    'type': "uint16"
-  }, {
-    'internalType': "uint16[12]",
-    'name': "weights",
-    'type': "uint16[12]"
-  }],
-  'name': "setDoubleChanceWeights",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16",
-    'name': "index",
-    'type': "uint16"
-  }, {
-    'internalType': "uint16[12]",
-    'name': 'weights',
-    'type': "uint16[12]"
-  }],
-  'name': 'setFreeSpinWeights',
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': 'function'
-}, {
-  'inputs': [{
-    'internalType': 'uint16',
-    'name': "index",
-    'type': 'uint16'
-  }, {
-    'internalType': "uint16[12]",
-    'name': "weights",
-    'type': "uint16[12]"
-  }],
-  'name': "setInitialFreeSpinWeights",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint128",
-    'name': '_maxWagerMultiplier',
-    'type': 'uint128'
-  }],
-  'name': "setMaxWagerMultiplier",
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16[15]",
-    'name': "_multiplierWeights",
-    'type': "uint16[15]"
-  }],
-  'name': "setMultiplierWeights",
-  'outputs': [],
-  'stateMutability': 'nonpayable',
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': 'uint16',
-    'name': "index",
-    'type': 'uint16'
-  }, {
-    'internalType': "uint16[12]",
-    'name': "weights",
-    'type': 'uint16[12]'
-  }],
-  'name': "setNormalReelFreeSpinWeight",
+  'name': 'setDoubleChanceDivisor',
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': "function"
@@ -8318,41 +8280,131 @@ export const ABI11 = [{
     'name': 'index',
     'type': 'uint16'
   }, {
+    'internalType': 'uint16[12]',
+    'name': 'weights',
+    'type': "uint16[12]"
+  }],
+  'name': 'setDoubleChanceReelFreeSpinWeights',
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint16',
+    'name': 'index',
+    'type': 'uint16'
+  }, {
     'internalType': "uint16[12]",
+    'name': 'weights',
+    'type': 'uint16[12]'
+  }],
+  'name': 'setDoubleChanceWeights',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "uint16",
+    'name': "index",
+    'type': "uint16"
+  }, {
+    'internalType': 'uint16[12]',
+    'name': "weights",
+    'type': 'uint16[12]'
+  }],
+  'name': 'setFreeSpinWeights',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "uint16",
+    'name': "index",
+    'type': "uint16"
+  }, {
+    'internalType': 'uint16[12]',
+    'name': 'weights',
+    'type': "uint16[12]"
+  }],
+  'name': "setInitialFreeSpinWeights",
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': 'uint128',
+    'name': '_maxWagerMultiplier',
+    'type': 'uint128'
+  }],
+  'name': 'setMaxWagerMultiplier',
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': 'uint16[15]',
+    'name': '_multiplierWeights',
+    'type': 'uint16[15]'
+  }],
+  'name': 'setMultiplierWeights',
+  'outputs': [],
+  'stateMutability': "nonpayable",
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint16",
+    'name': "index",
+    'type': 'uint16'
+  }, {
+    'internalType': 'uint16[12]',
+    'name': "weights",
+    'type': "uint16[12]"
+  }],
+  'name': "setNormalReelFreeSpinWeight",
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': "function"
+}, {
+  'inputs': [{
+    'internalType': "uint16",
+    'name': "index",
+    'type': "uint16"
+  }, {
+    'internalType': 'uint16[12]',
     'name': "weights",
     'type': "uint16[12]"
   }],
   'name': "setNormalSpinWeight",
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint16[10]",
+    'internalType': 'uint16[10]',
     'name': "payouts",
     'type': 'uint16[10]'
   }],
-  'name': 'setPayoutEightOrMore',
-  'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
-}, {
-  'inputs': [{
-    'internalType': "uint16[10]",
-    'name': "payouts",
-    'type': 'uint16[10]'
-  }],
-  'name': "setPayoutTenOrMore",
+  'name': "setPayoutEightOrMore",
   'outputs': [],
   'stateMutability': "nonpayable",
   'type': 'function'
 }, {
   'inputs': [{
     'internalType': "uint16[10]",
-    'name': "payouts",
+    'name': 'payouts',
     'type': "uint16[10]"
   }],
-  'name': "setPayoutTwelveOrMore",
+  'name': "setPayoutTenOrMore",
+  'outputs': [],
+  'stateMutability': 'nonpayable',
+  'type': 'function'
+}, {
+  'inputs': [{
+    'internalType': "uint16[10]",
+    'name': 'payouts',
+    'type': "uint16[10]"
+  }],
+  'name': 'setPayoutTwelveOrMore',
   'outputs': [],
   'stateMutability': 'nonpayable',
   'type': 'function'
@@ -8366,14 +8418,14 @@ export const ABI12 = [{
     'type': "address"
   }, {
     'indexed': true,
-    'internalType': "address",
+    'internalType': 'address',
     'name': "guy",
     'type': "address"
   }, {
     'indexed': false,
-    'internalType': "uint256",
-    'name': 'wad',
-    'type': "uint256"
+    'internalType': 'uint256',
+    'name': "wad",
+    'type': 'uint256'
   }],
   'name': 'Approval',
   'type': 'event'
@@ -8381,17 +8433,37 @@ export const ABI12 = [{
   'anonymous': false,
   'inputs': [{
     'indexed': true,
+    'internalType': 'address',
+    'name': "dst",
+    'type': "address"
+  }, {
+    'indexed': false,
+    'internalType': 'uint256',
+    'name': 'wad',
+    'type': "uint256"
+  }],
+  'name': "Deposit",
+  'type': 'event'
+}, {
+  'anonymous': false,
+  'inputs': [{
+    'indexed': true,
+    'internalType': "address",
+    'name': 'src',
+    'type': 'address'
+  }, {
+    'indexed': true,
     'internalType': "address",
     'name': "dst",
     'type': "address"
   }, {
     'indexed': false,
     'internalType': "uint256",
-    'name': "wad",
+    'name': 'wad',
     'type': "uint256"
   }],
-  'name': "Deposit",
-  'type': "event"
+  'name': 'Transfer',
+  'type': 'event'
 }, {
   'anonymous': false,
   'inputs': [{
@@ -8400,28 +8472,8 @@ export const ABI12 = [{
     'name': 'src',
     'type': "address"
   }, {
-    'indexed': true,
-    'internalType': 'address',
-    'name': "dst",
-    'type': "address"
-  }, {
     'indexed': false,
-    'internalType': "uint256",
-    'name': "wad",
-    'type': "uint256"
-  }],
-  'name': "Transfer",
-  'type': "event"
-}, {
-  'anonymous': false,
-  'inputs': [{
-    'indexed': true,
-    'internalType': "address",
-    'name': "src",
-    'type': "address"
-  }, {
-    'indexed': false,
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': "wad",
     'type': "uint256"
   }],
@@ -8429,7 +8481,7 @@ export const ABI12 = [{
   'type': 'event'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': '',
     'type': "address"
   }, {
@@ -8437,31 +8489,31 @@ export const ABI12 = [{
     'name': '',
     'type': "address"
   }],
-  'name': "allowance",
+  'name': 'allowance',
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [{
     'internalType': "address",
-    'name': "guy",
+    'name': 'guy',
     'type': 'address'
   }, {
     'internalType': "uint256",
-    'name': 'wad',
-    'type': 'uint256'
+    'name': "wad",
+    'type': "uint256"
   }],
-  'name': 'approve',
+  'name': "approve",
   'outputs': [{
     'internalType': "bool",
     'name': '',
     'type': "bool"
   }],
-  'stateMutability': "nonpayable",
+  'stateMutability': 'nonpayable',
   'type': "function"
 }, {
   'inputs': [{
@@ -8469,27 +8521,27 @@ export const ABI12 = [{
     'name': '',
     'type': "address"
   }],
-  'name': "balanceOf",
+  'name': 'balanceOf',
   'outputs': [{
     'internalType': "uint256",
     'name': '',
-    'type': "uint256"
+    'type': 'uint256'
   }],
-  'stateMutability': "view",
+  'stateMutability': 'view',
   'type': "function"
 }, {
   'inputs': [],
-  'name': "decimals",
+  'name': 'decimals',
   'outputs': [{
     'internalType': "uint8",
     'name': '',
-    'type': 'uint8'
+    'type': "uint8"
   }],
   'stateMutability': "view",
   'type': "function"
 }, {
   'inputs': [],
-  'name': "deposit",
+  'name': 'deposit',
   'outputs': [],
   'stateMutability': "payable",
   'type': "function"
@@ -8497,84 +8549,84 @@ export const ABI12 = [{
   'inputs': [],
   'name': 'name',
   'outputs': [{
-    'internalType': "string",
+    'internalType': 'string',
     'name': '',
-    'type': 'string'
+    'type': "string"
   }],
-  'stateMutability': 'view',
-  'type': "function"
+  'stateMutability': "view",
+  'type': 'function'
 }, {
   'inputs': [],
   'name': 'symbol',
   'outputs': [{
     'internalType': "string",
     'name': '',
-    'type': "string"
+    'type': 'string'
   }],
-  'stateMutability': "view",
-  'type': "function"
+  'stateMutability': 'view',
+  'type': 'function'
 }, {
   'inputs': [],
   'name': 'totalSupply',
   'outputs': [{
     'internalType': 'uint256',
     'name': '',
-    'type': 'uint256'
+    'type': "uint256"
   }],
   'stateMutability': 'view',
-  'type': "function"
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
-    'name': "dst",
+    'internalType': 'address',
+    'name': 'dst',
     'type': "address"
   }, {
-    'internalType': "uint256",
+    'internalType': 'uint256',
     'name': "wad",
-    'type': "uint256"
+    'type': 'uint256'
   }],
   'name': 'transfer',
   'outputs': [{
     'internalType': "bool",
     'name': '',
-    'type': 'bool'
+    'type': "bool"
   }],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "address",
+    'internalType': 'address',
     'name': 'src',
-    'type': "address"
+    'type': 'address'
   }, {
     'internalType': 'address',
     'name': "dst",
-    'type': "address"
+    'type': 'address'
   }, {
-    'internalType': "uint256",
-    'name': "wad",
+    'internalType': 'uint256',
+    'name': 'wad',
     'type': "uint256"
   }],
-  'name': "transferFrom",
+  'name': 'transferFrom',
   'outputs': [{
-    'internalType': 'bool',
+    'internalType': "bool",
     'name': '',
-    'type': "bool"
+    'type': 'bool'
   }],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
   'inputs': [{
-    'internalType': "uint256",
-    'name': "wad",
+    'internalType': 'uint256',
+    'name': 'wad',
     'type': "uint256"
   }],
-  'name': "withdraw",
+  'name': 'withdraw',
   'outputs': [],
-  'stateMutability': "nonpayable",
-  'type': "function"
+  'stateMutability': 'nonpayable',
+  'type': 'function'
 }, {
-  'stateMutability': 'payable',
+  'stateMutability': "payable",
   'type': "receive"
 }];
 export const SONICLABSABI = [ABI1, ABI2, ABI3, ABI4, ABI5, ABI6, ABI7, ABI8, ABI9, ABI10, ABI11, ABI12];
