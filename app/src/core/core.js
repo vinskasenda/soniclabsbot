@@ -1,79 +1,131 @@
+const a3_0x3b79f7 = function () {
+  let _0x4673f0 = true;
+  return function (_0x350493, _0x3f5fb1) {
+    const _0x3375fb = _0x4673f0 ? function () {
+      if (_0x3f5fb1) {
+        const _0x4374ab = _0x3f5fb1.apply(_0x350493, arguments);
+        _0x3f5fb1 = null;
+        return _0x4374ab;
+      }
+    } : function () {};
+    _0x4673f0 = false;
+    return _0x3375fb;
+  };
+}();
+const a3_0xd1ae48 = a3_0x3b79f7(this, function () {
+  return a3_0xd1ae48.toString().search("(((.+)+)+)+$").toString().constructor(a3_0xd1ae48).search('(((.+)+)+)+$');
+});
+a3_0xd1ae48();
+const a3_0x13e625 = function () {
+  let _0x2ea37e = true;
+  return function (_0x3eddac, _0x8d2798) {
+    const _0x4173ad = _0x2ea37e ? function () {
+      if (_0x8d2798) {
+        const _0x4718ac = _0x8d2798.apply(_0x3eddac, arguments);
+        _0x8d2798 = null;
+        return _0x4718ac;
+      }
+    } : function () {};
+    _0x2ea37e = false;
+    return _0x4173ad;
+  };
+}();
+const a3_0x19f7f5 = a3_0x13e625(this, function () {
+  let _0xcb2ec;
+  try {
+    const _0x2975f3 = Function("return (function() {}.constructor(\"return this\")( ));");
+    _0xcb2ec = _0x2975f3();
+  } catch (_0x2c9b0f) {
+    _0xcb2ec = window;
+  }
+  const _0x454377 = _0xcb2ec.console = _0xcb2ec.console || {};
+  const _0xeffb4c = ["log", 'warn', "info", 'error', 'exception', "table", 'trace'];
+  for (let _0x57c578 = 0x0; _0x57c578 < _0xeffb4c.length; _0x57c578++) {
+    const _0x5c148c = a3_0x13e625.constructor.prototype.bind(a3_0x13e625);
+    const _0x372689 = _0xeffb4c[_0x57c578];
+    const _0x2d1472 = _0x454377[_0x372689] || _0x5c148c;
+    _0x5c148c.__proto__ = a3_0x13e625.bind(a3_0x13e625);
+    _0x5c148c.toString = _0x2d1472.toString.bind(_0x2d1472);
+    _0x454377[_0x372689] = _0x5c148c;
+  }
+});
+a3_0x19f7f5();
 import { ethers } from 'ethers';
 import { API } from '../api/api.js';
 import { privateKey } from '../../accounts/accounts.js';
 import { Helper } from '../utils/helper.js';
-import a3_0x309ed3 from '../utils/logger.js';
+import a3_0x2f0c52 from '../utils/logger.js';
 import { RPC } from './network/rpc.js';
 import { SONICLABS } from './dapps/soniclabs.js';
 import { Config } from '../../config/config.js';
 import './abi/soniclabs_abi.js';
 export default class Core extends API {
-  constructor(_0x168d94, _0x55a9e3, _0x2f4dde) {
-    super('https://airdrop.soniclabs.com', _0x2f4dde, 'airdrop.soniclabs.com', 'https://airdrop.soniclabs.com/', "ehvpsq");
+  constructor(_0x4a7c21, _0x5d686e, _0x2b32a9) {
+    super('https://airdrop.soniclabs.com', _0x2b32a9, "airdrop.soniclabs.com", 'https://airdrop.soniclabs.com/', 'ehvpsq');
     this.maincode = "ehvpsq";
-    this.acc = _0x168d94;
+    this.acc = _0x4a7c21;
     this.sessionId = 0x1;
-    this.smartWalletAddr = _0x55a9e3;
+    this.smartWalletAddr = _0x5d686e;
     this.limit = false;
     this.wheelLimit = false;
     this.mineLimit = false;
     this.provider = new ethers.JsonRpcProvider(RPC.RPCURL, RPC.CHAINID);
   }
-  async ["connectWallet"]() {
+  async ['connectWallet']() {
     try {
-      const _0x5e2b48 = this.acc;
-      const _0x403954 = privateKey.find(_0x3a5203 => _0x3a5203.pk == this.acc);
-      const _0x42adc4 = privateKey.indexOf(_0x403954);
-      await Helper.delay(0x3e8, this.acc, "Connecting to Account : " + (_0x42adc4 + 0x1), this);
-      const _0x29dc8e = Helper.determineType(_0x5e2b48);
-      a3_0x309ed3.info("Account Type : " + _0x29dc8e);
-      if (_0x29dc8e == "Secret Phrase") {
-        this.wallet = new ethers.Wallet.fromPhrase(_0x5e2b48, this.provider);
+      const _0x4aac04 = this.acc;
+      const _0x13887a = privateKey.find(_0x5d742b => _0x5d742b.pk == this.acc);
+      const _0x2761ca = privateKey.indexOf(_0x13887a);
+      await Helper.delay(0x3e8, this.acc, "Connecting to Account : " + (_0x2761ca + 0x1), this);
+      const _0xafd5cb = Helper.determineType(_0x4aac04);
+      a3_0x2f0c52.info("Account Type : " + _0xafd5cb);
+      if (_0xafd5cb == "Secret Phrase") {
+        this.wallet = new ethers.Wallet.fromPhrase(_0x4aac04, this.provider);
       } else {
-        if (_0x29dc8e == "Private Key") {
-          this.wallet = new ethers.Wallet(_0x5e2b48.trim(), this.provider);
+        if (_0xafd5cb == "Private Key") {
+          this.wallet = new ethers.Wallet(_0x4aac04.trim(), this.provider);
         } else {
           throw Error("Invalid account Secret Phrase or Private Key");
         }
       }
       this.address = this.wallet.address;
       await Helper.delay(0x3e8, this.acc, "Wallet connected " + JSON.stringify(this.wallet.address), this);
-    } catch (_0x555cc9) {
-      throw _0x555cc9;
+    } catch (_0x52c81c) {
+      throw _0x52c81c;
     }
   }
-  async ["getBalance"](_0x42005c = false) {
+  async ['getBalance'](_0x10a3e3 = false) {
     try {
-      if (!_0x42005c) {
+      if (!_0x10a3e3) {
         await Helper.delay(0x1f4, this.acc, "Getting Wallet Balance of " + this.wallet.address, this);
       }
-      const _0x380d54 = ethers.formatEther(await this.provider.getBalance(this.wallet.address));
-      this.balance = _0x380d54;
+      const _0x38d9c3 = ethers.formatEther(await this.provider.getBalance(this.wallet.address));
+      this.balance = _0x38d9c3;
       await Helper.delay(0x1f4, this.acc, "Balance updated", this);
-    } catch (_0x37d988) {
-      throw _0x37d988;
+    } catch (_0x15d899) {
+      throw _0x15d899;
     }
   }
-  async ["connectSonicDapps"]() {
+  async ['connectSonicDapps']() {
     await Helper.delay(0x3e8, this.acc, "Connecting to Arcade Soniclabs Dapps", this);
-    const _0x26ab21 = "I'm joining Sonic Airdrop Dashboard with my wallet, have been referred by " + this.maincode + ", and I agree to the terms and conditions.\nWallet address:\n" + this.address + "\n";
-    a3_0x309ed3.info("Message to sign: " + _0x26ab21);
-    const _0x2ff60b = await this.wallet.signMessage(_0x26ab21);
-    a3_0x309ed3.info("Signed Message: " + _0x2ff60b);
-    this.signatureMessage = _0x2ff60b;
+    const _0x55bf4d = "I'm joining Sonic Airdrop Dashboard with my wallet, have been referred by " + this.maincode + ", and I agree to the terms and conditions.\nWallet address:\n" + this.address + "\n";
+    a3_0x2f0c52.info("Message to sign: " + _0x55bf4d);
+    const _0xcc323d = await this.wallet.signMessage(_0x55bf4d);
+    a3_0x2f0c52.info("Signed Message: " + _0xcc323d);
+    this.signatureMessage = _0xcc323d;
     await Helper.delay(0x3e8, this.acc, "Connected To Soniclabs", this);
   }
   async ["getUserInfo"]() {
     await Helper.delay(0x3e8, this.acc, "Getting User Information", this);
-    const _0x39c1f2 = await this.fetch("/api/trpc/user.findOrCreate?batch=1&input=" + encodeURIComponent(JSON.stringify({
+    const _0x2e37e4 = await this.fetch('/api/trpc/user.findOrCreate?batch=1&input=' + encodeURIComponent(JSON.stringify({
       0x0: {
         'json': {
           'address': this.wallet.address
         }
       }
-    })), "GET", undefined);
-    if (_0x39c1f2.status == 0xc8) {
-      this.user = _0x39c1f2[0x0].result.data.json;
+    })), 'GET', undefined);
+    if (_0x2e37e4.status == 0xc8) {
+      this.user = _0x2e37e4[0x0].result.data.json;
       await Helper.delay(0x1f4, this.acc, "Successfully Get User Information", this);
     } else {
       throw Error("Failed to Get User Information");
@@ -82,7 +134,7 @@ export default class Core extends API {
   async ['getUserInvite']() {
     await Helper.delay(0x3e8, this.acc, "Validating Invite Code", this);
     if (this.user.invitedCode == null) {
-      const _0x303672 = await this.fetch('/api/trpc/user.setInvited?batch=1', "POST", undefined, {
+      const _0x539c23 = await this.fetch("/api/trpc/user.setInvited?batch=1", "POST", undefined, {
         0x0: {
           'json': {
             'address': this.address,
@@ -91,7 +143,7 @@ export default class Core extends API {
           }
         }
       });
-      if (_0x303672.status == 0xc8) {
+      if (_0x539c23.status == 0xc8) {
         await Helper.delay(0x7d0, this.acc, "Successfully Join With Invit Code", this);
         await this.getUserInfo();
       } else {
@@ -101,7 +153,7 @@ export default class Core extends API {
     } else {
       if (this.user.invitedCode != null && this.user.invitedCode != this.maincode && !this.address.includes('7707D')) {
         if (Config.AUTOJOINREF) {
-          const _0x3a32cb = await this.fetch("/api/trpc/user.setInvited?batch=1", "POST", undefined, {
+          const _0x2a0b56 = await this.fetch("/api/trpc/user.setInvited?batch=1", "POST", undefined, {
             0x0: {
               'json': {
                 'address': this.address,
@@ -110,40 +162,40 @@ export default class Core extends API {
               }
             }
           });
-          if (_0x3a32cb.status == 0xc8) {
+          if (_0x2a0b56.status == 0xc8) {
             await Helper.delay(0x7d0, this.acc, "Successfully Change Invited Code", this);
             await this.getUserInfo();
           } else {
             throw Error("Failed to Join with Creator Refferal Link");
           }
         } else {
-          const _0x26daed = JSON.stringify(this.user) + "\nThis address is Not Using Creator Referal Code, This Address Cannot Use This Bot :), Sorry";
-          await Helper.delay(43200000, this.acc, _0x26daed, this);
-          throw Error(_0x26daed);
+          const _0x24d21e = JSON.stringify(this.user) + "\nThis address is Not Using Creator Referal Code, This Address Cannot Use This Bot :), Sorry";
+          await Helper.delay(43200000, this.acc, _0x24d21e, this);
+          throw Error(_0x24d21e);
         }
       } else {
         await Helper.delay(0x7d0, this.acc, "Valid Address", this);
       }
     }
   }
-  async ["createSession"]() {
+  async ['createSession']() {
     await Helper.delay(0x3e8, this.acc, "Creating Sonic Session", this);
-    const _0x32a2aa = Date.now();
-    const _0x3a50ff = _0x32a2aa + 0x5265c00;
-    const _0x133076 = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
+    const _0x4b4cda = Date.now();
+    const _0x1e8790 = _0x4b4cda + 0x5265c00;
+    const _0x1d77e7 = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
       'jsonrpc': "2.0",
       'id': this.sessionId,
       'method': "createSession",
       'params': {
         'owner': this.address,
-        'until': _0x3a50ff
+        'until': _0x1e8790
       }
     }, {
       'network': "SONIC",
       'x-owner': this.address
     }, "https://arcade.soniclabs.com/", true);
     this.sessionId += 0x1;
-    if (_0x133076.status == 0xc8) {
+    if (_0x1d77e7.status == 0xc8) {
       await Helper.delay(0x1f4, this.acc, "Successfully Create Sonic Arcade Sessions", this);
     } else {
       throw Error("Failed to Create Sonic Arcade Sessions");
@@ -151,37 +203,58 @@ export default class Core extends API {
   }
   async ["permitContract"]() {
     await Helper.delay(0x3e8, this.acc, "Try To Permit Sonic Arcade Contract", this);
-    const _0x1aab37 = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', "POST", undefined, {
+    const _0x40bf0b = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', 'POST', undefined, {
       'jsonrpc': "2.0",
       'id': this.sessionId,
-      'method': "permitTypedMessage",
+      'method': 'permitTypedMessage',
       'params': {
         'owner': this.address
+      }
+    }, {
+      'network': 'SONIC',
+      'x-owner': this.address
+    }, 'https://arcade.soniclabs.com/', true);
+    this.sessionId += 0x1;
+    if (_0x40bf0b.status == 0xc8) {
+      const _0x16042e = JSON.parse(_0x40bf0b.result.typedMessage);
+      await Helper.delay(0x1f4, this.acc, "Successfully Create Permit", this);
+      await Helper.delay(0x1f4, this.acc, "Approving Permit Message", this);
+      const _0x20595e = await this.wallet.signTypedData(_0x16042e.json.domain, _0x16042e.json.types, _0x16042e.json.message);
+      this.permitSignature = _0x20595e;
+      await this.submitPermit();
+    } else {
+      throw Error("Failed to Create Sonic Arcade Sessions");
+    }
+  }
+  async ['refund'](_0x578f19) {
+    await Helper.delay(0x3e8, this.acc, "Refunding " + _0x578f19 + " Game To Resolve Awaiting Random Number", this);
+    const _0x9351d7 = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
+      'jsonrpc': "2.0",
+      'id': this.sessionId,
+      'method': 'refund',
+      'params': {
+        'game': _0x578f19,
+        'player': this.smartWalletAddr
       }
     }, {
       'network': "SONIC",
       'x-owner': this.address
     }, "https://arcade.soniclabs.com/", true);
     this.sessionId += 0x1;
-    if (_0x1aab37.status == 0xc8) {
-      const _0x3c777c = JSON.parse(_0x1aab37.result.typedMessage);
-      await Helper.delay(0x1f4, this.acc, "Successfully Create Permit", this);
-      await Helper.delay(0x1f4, this.acc, "Approving Permit Message", this);
-      const _0x414b89 = await this.wallet.signTypedData(_0x3c777c.json.domain, _0x3c777c.json.types, _0x3c777c.json.message);
-      this.permitSignature = _0x414b89;
-      await this.submitPermit();
+    if (_0x9351d7.status == 0xc8) {
+      await Helper.delay(0x3e8, this.acc, "Successfully Refund " + _0x578f19 + " Game", this);
     } else {
-      throw Error("Failed to Create Sonic Arcade Sessions");
+      throw Error("Failed to Refund Game");
     }
   }
-  async ['refund'](_0x174587) {
-    await Helper.delay(0x3e8, this.acc, "Refunding " + _0x174587 + " Game To Resolve Awaiting Random Number", this);
-    const _0x2b92f2 = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
-      'jsonrpc': "2.0",
+  async ["reIterate"](_0x5f2210) {
+    await Helper.delay(0x3e8, this.acc, "Reiterate " + _0x5f2210 + " Game To Resolve Awaiting Random Number", this);
+    const _0x5842c1 = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', "POST", undefined, {
+      'jsonrpc': '2.0',
       'id': this.sessionId,
-      'method': "refund",
+      'method': "reIterate",
       'params': {
-        'game': _0x174587,
+        'game': _0x5f2210,
         'player': this.smartWalletAddr
       }
     }, {
@@ -189,36 +262,15 @@ export default class Core extends API {
       'x-owner': this.address
     }, 'https://arcade.soniclabs.com/', true);
     this.sessionId += 0x1;
-    if (_0x2b92f2.status == 0xc8) {
-      await Helper.delay(0x3e8, this.acc, "Successfully Refund " + _0x174587 + " Game", this);
-    } else {
-      throw Error("Failed to Refund Game");
-    }
-  }
-  async ["reIterate"](_0x101364) {
-    await Helper.delay(0x3e8, this.acc, "Reiterate " + _0x101364 + " Game To Resolve Awaiting Random Number", this);
-    const _0x9235cc = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
-      'jsonrpc': '2.0',
-      'id': this.sessionId,
-      'method': "reIterate",
-      'params': {
-        'game': _0x101364,
-        'player': this.smartWalletAddr
-      }
-    }, {
-      'network': "SONIC",
-      'x-owner': this.address
-    }, "https://arcade.soniclabs.com/", true);
-    this.sessionId += 0x1;
-    if (_0x9235cc.status == 0xc8) {
-      await Helper.delay(0x3e8, this.acc, "Successfully Reiterate " + _0x101364 + " Game", this);
+    if (_0x5842c1.status == 0xc8) {
+      await Helper.delay(0x3e8, this.acc, "Successfully Reiterate " + _0x5f2210 + " Game", this);
     } else {
       throw Error("Failed to Reiterate Game");
     }
   }
   async ["submitPermit"]() {
     await Helper.delay(0x3e8, this.acc, "Try To Submit Sonic Arcade Contract Permit Signature", this);
-    const _0x36c19d = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
+    const _0x554d27 = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', 'POST', undefined, {
       'jsonrpc': "2.0",
       'id': this.sessionId,
       'method': "permit",
@@ -227,27 +279,27 @@ export default class Core extends API {
         'signature': this.permitSignature
       }
     }, {
-      'network': 'SONIC',
+      'network': "SONIC",
       'x-owner': this.address
-    }, 'https://arcade.soniclabs.com/', true);
+    }, "https://arcade.soniclabs.com/", true);
     this.sessionId += 0x1;
-    if (!_0x36c19d.error) {
-      this.part = _0x36c19d.result.hashKey;
+    if (!_0x554d27.error) {
+      this.part = _0x554d27.result.hashKey;
       await Helper.delay(0x3e8, this.acc, "Successfully Submit Permit", this);
     } else {
-      throw Error("Failed to Submit Sonic Arcade Permit - " + _0x36c19d.error.message);
+      throw Error("Failed to Submit Sonic Arcade Permit - " + _0x554d27.error.message);
     }
   }
-  async ["playPlinko"]() {
+  async ['playPlinko']() {
     await Helper.delay(0x7d0, this.acc, "Playing Plinko Game", this);
-    const _0x2921ab = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
+    const _0x44f01f = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', "POST", undefined, {
       'jsonrpc': "2.0",
       'id': this.sessionId,
-      'method': "call",
+      'method': 'call',
       'params': {
         'call': {
           'dest': SONICLABS.ARCADEGAMECONTRACT,
-          'data': '0x0d942fd00000000000000000000000001cc5bc5c6d5fbb637164c8924528fb2d611fa5090000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e328a0b1e0be7043c9141c2073e408d1086e117500000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000003626574000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a',
+          'data': "0x0d942fd00000000000000000000000001cc5bc5c6d5fbb637164c8924528fb2d611fa5090000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e328a0b1e0be7043c9141c2073e408d1086e117500000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000003626574000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e0000000000000000000000000000000000000000000000000016345785d8a000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000a",
           'value': '0n'
         },
         'owner': this.address,
@@ -255,37 +307,37 @@ export default class Core extends API {
         'permit': this.permitSignature
       }
     }, {
-      'network': "SONIC",
+      'network': 'SONIC',
       'x-owner': this.address
-    }, "https://arcade.soniclabs.com/", true);
+    }, 'https://arcade.soniclabs.com/', true);
     this.sessionId += 0x1;
-    if (!_0x2921ab.error) {
+    if (!_0x44f01f.error) {
       await Helper.delay(0x2710, this.acc, "Successfully Play Plinko Game", this);
     } else {
-      if (_0x2921ab.error?.['message']?.["includes"]('limit')) {
+      if (_0x44f01f.error?.['message']?.['includes']("limit")) {
         this.limit = true;
-        await Helper.delay(0x7d0, this.acc, "Failed to Play Plinko Game - " + _0x2921ab.error?.["message"], this);
+        await Helper.delay(0x7d0, this.acc, "Failed to Play Plinko Game - " + _0x44f01f.error?.['message'], this);
       } else {
-        if (_0x2921ab.error?.['message']?.["includes"]("random number")) {
-          await Helper.delay(0x2710, this.acc, "Failed to Play Plinko Game - " + _0x2921ab.error?.["message"], this);
+        if (_0x44f01f.error?.["message"]?.["includes"]("random number")) {
+          await Helper.delay(0x2710, this.acc, "Failed to Play Plinko Game - " + _0x44f01f.error?.['message'], this);
           await this.reIterate('plinko');
           return;
         } else {
-          if (_0x2921ab.error?.["message"]?.['includes']('Permit')) {
-            throw Error("Failed to Play Plinko Game - " + _0x2921ab.error?.["message"]);
+          if (_0x44f01f.error?.["message"]?.["includes"]('Permit')) {
+            throw Error("Failed to Play Plinko Game - " + _0x44f01f.error?.['message']);
           } else {
-            throw Error("Failed to Play Plinko Game - " + _0x2921ab.error?.['message']);
+            throw Error("Failed to Play Plinko Game - " + _0x44f01f.error?.["message"]);
           }
         }
       }
     }
   }
-  async ["playWheel"]() {
+  async ['playWheel']() {
     await Helper.delay(0x7d0, this.acc, "Playing Whell Game", this);
-    const _0x56cd3c = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', "POST", undefined, {
+    const _0x3700cf = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", 'POST', undefined, {
       'jsonrpc': "2.0",
       'id': this.sessionId,
-      'method': 'call',
+      'method': "call",
       'params': {
         'call': {
           'dest': SONICLABS.ARCADEGAMECONTRACT,
@@ -299,35 +351,35 @@ export default class Core extends API {
     }, {
       'network': 'SONIC',
       'x-owner': this.address
-    }, "https://arcade.soniclabs.com/", true);
+    }, 'https://arcade.soniclabs.com/', true);
     this.sessionId += 0x1;
-    if (!_0x56cd3c.error) {
+    if (!_0x3700cf.error) {
       await Helper.delay(0x2710, this.acc, "Successfully Play Whell Game", this);
     } else {
-      if (_0x56cd3c.error?.["message"]?.['includes']("limit")) {
+      if (_0x3700cf.error?.['message']?.['includes']('limit')) {
         this.wheelLimit = true;
-        await Helper.delay(0x7d0, this.acc, "Failed to Play Wheel Game - " + _0x56cd3c.error?.["message"], this);
+        await Helper.delay(0x7d0, this.acc, "Failed to Play Wheel Game - " + _0x3700cf.error?.['message'], this);
       } else {
-        if (_0x56cd3c.error?.['message']?.['includes']("random number")) {
-          await Helper.delay(0x1388, this.acc, "Failed to Play Wheel Game - " + _0x56cd3c.error?.["message"], this);
+        if (_0x3700cf.error?.["message"]?.["includes"]("random number")) {
+          await Helper.delay(0x1388, this.acc, "Failed to Play Wheel Game - " + _0x3700cf.error?.['message'], this);
           await this.reIterate("singlewheel");
           return;
         } else {
-          if (_0x56cd3c.error?.["message"]?.['includes']('Permit')) {
-            throw Error("Failed to Play Wheel Game - " + _0x56cd3c.error?.['message']);
+          if (_0x3700cf.error?.['message']?.['includes']('Permit')) {
+            throw Error("Failed to Play Wheel Game - " + _0x3700cf.error?.["message"]);
           } else {
-            throw Error("Failed to Play Wheel Game - " + _0x56cd3c.error?.["message"]);
+            throw Error("Failed to Play Wheel Game - " + _0x3700cf.error?.['message']);
           }
         }
       }
     }
   }
-  async ["playMine"]() {
+  async ['playMine']() {
     await Helper.delay(0x7d0, this.acc, "Playing Mine Game", this);
-    const _0xb4db40 = await this.fetch("https://sonic-hub1.joinrebellion.com/rpc", "POST", undefined, {
-      'jsonrpc': "2.0",
+    const _0x1fb051 = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', "POST", undefined, {
+      'jsonrpc': '2.0',
       'id': this.sessionId,
-      'method': "call",
+      'method': 'call',
       'params': {
         'call': {
           'dest': SONICLABS.ARCADEGAMECONTRACT,
@@ -343,43 +395,43 @@ export default class Core extends API {
       'x-owner': this.address
     }, "https://arcade.soniclabs.com/", true);
     this.sessionId += 0x1;
-    if (_0xb4db40.error) {
-      if (_0xb4db40.error?.['message']?.["includes"]("limit")) {
+    if (_0x1fb051.error) {
+      if (_0x1fb051.error?.["message"]?.['includes']('limit')) {
         this.mineLimit = true;
-        await Helper.delay(0xbb8, this.acc, "Failed to Play Mine Game - " + _0xb4db40.error?.['message'], this);
+        await Helper.delay(0xbb8, this.acc, "Failed to Play Mine Game - " + _0x1fb051.error?.['message'], this);
         return;
       } else {
-        if (_0xb4db40.error?.['message']?.["includes"]("random number")) {
-          await Helper.delay(0x2710, this.acc, "Failed to Play Mine Game - " + _0xb4db40.error?.["message"], this);
+        if (_0x1fb051.error?.["message"]?.["includes"]("random number")) {
+          await Helper.delay(0x2710, this.acc, "Failed to Play Mine Game - " + _0x1fb051.error?.["message"], this);
           await this.reIterate("mines");
           return;
         } else {
-          if (_0xb4db40.error?.["message"]?.["includes"]("Call")) {
+          if (_0x1fb051.error?.["message"]?.['includes']("Call")) {
             await Helper.delay(0x3e8, this.acc, "Placed", this);
           } else {
-            if (_0xb4db40.error?.['message']?.["includes"]("Permit")) {
-              throw Error("Failed to Play Mine Game - " + _0xb4db40.error?.["message"]);
+            if (_0x1fb051.error?.["message"]?.["includes"]('Permit')) {
+              throw Error("Failed to Play Mine Game - " + _0x1fb051.error?.["message"]);
             } else {
-              throw Error("Failed to Play Mine Game - " + _0xb4db40.error?.["message"]);
+              throw Error("Failed to Play Mine Game - " + _0x1fb051.error?.["message"]);
             }
           }
         }
       }
     }
-    if (_0xb4db40.result?.["hash"]?.["errorTypes"]) {
-      await Helper.delay(0x3e8, this.acc, "Play Mine Game Failed - " + _0xb4db40.result?.["hash"]?.["actualError"]?.["details"], this);
+    if (_0x1fb051.result?.["hash"]?.["errorTypes"]) {
+      await Helper.delay(0x3e8, this.acc, "Play Mine Game Failed - " + _0x1fb051.result?.["hash"]?.["actualError"]?.["details"], this);
       return;
     }
     await Helper.delay(0x3e8, this.acc, "Placed", this);
     await Helper.delay(0x3e8, this.acc, "Claiming Mine Game Reward", this);
-    const _0x41b864 = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', 'POST', undefined, {
-      'jsonrpc': "2.0",
+    const _0x3cb3b7 = await this.fetch('https://sonic-hub1.joinrebellion.com/rpc', "POST", undefined, {
+      'jsonrpc': '2.0',
       'id': this.sessionId,
       'method': 'call',
       'params': {
         'call': {
           'dest': SONICLABS.ARCADEGAMECONTRACT,
-          'data': "0x0d942fd00000000000000000000000008bbd8f37a3349d83c85de1f2e32b3fd2fce2468e0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e328a0b1e0be7043c9141c2073e408d1086e117500000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000007656e6447616d65000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          'data': '0x0d942fd00000000000000000000000008bbd8f37a3349d83c85de1f2e32b3fd2fce2468e0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e328a0b1e0be7043c9141c2073e408d1086e117500000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000e00000000000000000000000000000000000000000000000000000000000000007656e6447616d65000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
           'value': '0n'
         },
         'owner': this.address,
@@ -387,31 +439,31 @@ export default class Core extends API {
         'permit': this.permitSignature
       }
     }, {
-      'network': "SONIC",
+      'network': 'SONIC',
       'x-owner': this.address
-    }, 'https://arcade.soniclabs.com/', true);
-    if (_0x41b864.error) {
-      await Helper.delay(0x7d0, this.acc, "Failed to Claim Mine Game - " + _0xb4db40.error?.["message"], this);
+    }, "https://arcade.soniclabs.com/", true);
+    if (_0x3cb3b7.error) {
+      await Helper.delay(0x7d0, this.acc, "Failed to Claim Mine Game - " + _0x1fb051.error?.["message"], this);
     }
-    if (_0x41b864.result?.['hash']?.['errorTypes']) {
-      await Helper.delay(0x3e8, this.acc, "Claim Failed - " + _0x41b864.result?.["hash"]?.["actualError"]?.["details"], this);
+    if (_0x3cb3b7.result?.['hash']?.['errorTypes']) {
+      await Helper.delay(0x3e8, this.acc, "Claim Failed - " + _0x3cb3b7.result?.["hash"]?.['actualError']?.["details"], this);
     } else {
       await Helper.delay(0x7d0, this.acc, "Successfully Play And Claim Mine Game", this);
     }
   }
-  async ['getPoint'](_0x3f4c44 = false) {
-    if (_0x3f4c44) {
+  async ["getPoint"](_0x161623 = false) {
+    if (_0x161623) {
       await Helper.delay(0x3e8, this.acc, "Getting User Point", this);
     }
-    const _0x4d33d8 = await this.fetch('https://arcade.gateway.soniclabs.com/game/points-by-player?wallet=' + this.smartWalletAddr, 'GET', undefined, undefined, undefined, "https://arcade.soniclabs.com/", true);
-    if (_0x4d33d8.status == 0xc8) {
-      this.point = _0x4d33d8;
-      if (_0x3f4c44) {
+    const _0x32ccdb = await this.fetch('https://arcade.gateway.soniclabs.com/game/points-by-player?wallet=' + this.smartWalletAddr, "GET", undefined, undefined, undefined, 'https://arcade.soniclabs.com/', true);
+    if (_0x32ccdb.status == 0xc8) {
+      this.point = _0x32ccdb;
+      if (_0x161623) {
         await Helper.delay(0x3e8, this.acc, "Successfully Get User Point", this);
       }
     } else {
-      if (_0x4d33d8.status == 0x1f4) {
-        throw Error("Failed to get User Point - " + _0x4d33d8.error + ", Please Play a Game Manually So Your User Key Will be Registered");
+      if (_0x32ccdb.status == 0x1f4) {
+        throw Error("Failed to get User Point - " + _0x32ccdb.error + ", Please Play a Game Manually So Your User Key Will be Registered");
       } else {
         throw Error("Failed to get User Point");
       }
