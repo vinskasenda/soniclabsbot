@@ -41,7 +41,7 @@ qos4k8
 ### Linux
 1. clone project repo
    ```
-   git clone https://github.com/vinskasenda/soniclabsbot.git && cd soniclabsbot
+   git clone https://github.com/airdropinsiders/soniclabsbot.git && cd soniclabsbot
    ```
 2. run
    ```
@@ -72,7 +72,7 @@ qos4k8
 1. Open your `Command Prompt` or `Power Shell`.
 2. Clone project repo
    ```
-   git clone https://github.com/Widiskel/soniclabs-arcade-bot.git
+   git clone https://github.com/airdropinsiders/soniclabsbot.git
    ```
    and cd to project dir
    ```
